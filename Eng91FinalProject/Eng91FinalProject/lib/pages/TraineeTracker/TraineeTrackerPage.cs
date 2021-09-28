@@ -14,6 +14,7 @@ namespace Eng91FinalProject.lib.pages
         #region Properties
 
         private IWebDriver _seleniumDriver;
+        private IWebElement _selfCheckFeedback_Week => _seleniumDriver.FindElement(By.Id("weekSelector"));
         private IWebElement _editButton_BenHoward_Engineering79 => _seleniumDriver.FindElement(By.CssSelector("[href *= '/TraineeTracker/TrainerEdit/20']"));
         private IWebElement _stopBox => _seleniumDriver.FindElement(By.Id("stop"));
         private IWebElement _startBox => _seleniumDriver.FindElement(By.Id("start"));
@@ -43,6 +44,7 @@ namespace Eng91FinalProject.lib.pages
         public void Select_Consultant_B() => _bConsultant.Click();
         public void Select_Consultant_C() => _cConsultant.Click();
         public void Select_Consultant_D() => _dConsultant.Click();
+        public void SetSweek(int weekNumber) => _selfCheckFeedback_Week.SendKeys(weekNumber.ToString());
 
 
     }

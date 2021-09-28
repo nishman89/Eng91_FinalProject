@@ -8,5 +8,6 @@ namespace Eng91FinalProject.lib.pages
 {
     class TrainerProfilePage
     {
+
     }
 }

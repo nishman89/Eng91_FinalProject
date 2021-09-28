@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
 using Eng91FinalProject.lib.driver_config;
+using Eng91FinalProject.lib.pages.TraineeTracker;
+using Eng91FinalProject.lib.pages.Navbar;
 
 namespace Eng91FinalProject.lib.pages
 {
@@ -33,10 +35,12 @@ namespace Eng91FinalProject.lib.pages
         public AdminStreamPage AdminStreamPage { get; set; }
         public AdminUserCreatePage AdminUserCreatePage { get; set; }
         public AdminUserDeletePage AdminUserDeletePage { get; set; }
-        public AdminStreamEditPage AdminStreamEditPage { get; set; }
         public AdminUsersPage AdminUsersPage { get; set; }
         public BulkImportProfilesPage BulkImportProfilesPage { get; set; }
         public BulkImportUsersPage BulkImportUsersPage { get; set; }
+        public SharedNavbar Navbar { get; set; }
+        public TrainerNavbar TrainerNavbar { get; set; }
+        public TraineeNavbar TraineeNavbar {get;set;}
 
         public Website(int pageLoadInSecs = 10, int implicitWaitInSecs = 10)
         {

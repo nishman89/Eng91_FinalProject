@@ -13,16 +13,15 @@ namespace Eng91FinalProjectAPI.Tests
         private TraineeService _traineeService;
 
         [BeforeScenario]
-        public async Task OneTimeSetUpAsync()
+        public void OneTimeSetUpAsync()
         {
             _traineeService = new TraineeService();
-            await _traineeService.MakeTraineeRequestAsync();
         }
 
         [Given(@"I have an approved token")]
         public void GivenIHaveAnApprovedToken()
         {
-            _traineeService.CallManager.AuthorisationToken = "raHHLG3CkngPn73rvHVj1AsQpMxoJvD8Ck93GwnCK4=";
+            _traineeService.CallManager.AuthorisationToken = "/raHHLG3CkngPn73rvHVj1AsQpMxoJvD8Ck93GwnCK4=";
         }
         
         [Given(@"I make a get request for trainees")]
@@ -60,6 +59,13 @@ namespace Eng91FinalProjectAPI.Tests
         {
             Assert.That(_traineeService.ErrorResponseDTO.Response.errors.FirstOrDefault(), Is.EqualTo(errorMessage));
         }
+
+        [Then(@"I should receive a status code ""(.*)"" in the JSON response")]
+        public void ThenIShouldReceiveAStatusCodeInTheJSONResponse(int statusCode)
+        {
+            Assert.That(_traineeService.CallManager.JSONStatusCode, Is.EqualTo(statusCode));
+        }
+
 
     }
 }

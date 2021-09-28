@@ -20,6 +20,7 @@ namespace Eng91FinalProject.lib.pages
 
 
 
+
         public void ClickCreateNewTracker() => _findChooseFileButton.Click();
         public void ClickEditButton() => _findSaveButton.Click();
     }

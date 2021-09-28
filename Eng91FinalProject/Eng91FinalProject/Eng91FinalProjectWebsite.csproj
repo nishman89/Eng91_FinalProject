@@ -128,14 +128,22 @@
     <Compile Include="lib\pages\AdminStream\AdminStreamCreatePage.cs" />
     <Compile Include="lib\pages\AdminStream\AdminStreamDeletePage.cs" />
     <Compile Include="lib\pages\AdminStream\AdminStreamEditPage.cs" />
+<<<<<<< HEAD
     <Compile Include="lib\pages\TrackerDeletePage.cs" />
     <Compile Include="lib\pages\TrackerEditPage.cs" />
     <Compile Include="lib\pages\TrainerTrackerPage.cs" />
     <Compile Include="lib\pages\TraineeTrackerPage.cs" />
+=======
+    <Compile Include="lib\pages\TraineeTracker\TrackerCreatePage.cs" />
+    <Compile Include="lib\pages\TraineeTracker\TrackerDeletePage.cs" />
+    <Compile Include="lib\pages\TraineeTracker\TrackerEditPage.cs" />
+    <Compile Include="lib\pages\TraineeTracker\TraineeTrackerPage.cs" />
+>>>>>>> c273a6d22598a16e3a32cb5cce65a4d22d9dbb90
     <Compile Include="lib\pages\TrainerProfilePage.cs" />
     <Compile Include="lib\pages\AdminUsers\AdminUserCreatePage.cs" />
     <Compile Include="lib\pages\AdminUsers\AdminUserDeletePage.cs" />
     <Compile Include="lib\pages\AdminUsers\AdminUserEditPage.cs" />
+    <Compile Include="lib\pages\Website.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="utils\Credentials.cs" />
   </ItemGroup>

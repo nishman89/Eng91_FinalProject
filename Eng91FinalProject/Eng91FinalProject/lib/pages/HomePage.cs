@@ -15,6 +15,7 @@ namespace Eng91FinalProject.lib.pages
 		#region Navbar
 		private IWebElement _loginButton => _seleniumDriver.FindElement(By.LinkText("Login"));
 		private IWebElement _logoutButton => _seleniumDriver.FindElement(By.LinkText("Logout"));
+		private IWebElement _homeButton => _seleniumDriver.FindElement(By.LinkText("Home"));
 		private IWebElement _profilesButton => _seleniumDriver.FindElement(By.LinkText("Profiles"));
 		private IWebElement _traineeTrackerButton => _seleniumDriver.FindElement(By.LinkText("Trainee Tracker"));
 		private IWebElement _adminDropdownButton => _seleniumDriver.FindElement(By.Id("adminDropdown"));
@@ -29,12 +30,16 @@ namespace Eng91FinalProject.lib.pages
 
 		private IWebElement _trainerProfileButton => _seleniumDriver.FindElement(By.LinkText("jsmith"));
 		#endregion
-		#region TraineePage
+		#region TraineePage - Bhoward
+		private IWebElement _traineeProfilePageButton => _seleniumDriver.FindElement(By.LinkText("bhoward"));
 		private IWebElement _trackerButton => _seleniumDriver.FindElement(By.LinkText("Tracker"));
 		public IReadOnlyCollection<IWebElement> _expandableTestContainers => _seleniumDriver.FindElements(By.ClassName("mb-0"));
 		private IWebElement _advancedOOPTestExpandable => _expandableTestContainers.ElementAt(0);
 		private IWebElement _OOPTestExpandable => _expandableTestContainers.ElementAt(1);
 		private IWebElement _SQLTestExpandable => _expandableTestContainers.ElementAt(2);
+
+		private IReadOnlyCollection<IWebElement> _testListItems => _seleniumDriver.FindElements(By.ClassName("mb-2")); 
+
 		#endregion
 
 		#region Stream Student Details
@@ -52,11 +57,34 @@ namespace Eng91FinalProject.lib.pages
 
 		#region Methods
 
+
 		#region Trainee Page Methods
 		public void ClicktrackerButton() => _trackerButton.Click();
+		public void ClickTraineeProfilePageButton() => _traineeProfilePageButton.Click();
 		public void ClickAdvancedOOPTestExpandable() => _advancedOOPTestExpandable.Click();
 		public void ClickOOPTestExpandable() => _OOPTestExpandable.Click();
 		public void ClickSQLTestExpandable() => _SQLTestExpandable.Click();
+
+		public bool IsExpandedAdvancedOOPTestExpandable() => _advancedOOPTestExpandable.GetAttribute("aria - expanded").Contains("true") ? true : false;
+		public bool IsExpandedOOPTestExpandable() => _OOPTestExpandable.GetAttribute("aria - expanded").Contains("true") ? true : false;
+		public bool IsExpandedSQLTestExpandable() => _SQLTestExpandable.GetAttribute("aria - expanded").Contains("true") ? true : false;
+
+		public bool TestsAreContained()
+		{
+			try 
+			{
+				_testListItems.ElementAt(0).FindElement(By.Id("accordion_Advanced-OOP-and-Unit-Testing"));
+				_testListItems.ElementAt(0).FindElement(By.Id("accordion_OOP"));
+				_testListItems.ElementAt(0).FindElement(By.Id("accordion_SQL"));
+				return true;
+			}
+			catch (NoSuchElementException)
+			{
+				return false;
+			}
+		}
+		
+
 		#endregion
 
 		#region Stream Details Methods

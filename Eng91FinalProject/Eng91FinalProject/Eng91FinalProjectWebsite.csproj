@@ -157,14 +157,12 @@
     <None Include="BDD\AdminCourseDeletePage.feature" />
     <None Include="BDD\AdminCourseEditPage.feature" />
     <None Include="BDD\AdminCoursePage.feature" />
-    <None Include="BDD\Login.feature" />
     <None Include="BDD\MyProfilePage.feature" />
     <None Include="BDD\Login.feature" />
     <None Include="BDD\TraineeProfile.feature" />
     <None Include="BDD\TraineeProfileEdit.feature" />
     <None Include="BDD\TrainerHomePage.feature" />
     <None Include="packages.config" />
-    <None Include="Login.feature" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

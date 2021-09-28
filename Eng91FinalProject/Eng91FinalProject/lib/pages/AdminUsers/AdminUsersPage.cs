@@ -25,5 +25,6 @@ namespace Eng91FinalProject.lib.pages
         public void DeleteCourse(string username) => _deleteUser(username).Click();
         public void SearchUser() => _searchButton.Click();
         public void Search(string username) => _searchBar.SendKeys(username);
+
     }
 }

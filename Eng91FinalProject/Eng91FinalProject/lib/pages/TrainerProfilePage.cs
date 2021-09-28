@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Eng91FinalProject.lib.pages
 {
-    class TrainerProfilePage
+    public class TrainerProfilePage
     {
 
     }

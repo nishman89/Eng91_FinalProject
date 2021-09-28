@@ -2,14 +2,12 @@
 
 namespace Eng91FinalProject.lib.pages.TraineeProfile
 {
-    class TraineeProfileEditPage
+    public class TraineeProfileEditPage
     {
         private IWebDriver _seleniumDriver { get; set; }
-
-
         public TraineeProfileEditPage(IWebDriver seleniumDriver) => _seleniumDriver = seleniumDriver;
-        private IWebElement _saveButton => _seleniumDriver.FindElement(By.Id("submitChanges"));
 
+        private IWebElement _saveButton => _seleniumDriver.FindElement(By.Id("submitChanges"));
         private IWebElement _summaryBox => _seleniumDriver.FindElement(By.Id("Summary"));
         private IWebElement _lifeStoryBox => _seleniumDriver.FindElement(By.Id("LifeStory"));
         private IWebElement _careerMotivationBox => _seleniumDriver.FindElement(By.Id("WorkMotivation"));

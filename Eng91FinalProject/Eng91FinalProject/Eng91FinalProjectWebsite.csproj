@@ -109,6 +109,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppConfigReader.cs" />
+    <Compile Include="BDD\LoginSteps.cs" />
+    <Compile Include="BDD\TraineeProfileEditSteps.cs" />
+    <Compile Include="BDD\TraineeProfileSteps.cs" />
     <Compile Include="lib\driver_config\SeleniumDriverConfig.cs" />
     <Compile Include="lib\pages\AdminAPI\AdminAPICreatePage.cs" />
     <Compile Include="lib\pages\AdminAPI\AdminAPIPage.cs" />
@@ -144,6 +147,7 @@
     <Compile Include="lib\pages\AdminUsers\AdminUserEditPage.cs" />
     <Compile Include="lib\pages\Website.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LoginSteps.cs" />
     <Compile Include="SharedLoginSteps.cs" />
     <Compile Include="utils\Credentials.cs" />
   </ItemGroup>
@@ -155,8 +159,12 @@
     <None Include="BDD\AdminCoursePage.feature" />
     <None Include="BDD\Login.feature" />
     <None Include="BDD\MyProfilePage.feature" />
+    <None Include="BDD\Login.feature" />
+    <None Include="BDD\TraineeProfile.feature" />
+    <None Include="BDD\TraineeProfileEdit.feature" />
+    <None Include="BDD\TrainerHomePage.feature" />
     <None Include="packages.config" />
-    <None Include="SharedLogin.feature" />
+    <None Include="Login.feature" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

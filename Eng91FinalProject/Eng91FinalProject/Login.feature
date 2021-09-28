@@ -12,7 +12,6 @@ Scenario: Valid Login - Admin
     And I click ‘LOGIN’
     Then I am taken to the Home Page
 
-
     #Given I am on the login page
     #And I enter the following <email> and <password>
     #When I enter these credentials

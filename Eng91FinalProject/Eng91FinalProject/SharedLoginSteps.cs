@@ -8,12 +8,20 @@ using NUnit.Framework;
 
 namespace Eng91FinalProject
 {
-    //[Binding]
-    //[Scope(Feature = "Login")]
     public class SharedLoginSteps
     {
         public Website<ChromeDriver> Website { get; } = new Website<ChromeDriver>();
         protected Credentials _credentials;
+
+        [Given(@"I am logged in")]
+        public void GivenIAmLoggedIn(Table table)
+        {
+            GivenIAmOnTheSplashPage();
+            GivenIClickLogin();
+            WhenIEnterTheCorrectCredentials(table);
+            WhenIClickLOGIN();
+            ThenIAmTakenToTheHomePage();
+        }
 
         [Given(@"I am on the Splash Page")]
         public void GivenIAmOnTheSplashPage()
@@ -45,7 +53,7 @@ namespace Eng91FinalProject
         [Then(@"I am taken to the Home Page")]
         public void ThenIAmTakenToTheHomePage()
         {
-            Assert.That(Website.HomePage.IsOnTrainerHomePage(), Is.True);
+            Assert.That(Website.HomePage.IsOnTheLogInPage(), Is.False);
         }
 
         [AfterScenario]

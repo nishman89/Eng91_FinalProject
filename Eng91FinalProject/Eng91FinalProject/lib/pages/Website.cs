@@ -7,6 +7,7 @@ using OpenQA.Selenium;
 using Eng91FinalProject.lib.driver_config;
 using Eng91FinalProject.lib.pages.TraineeTracker;
 using Eng91FinalProject.lib.pages.TrainerProfile;
+using Eng91FinalProject.lib.pages.TraineeProfile;
 using Eng91FinalProject.lib.pages.Navbar;
 
 namespace Eng91FinalProject.lib.pages
@@ -22,12 +23,11 @@ namespace Eng91FinalProject.lib.pages
         public TrackerDeletePage TrackerDeletePage { get; set; }
         public TrackerEditPage TrackerEditPage { get; set; }
         public TraineeTrackerPage TraineeTrackerPage { get; set; }
-
         public TrainerTrackerPage TrainerTrackerPage { get; set; }
-        //public TrainerProfilePage TrainerProfilePage { get; set; }
         public TrainerProfilePage TrainerProfilePage { get; set; }
         public TrainerProfileEditPage TrainerProfileEditPage { get; set; }
-        public MyProfilePage MyProfilePage { get; set; }
+        public TraineeProfilePage TraineeProfilePage { get; set; }
+        public TraineeProfileEditPage TraineeProfileEditPage { get; set; }
         public AdminAPICreatePage AdminAPICreatePage { get; set; }
         public AdminAPIPage AdminAPIPage { get; set; }
         public AdminCourseCreatePage AdminCourseCreatePage { get; set; }
@@ -55,19 +55,12 @@ namespace Eng91FinalProject.lib.pages
             LoginPage = new LoginPage(SeleniumDriver);
             HomePage = new HomePage(SeleniumDriver);
             ProfilesPage = new ProfilesPage(SeleniumDriver);
-            //TrackerCreatePage = new TrackerCreatePage(SeleniumDriver);
-            //TrackerDeletePage = new TrackerDeletePage(SeleniumDriver);
-           // TrackerEditPage = new TrackerEditPage(SeleniumDriver);
-
             TraineeTrackerPage = new TraineeTrackerPage(SeleniumDriver);
-
             TrainerTrackerPage = new TrainerTrackerPage(SeleniumDriver);
-
-            //TrainerProfilePage = new TrainerProfilePage(SeleniumDriver);
-
             TrainerProfilePage = new TrainerProfilePage(SeleniumDriver);
             TrainerProfileEditPage = new TrainerProfileEditPage(SeleniumDriver);
-            MyProfilePage = new MyProfilePage(SeleniumDriver);
+            TraineeProfilePage = new TraineeProfilePage(SeleniumDriver);
+            TraineeProfileEditPage = new TraineeProfileEditPage(SeleniumDriver);
             AdminAPICreatePage = new AdminAPICreatePage(SeleniumDriver);
             AdminAPIPage = new AdminAPIPage(SeleniumDriver);
             AdminCourseCreatePage = new AdminCourseCreatePage(SeleniumDriver);

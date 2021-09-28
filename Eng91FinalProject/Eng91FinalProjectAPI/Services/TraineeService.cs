@@ -35,12 +35,12 @@ namespace Eng91FinalProjectAPI.Services
 
         private void ParseObjects()
         {
-            if (CallManager.StatusCode == 200)
+            if (CallManager.JSONStatusCode == 200)
             {
                 JsonResponse = JObject.Parse(RequestResponse);
                 TraineeResponseDTO.Deserialize(RequestResponse);
             }
-            if (CallManager.StatusCode == 400)
+            if (CallManager.JSONStatusCode == 400)
             {
                 JsonResponse = JObject.Parse(RequestResponse);
                 ErrorResponseDTO.Deserialize(RequestResponse);

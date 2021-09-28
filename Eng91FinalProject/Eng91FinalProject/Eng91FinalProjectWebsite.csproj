@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\NUnit3TestAdapter.4.0.0\build\net35\NUnit3TestAdapter.props" Condition="Exists('..\packages\NUnit3TestAdapter.4.0.0\build\net35\NUnit3TestAdapter.props')" />
   <Import Project="..\packages\SpecFlow.Plus.LivingDocPlugin.3.9.57\build\SpecFlow.Plus.LivingDocPlugin.props" Condition="Exists('..\packages\SpecFlow.Plus.LivingDocPlugin.3.9.57\build\SpecFlow.Plus.LivingDocPlugin.props')" />
@@ -134,8 +134,14 @@
     <Compile Include="lib\pages\TraineeTracker\TrackerCreatePage.cs" />
     <Compile Include="lib\pages\TraineeTracker\TrackerDeletePage.cs" />
     <Compile Include="lib\pages\TraineeTracker\TrackerEditPage.cs" />
+
     <Compile Include="lib\pages\TraineeTracker\TrainerTrackerPage.cs" />
     <Compile Include="lib\pages\TrainerProfilePage.cs" />
+
+    <Compile Include="lib\pages\TraineeTracker\TraineeTrackerPage.cs" />
+    <Compile Include="lib\pages\TrainerProfile\TrainerProfileEditPage.cs" />
+    <Compile Include="lib\pages\TrainerProfile\TrainerProfilePage.cs" />
+
     <Compile Include="lib\pages\AdminUsers\AdminUserCreatePage.cs" />
     <Compile Include="lib\pages\AdminUsers\AdminUserDeletePage.cs" />
     <Compile Include="lib\pages\AdminUsers\AdminUserEditPage.cs" />

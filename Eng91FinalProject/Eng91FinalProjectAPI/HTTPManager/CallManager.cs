@@ -19,16 +19,21 @@ namespace Eng91FinalProjectAPI.HTTPManager
         public CallManager()
         {
             _client = new RestClient(AppConfigReader.BaseUrl);
+            _client.RemoteCertificateValidationCallback = (sender, certificate, chain, sslPolicyErrors) => true;
         }
 
         public async Task<string> MakeGetRequestAsync(GetMethods method)
         {
             var request = new RestRequest();
             request.AddHeader("Content-Type", "application/json");
-            request.Resource = $"/{method.ToString().ToLower()}";
+            request.Resource = $"{method.ToString().ToLower()}";
             request.AddHeader("Authorization", $"Bearer /{AuthorisationToken}");
             IRestResponse response = await _client.ExecuteAsync(request);
             StatusCode = (int)response.StatusCode;
+            if (StatusCode == 200)
+            {
+                StatusCode = int.Parse(response.Content.Substring(26, 3));
+            }
             return response.Content;
         }
 

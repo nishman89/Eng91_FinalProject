@@ -8,8 +8,6 @@ using NUnit.Framework;
 
 namespace Eng91FinalProject
 {
-    //[Binding]
-    //[Scope(Feature = "Login")]
     public class SharedLoginSteps
     {
         public Website<ChromeDriver> Website { get; } = new Website<ChromeDriver>();

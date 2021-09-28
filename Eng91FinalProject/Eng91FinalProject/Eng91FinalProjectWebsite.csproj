@@ -109,6 +109,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppConfigReader.cs" />
+    <Compile Include="BDD\LoginSteps.cs" />
+    <Compile Include="BDD\TraineeProfileEditSteps.cs" />
+    <Compile Include="BDD\TraineeProfileSteps.cs" />
     <Compile Include="lib\driver_config\SeleniumDriverConfig.cs" />
     <Compile Include="lib\pages\AdminAPI\AdminAPICreatePage.cs" />
     <Compile Include="lib\pages\AdminAPI\AdminAPIPage.cs" />
@@ -150,8 +153,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="BDD\Login.feature" />
+    <None Include="BDD\TraineeProfile.feature" />
+    <None Include="BDD\TraineeProfileEdit.feature" />
     <None Include="BDD\TrainerHomePage.feature" />
-    <None Include="BDD\MyProfilePage.feature" />
     <None Include="packages.config" />
     <None Include="Login.feature" />
   </ItemGroup>

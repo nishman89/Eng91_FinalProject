@@ -119,6 +119,9 @@
     <Compile Include="lib\pages\BulkImport\BulkImportUsersPage.cs" />
     <Compile Include="lib\pages\LoginPage.cs" />
     <Compile Include="lib\pages\MyProfilePage.cs" />
+    <Compile Include="lib\pages\Navbar\SharedNavbar.cs" />
+    <Compile Include="lib\pages\Navbar\TraineeNavbar.cs" />
+    <Compile Include="lib\pages\Navbar\TrainerNavbar.cs" />
     <Compile Include="lib\pages\ProfilesPage.cs" />
     <Compile Include="lib\pages\SplashPage.cs" />
     <Compile Include="lib\pages\HomePage.cs" />

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Eng91FinalProject.lib.pages.TraineeTracker
 {
-    class TrackerCreatePage
+    public class TrackerCreatePage
     {
     }
 }

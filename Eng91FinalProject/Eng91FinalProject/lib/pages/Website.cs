@@ -7,6 +7,7 @@ using OpenQA.Selenium;
 using Eng91FinalProject.lib.driver_config;
 using Eng91FinalProject.lib.pages.TraineeTracker;
 using Eng91FinalProject.lib.pages.Navbar;
+using Eng91FinalProject.lib.pages.TrainerProfile;
 
 namespace Eng91FinalProject.lib.pages
 {

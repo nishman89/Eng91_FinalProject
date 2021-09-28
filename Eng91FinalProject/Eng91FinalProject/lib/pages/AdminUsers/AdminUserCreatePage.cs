@@ -61,7 +61,7 @@ namespace Eng91FinalProject.lib.pages
         public void InputLastName(string lastname) => _assignLastName.SendKeys(lastname);
         public void InputEmail(string email) => _assignEmail.SendKeys(email);
         public void InputPassword(string password) => _assignPassword.SendKeys(password);
-        public void InputLocation(string location) => _assignFirstName.SendKeys(location);
+        public void InputLocation(string location) => _assignLocation.SendKeys(location);
         public void ClickStreamDropdown() => _streamSelectDropdown.Click();
         public void SelectStreamFromDropdown(StreamEnum streamEnum) => _streamSelectStream(streamEnum).Click();
         public void ClickCourseDropdown() => _courseSelectDropdown.Click();

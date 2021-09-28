@@ -9,41 +9,40 @@ using OpenQA.Selenium.Support.UI;
 
 namespace Eng91FinalProject.lib.pages
 {
-    public class TrainerTrackerPage
+    public class TraineeTrackerPage
     {
         #region Properties
 
         private IWebDriver _seleniumDriver;
-        private IWebElement _deleteButton_BenHoward_Engineering79 => _seleniumDriver.FindElement(By.CssSelector("[href *= '/TraineeTracker/Delete/1']"));
-        private IWebElement _editButton_BenHoward_Engineering79 => _seleniumDriver.FindElement(By.CssSelector("[href *= '/TraineeTracker/TrainerEdit/1']"));
-        private IWebElement _commentBox => _seleniumDriver.FindElement(By.Id("comment"));
-        private IWebElement _techGrades => _seleniumDriver.FindElement(By.Name("TrainerTechnicalGrade"));
-        private IWebElement _consultGrades => _seleniumDriver.FindElement(By.Name("consuTrainerConsultantGradeltgrades"));
-        private IWebElement _overallGrades => _seleniumDriver.FindElement(By.Name("OverallGrade"));
-        private SelectElement _techGradeSelected => new SelectElement(_techGrades);
-        private SelectElement _consultGradeSelected => new SelectElement(_consultGrades);
-        private SelectElement _overallGradeSelected => new SelectElement(_overallGrades);
-        private IWebElement _saveChangesButton => _seleniumDriver.FindElement(By.Id("create-button"));
+        private IWebElement _editButton_BenHoward_Engineering79 => _seleniumDriver.FindElement(By.CssSelector("[href *= '/TraineeTracker/TrainerEdit/20']"));
+        private IWebElement _stopBox => _seleniumDriver.FindElement(By.Id("stop"));
+        private IWebElement _startBox => _seleniumDriver.FindElement(By.Id("start"));
+        private IWebElement _continueBox => _seleniumDriver.FindElement(By.Id("continue"));
+        private IWebElement _saveChangesButton => _seleniumDriver.FindElement(By.XPath("xpath=//input[@value='Save']"));
+        private IWebElement _aSkill => _seleniumDriver.FindElement(By.Id("Atech"));
+        private IWebElement _bSkill => _seleniumDriver.FindElement(By.Id("Btech"));
+        private IWebElement _cSkill => _seleniumDriver.FindElement(By.Id("Ctech"));
+        private IWebElement _dSkill => _seleniumDriver.FindElement(By.Id("Dtech"));
+        private IWebElement _aConsultant => _seleniumDriver.FindElement(By.Id("Aconsultant"));
+        private IWebElement _bConsultant => _seleniumDriver.FindElement(By.Id("Bconsultant"));
+        private IWebElement _cConsultant => _seleniumDriver.FindElement(By.Id("Cconsultant"));
+        private IWebElement _dConsultant => _seleniumDriver.FindElement(By.Id("Dconsultant"));
 
         #endregion
-        public void ClickCreateNewTracker() => _deleteButton_BenHoward_Engineering79.Click();
-        public void ClickEditButton() => _editButton_BenHoward_Engineering79.Click();
-        public void ManageComment(string message) => _commentBox.SendKeys(message);
-
-        public void MaxTechGradeByValue()
-        {
-            _techGradeSelected.SelectByValue("A+");
-            _consultGradeSelected.SelectByValue("A+");
-            _overallGradeSelected.SelectByValue("A+");
-        }
-        public void MaxTechGradeByText()
-        {
-            _techGradeSelected.SelectByValue("A+");
-            _consultGradeSelected.SelectByValue("A+");
-            _overallGradeSelected.SelectByText("A+");
-        }
-
+        public void ManageStop(string message) => _stopBox.SendKeys(message);
+        public void ManageStart(string message) => _stopBox.SendKeys(message);
+        public void ManageContinue(string message) => _stopBox.SendKeys(message);
         public void SaveChanges() => _saveChangesButton.Click();
+        public void ClickEditButton() => _editButton_BenHoward_Engineering79.Click();
+
+        public void Select_Skill_A() => _aSkill.Click();
+        public void Select_Skill_B() => _bSkill.Click();
+        public void Select_Skill_C() => _cSkill.Click();
+        public void Select_Skill_D() => _dSkill.Click();
+        public void Select_Consultant_A() => _aConsultant.Click();
+        public void Select_Consultant_B() => _bConsultant.Click();
+        public void Select_Consultant_C() => _cConsultant.Click();
+        public void Select_Consultant_D() => _dConsultant.Click();
 
 
     }

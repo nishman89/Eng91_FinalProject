@@ -27,6 +27,8 @@ namespace Eng91FinalProject.lib.pages
         #endregion
 
 
+        public AdminStreamPage(IWebDriver seleniumDriver) => _seleniumDriver = seleniumDriver;
+
         public void InsertDataIntoSearchBar(string data) => _findSearchBar.SendKeys(data);
         public void ClickSearchBttn() => _findSearchButton.Click();
         public void ClickCreateNew() => _findCreateNew.Click();

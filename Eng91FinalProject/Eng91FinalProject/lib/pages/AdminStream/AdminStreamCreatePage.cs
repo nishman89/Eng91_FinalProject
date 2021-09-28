@@ -18,6 +18,8 @@ namespace Eng91FinalProject.lib.pages
 
         #endregion
 
+        public AdminStreamCreatePage(IWebDriver seleniumDriver) => _seleniumDriver = seleniumDriver;
+
         public void GiveDataToNameField(string data) => _findDataField.SendKeys(data);
         public void ClickSaveBttn() => _findSaveBttn.Click();
 

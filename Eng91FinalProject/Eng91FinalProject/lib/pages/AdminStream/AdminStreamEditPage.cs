@@ -17,6 +17,8 @@ namespace Eng91FinalProject.lib.pages
 
         #endregion
 
+        public AdminStreamEditPage(IWebDriver seleniumDriver) => _seleniumDriver = seleniumDriver;
+
         public void ClickDeleteBar(string data) => _findEditBar.SendKeys(data);
         public void ClickBackToList() => _findSaveBtnn.Click();
     }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using OpenQA.Selenium;
 using Eng91FinalProject.lib.driver_config;
 using Eng91FinalProject.lib.pages.TraineeTracker;
+using Eng91FinalProject.lib.pages.TrainerProfile;
 using Eng91FinalProject.lib.pages.Navbar;
 
 namespace Eng91FinalProject.lib.pages
@@ -21,8 +22,11 @@ namespace Eng91FinalProject.lib.pages
         public TrackerDeletePage TrackerDeletePage { get; set; }
         public TrackerEditPage TrackerEditPage { get; set; }
         public TraineeTrackerPage TraineeTrackerPage { get; set; }
+
         public TrainerTrackerPage TrainerTrackerPage { get; set; }
         //public TrainerProfilePage TrainerProfilePage { get; set; }
+        public TrainerProfilePage TrainerProfilePage { get; set; }
+        public TrainerProfileEditPage TrainerProfileEditPage { get; set; }
         public MyProfilePage MyProfilePage { get; set; }
         public AdminAPICreatePage AdminAPICreatePage { get; set; }
         public AdminAPIPage AdminAPIPage { get; set; }
@@ -39,9 +43,9 @@ namespace Eng91FinalProject.lib.pages
         public AdminUsersPage AdminUsersPage { get; set; }
         public BulkImportProfilesPage BulkImportProfilesPage { get; set; }
         public BulkImportUsersPage BulkImportUsersPage { get; set; }
-        public SharedNavbar Navbar { get; set; }
+        public SharedNavbar SharedNavbar { get; set; }
         public TrainerNavbar TrainerNavbar { get; set; }
-        public TraineeNavbar TraineeNavbar {get;set;}
+        public TraineeNavbar TraineeNavbar { get;set; }
 
         public Website(int pageLoadInSecs = 10, int implicitWaitInSecs = 10)
         {
@@ -56,10 +60,13 @@ namespace Eng91FinalProject.lib.pages
            // TrackerEditPage = new TrackerEditPage(SeleniumDriver);
 
             TraineeTrackerPage = new TraineeTrackerPage(SeleniumDriver);
+
             TrainerTrackerPage = new TrainerTrackerPage(SeleniumDriver);
 
             //TrainerProfilePage = new TrainerProfilePage(SeleniumDriver);
 
+            TrainerProfilePage = new TrainerProfilePage(SeleniumDriver);
+            TrainerProfileEditPage = new TrainerProfileEditPage(SeleniumDriver);
             MyProfilePage = new MyProfilePage(SeleniumDriver);
             AdminAPICreatePage = new AdminAPICreatePage(SeleniumDriver);
             AdminAPIPage = new AdminAPIPage(SeleniumDriver);
@@ -77,6 +84,9 @@ namespace Eng91FinalProject.lib.pages
             AdminUsersPage = new AdminUsersPage(SeleniumDriver);
             BulkImportProfilesPage = new BulkImportProfilesPage(SeleniumDriver);
             BulkImportUsersPage = new BulkImportUsersPage(SeleniumDriver);
+            SharedNavbar = new SharedNavbar(SeleniumDriver);
+            TrainerNavbar = new TrainerNavbar(SeleniumDriver);
+            TraineeNavbar = new TraineeNavbar(SeleniumDriver);
         }
 
         public void DeleteCookies() => SeleniumDriver.Manage().Cookies.DeleteAllCookies();

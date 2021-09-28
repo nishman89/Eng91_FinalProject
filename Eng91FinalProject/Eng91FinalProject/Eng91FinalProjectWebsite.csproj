@@ -134,7 +134,7 @@
     <Compile Include="lib\pages\TraineeTracker\TrackerCreatePage.cs" />
     <Compile Include="lib\pages\TraineeTracker\TrackerDeletePage.cs" />
     <Compile Include="lib\pages\TraineeTracker\TrackerEditPage.cs" />
-    <Compile Include="lib\pages\TraineeTracker\TraineeTrackerPage.cs" />
+    <Compile Include="lib\pages\TraineeTracker\TrainerTrackerPage.cs" />
     <Compile Include="lib\pages\TrainerProfilePage.cs" />
     <Compile Include="lib\pages\AdminUsers\AdminUserCreatePage.cs" />
     <Compile Include="lib\pages\AdminUsers\AdminUserDeletePage.cs" />

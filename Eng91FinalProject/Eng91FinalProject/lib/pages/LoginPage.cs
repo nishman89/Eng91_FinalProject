@@ -22,13 +22,15 @@ namespace Eng91FinalProject.lib.pages
         private IWebElement _emailBox => _seleniumDriver.FindElement(By.Id("Email"));
         private IWebElement _passwordBox => _seleniumDriver.FindElement(By.Id("Password"));
         private IWebElement _loginButton => _seleniumDriver.FindElement(By.LinkText("Login"));
+        private IWebElement _loginSubmitButton => _seleniumDriver.FindElement(By.CssSelector(".btn"));
         private IWebElement _errorMessage => _seleniumDriver.FindElement(By.CssSelector(".validation-summary-errors"));
         #endregion
 
         public void Login() => _loginButton.Click();
+        public void LoginSubmit() => _loginSubmitButton.Click();
         public void InputEmail(string email) => _emailBox.SendKeys(email);
-        public void InputPassword(string password) => _emailBox.SendKeys(password);
-
+        public void InputPassword(string password) => _passwordBox.SendKeys(password);
+        public void VisitHomePage() => _seleniumDriver.Navigate().GoToUrl(_homePageUrl);
         public void InputLoginCredentials(Credentials credentials)
         {
             _emailBox.SendKeys(credentials.Email);

@@ -54,7 +54,7 @@ namespace Eng91FinalProject.lib.pages
             SplashPage = new SplashPage(SeleniumDriver);
             LoginPage = new LoginPage(SeleniumDriver);
             HomePage = new HomePage(SeleniumDriver);
-            ProfilesPage = new ProfilesPage(SeleniumDriver);
+            //ProfilesPage = new ProfilesPage(SeleniumDriver);
             //TrackerCreatePage = new TrackerCreatePage(SeleniumDriver);
             //TrackerDeletePage = new TrackerDeletePage(SeleniumDriver);
            // TrackerEditPage = new TrackerEditPage(SeleniumDriver);

@@ -14,15 +14,15 @@ namespace Eng91FinalProject.lib.pages
         private IWebElement _assignTrainer => _seleniumDriver.FindElement(By.Id("TrainerId"));
         private IWebElement _assignStream => _seleniumDriver.FindElement(By.Id("StreamId"));
         private IWebElement _assignLocation => _seleniumDriver.FindElement(By.Id("Location"));
-        private IWebElement _assignCourseLengh => _seleniumDriver.FindElement(By.Id("CourseLengthInWeeks"));
+        private IWebElement _assignCourseLength => _seleniumDriver.FindElement(By.Id("CourseLengthInWeeks"));
         private IWebElement _assignCourseStart => _seleniumDriver.FindElement(By.Id("CourseStart"));
-        private IWebElement _createButton => _seleniumDriver.FindElement(By.CssSelector("['class=btn btn - primary m - 2']"));
+        private IWebElement _createButton => _seleniumDriver.FindElement(By.CssSelector("[class='btn btn - primary m - 2']"));
         public AdminCourseCreatePage(IWebDriver seleniumDriver) => _seleniumDriver = seleniumDriver;
         public void InputCourseName(string course) => _courseName.SendKeys(course);
         public string GetTrainerName() => _assignTrainer.Text;
         public string GetStreamName() => _assignStream.Text;
         public string GetLocation() => _assignLocation.Text;
-        public void InputCourseLength(string length) => _assignCourseLengh.SendKeys(length);
+        public void InputCourseLength(string length) => _assignCourseLength.SendKeys(length);
         public void InputStartDate(string date) => _assignCourseStart.SendKeys(date);
         public void CreateCourse() => _createButton.Click();
 

@@ -8,7 +8,7 @@ using Eng91FinalProject.utils;
 
 namespace Eng91FinalProject.lib.pages
 {
-    public class MyProfilePage
+    public class TraineeProfilePage
     {
         private IWebDriver _seleniumDriver;
         private string _myProfilePageUrl = AppConfigReader.MyProfileURL;
@@ -20,7 +20,7 @@ namespace Eng91FinalProject.lib.pages
         private IWebElement _trackerButton => _seleniumDriver.FindElement(By.LinkText("Tracker"));
         private IWebElement _logoutButton => _seleniumDriver.FindElement(By.LinkText("Logout"));
 
-        public MyProfilePage(IWebDriver seleniumDriver) => _seleniumDriver = seleniumDriver;
+        public TraineeProfilePage(IWebDriver seleniumDriver) => _seleniumDriver = seleniumDriver;
 
         public void ClickEditButton() => _editButton.Click();
         public void ClickSpartaGlobalButton() => _spartaGlobal.Click();

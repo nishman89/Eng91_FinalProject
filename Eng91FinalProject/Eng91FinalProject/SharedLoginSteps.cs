@@ -55,7 +55,7 @@ namespace Eng91FinalProject
         [Then(@"I am taken to the Home Page")]
         public void ThenIAmTakenToTheHomePage()
         {
-            Assert.That(Website.HomePage.IsOnTrainerHomePage(), Is.True);
+            Assert.That(Website.HomePage.IsOnTheLogInPage(), Is.False);
         }
 
         [AfterScenario]

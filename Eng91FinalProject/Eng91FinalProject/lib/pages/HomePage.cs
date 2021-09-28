@@ -138,6 +138,19 @@ namespace Eng91FinalProject.lib.pages
 				return false;
 			}
 		}
+
+		public bool IsOnTheLogInPage()
+        {
+            try
+            {
+				_mainContainer.FindElement(By.Id("Password"));
+				return true;
+			}
+			catch(NoSuchElementException)
+            {
+				return false;
+            }
+        }
 		#endregion
 
 		#endregion

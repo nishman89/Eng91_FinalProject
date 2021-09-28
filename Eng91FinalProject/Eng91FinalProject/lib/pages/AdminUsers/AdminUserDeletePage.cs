@@ -20,6 +20,9 @@ namespace Eng91FinalProject.lib.pages
         #endregion
 
         #region Methods
+
+        public AdminUserDeletePage(IWebDriver seleniumDriver) => _seleniumDriver = seleniumDriver;
+
         public void ClickBackToListButton() => _backToListButton.Click();
         public void ClickDeleteButton() => _deleteButton.Click();
         #endregion

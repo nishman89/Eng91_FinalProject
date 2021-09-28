@@ -13,19 +13,19 @@ namespace Eng91FinalProject.BDD
         {
             ScenarioContext.Current.Pending();
         }
-        
+
         [When(@"I click my name to view my Profile Page")]
         public void WhenIClickMyNameToViewMyProfilePage()
         {
             ScenarioContext.Current.Pending();
         }
-        
+
         [When(@"I click ‘EDIT’")]
         public void WhenIClickEDIT()
         {
             Website.TraineeProfilePage.ClickEditButton();
         }
-        
+
         [When(@"I update my details")]
         public void WhenIUpdateMyDetails()
         {
@@ -42,13 +42,13 @@ namespace Eng91FinalProject.BDD
             Website.TraineeProfileEditPage.InputLinkedIn(string linkedIn);
             Website.TraineeProfileEditPage.InputGithub(string github);
         }
-        
+
         [When(@"I click ‘SAVE’")]
         public void WhenIClickSAVE()
         {
             Website.TraineeProfileEditPage.ClickSaveButton();
         }
-        
+
         [Then(@"my profile is updated")]
         public void ThenMyProfileIsUpdated()
         {

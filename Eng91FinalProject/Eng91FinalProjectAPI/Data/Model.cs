@@ -15,6 +15,13 @@ namespace Eng91FinalProjectAPI.Data
             public Trainee[] trainees { get; set; }
         }
 
+
+        public class ErrorResponse : IResponse
+        {
+            public Response response { get; set; }
+            public string[] errors { get; set; }
+        }
+
         public class Response
         {
             public int statusCode { get; set; }

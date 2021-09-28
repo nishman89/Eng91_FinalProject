@@ -1,7 +1,7 @@
 ﻿Feature: TrainerHomePage
 	Simple tests conducted within the Trainer Home Page
 
-@Trainer test results
+@TrainerTestResults
 Scenario: As Trainer, view all test results
 	Given I am logged in
 
@@ -9,7 +9,7 @@ Scenario: As Trainer, view all test results
 
 	Then all test results are shown
 
-@Trainer test results 
+@TrainerTestResults 
 Scenario: As Trainer, view individual test results
 	Given I am logged in
 

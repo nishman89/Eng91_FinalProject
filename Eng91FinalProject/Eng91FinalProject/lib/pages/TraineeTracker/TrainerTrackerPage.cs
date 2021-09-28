@@ -16,6 +16,8 @@ namespace Eng91FinalProject.lib.pages
         #region Properties
 
         private IWebDriver _seleniumDriver;
+
+        private IWebElement _traineeTrackerLink => _seleniumDriver.FindElement(By.LinkText("Trainee Tracker"));
         private IWebElement _deleteButton_BenHoward_Engineering79 => _seleniumDriver.FindElement(By.CssSelector("[href *= '/TraineeTracker/Delete/1']"));
         private IWebElement _editButton_BenHoward_Engineering79 => _seleniumDriver.FindElement(By.CssSelector("[href *= '/TraineeTracker/TrainerEdit/1']"));
         private IWebElement _commentBox => _seleniumDriver.FindElement(By.Id("comment"));
@@ -31,6 +33,7 @@ namespace Eng91FinalProject.lib.pages
         public void ClickCreateNewTracker() => _deleteButton_BenHoward_Engineering79.Click();
         public void ClickEditButton() => _editButton_BenHoward_Engineering79.Click();
         public void ManageComment(string message) => _commentBox.SendKeys(message);
+        public void TraineeTrackerButton() => _traineeTrackerLink.Click();
 
         public void MaxTechGradeByValue()
         {

@@ -1,4 +1,4 @@
-﻿Feature: SharedLogin
+﻿Feature: Login
 	In order to be able to observe different parts of the website
 	I want to be able to sign in with particular accounts
 

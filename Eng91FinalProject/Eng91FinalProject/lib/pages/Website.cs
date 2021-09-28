@@ -22,6 +22,9 @@ namespace Eng91FinalProject.lib.pages
         public TrackerDeletePage TrackerDeletePage { get; set; }
         public TrackerEditPage TrackerEditPage { get; set; }
         public TraineeTrackerPage TraineeTrackerPage { get; set; }
+
+        public TrainerTrackerPage TrainerTrackerPage { get; set; }
+        //public TrainerProfilePage TrainerProfilePage { get; set; }
         public TrainerProfilePage TrainerProfilePage { get; set; }
         public TrainerProfileEditPage TrainerProfileEditPage { get; set; }
         public MyProfilePage MyProfilePage { get; set; }
@@ -52,10 +55,16 @@ namespace Eng91FinalProject.lib.pages
             LoginPage = new LoginPage(SeleniumDriver);
             HomePage = new HomePage(SeleniumDriver);
             ProfilesPage = new ProfilesPage(SeleniumDriver);
-            TrackerCreatePage = new TrackerCreatePage(SeleniumDriver);
-            TrackerDeletePage = new TrackerDeletePage(SeleniumDriver);
-            TrackerEditPage = new TrackerEditPage(SeleniumDriver);
+            //TrackerCreatePage = new TrackerCreatePage(SeleniumDriver);
+            //TrackerDeletePage = new TrackerDeletePage(SeleniumDriver);
+           // TrackerEditPage = new TrackerEditPage(SeleniumDriver);
+
             TraineeTrackerPage = new TraineeTrackerPage(SeleniumDriver);
+
+            TrainerTrackerPage = new TrainerTrackerPage(SeleniumDriver);
+
+            //TrainerProfilePage = new TrainerProfilePage(SeleniumDriver);
+
             TrainerProfilePage = new TrainerProfilePage(SeleniumDriver);
             TrainerProfileEditPage = new TrainerProfileEditPage(SeleniumDriver);
             MyProfilePage = new MyProfilePage(SeleniumDriver);

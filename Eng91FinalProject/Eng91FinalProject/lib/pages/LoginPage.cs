@@ -10,6 +10,8 @@ namespace Eng91FinalProject.lib.pages
 {
     public class LoginPage
     {
+        public LoginPage(IWebDriver seleniumDriver) => _seleniumDriver = seleniumDriver;
+
         #region Properties
         private IWebDriver _seleniumDriver;
 
@@ -20,7 +22,7 @@ namespace Eng91FinalProject.lib.pages
         private IWebElement _emailBox => _seleniumDriver.FindElement(By.Id("Email"));
         private IWebElement _passwordBox => _seleniumDriver.FindElement(By.Id("Password"));
         private IWebElement _loginButton => _seleniumDriver.FindElement(By.LinkText("Login"));
-        private IWebElement _errorMessage => _seleniumDriver.FindElement(By.LinkText("Sign in failed, Password incorrect."));
+        private IWebElement _errorMessage => _seleniumDriver.FindElement(By.CssSelector(".validation-summary-errors"));
         #endregion
 
         public void Login() => _loginButton.Click();

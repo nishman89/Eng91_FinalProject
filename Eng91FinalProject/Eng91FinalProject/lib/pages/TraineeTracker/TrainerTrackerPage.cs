@@ -11,6 +11,8 @@ namespace Eng91FinalProject.lib.pages
 {
     public class TrainerTrackerPage
     {
+        public TrainerTrackerPage(IWebDriver seleniumDriver) => _seleniumDriver = seleniumDriver;
+
         #region Properties
 
         private IWebDriver _seleniumDriver;

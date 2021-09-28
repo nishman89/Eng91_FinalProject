@@ -20,7 +20,7 @@ namespace Eng91FinalProject.lib.pages
         #endregion
 
 
-
+        public BulkImportProfilesPage(IWebDriver seleniumDriver) => _seleniumDriver = seleniumDriver;
         public void ClickCreateNewTracker() => _findChooseFileButton.Click();
         public void ClickEditButton() => _findSaveButton.Click();
     }

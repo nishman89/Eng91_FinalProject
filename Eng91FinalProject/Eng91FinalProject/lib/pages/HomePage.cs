@@ -9,6 +9,8 @@ namespace Eng91FinalProject.lib.pages
 {
     public class HomePage
     {
+		public HomePage (IWebDriver seleniumDriver) => _seleniumDriver = seleniumDriver;
+
 		#region Properties
 		private IWebDriver _seleniumDriver;
 		private IWebElement _mainContainer => _seleniumDriver.FindElement(By.ClassName("pb-3"));

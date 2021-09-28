@@ -10,6 +10,8 @@ namespace Eng91FinalProject.lib.pages
 {
     public class LoginPage
     {
+        public LoginPage(IWebDriver seleniumDriver) => _seleniumDriver = seleniumDriver;
+
         #region Properties
         private IWebDriver _seleniumDriver;
 

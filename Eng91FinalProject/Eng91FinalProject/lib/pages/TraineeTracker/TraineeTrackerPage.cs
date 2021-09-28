@@ -11,6 +11,7 @@ namespace Eng91FinalProject.lib.pages
 {
     public class TraineeTrackerPage
     {
+        public TraineeTrackerPage(IWebDriver seleniumDriver) => _seleniumDriver = seleniumDriver;
         #region Properties
 
         private IWebDriver _seleniumDriver;
@@ -45,7 +46,5 @@ namespace Eng91FinalProject.lib.pages
         public void Select_Consultant_C() => _cConsultant.Click();
         public void Select_Consultant_D() => _dConsultant.Click();
         public void SetSweek(int weekNumber) => _selfCheckFeedback_Week.SendKeys(weekNumber.ToString());
-
-
     }
 }

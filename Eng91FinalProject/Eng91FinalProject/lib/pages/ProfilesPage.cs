@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using OpenQA.Selenium;
+
 
 namespace Eng91FinalProject.lib.pages
 {
     public class ProfilesPage
     {
+        public ProfilesPage(IWebDriver webDriver)
+        {
+            var SomeString = "Hello";
+        }
 
     }
 }

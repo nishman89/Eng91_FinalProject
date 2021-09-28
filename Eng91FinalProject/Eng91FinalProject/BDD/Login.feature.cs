@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Eng91FinalProject
+namespace Eng91FinalProject.BDD
 {
     using TechTalk.SpecFlow;
     using System;
@@ -35,7 +35,7 @@ namespace Eng91FinalProject
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "", "Login", "\tIn order to be able to observe different parts of the website\r\n\tI want to be abl" +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BDD", "Login", "\tIn order to be able to observe different parts of the website\r\n\tI want to be abl" +
                     "e to sign in with particular accounts", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
@@ -109,14 +109,14 @@ this.ScenarioInitialize(scenarioInfo);
 #line 8
     testRunner.And("I click ‘Login’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table6.AddRow(new string[] {
+                table1.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 9
-    testRunner.When("I enter the correct credentials", ((string)(null)), table6, "When ");
+    testRunner.When("I enter the correct credentials", ((string)(null)), table1, "When ");
 #line hidden
 #line 12
     testRunner.And("I click ‘LOGIN’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

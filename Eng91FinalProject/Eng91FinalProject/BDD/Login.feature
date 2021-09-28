@@ -13,15 +13,15 @@ Scenario: Valid Login - Admin
     Then I am taken to the Home Page
 
 
-    #Given I am on the login page
-    #And I enter the following <email> and <password>
-    #When I enter these credentials
-    #And I click the login button
-    #Then I should be logged in and sent to the main page
-    #| email                    | password     |
-    #| jsmith@spartaglobal.com  | Password123! |
-    #| bhoward@spartaglobal.com | Password123! |
-    #| bpitt@spartaglobal.com   | Password123! |
+    Given I am on the login page
+    And I enter the following <email> and <password>
+    When I enter these credentials
+    And I click the login button
+    Then I should be logged in and sent to the main page
+    | email                    | password     |
+    | jsmith@spartaglobal.com  | Password123! |
+    | bhoward@spartaglobal.com | Password123! |
+    | bpitt@spartaglobal.com   | Password123! |
 
 	
 

@@ -22,6 +22,19 @@ namespace Eng91FinalProject.BDD
             Website.AdminCoursesPage.DeleteCourse(formatCourse);
         }
 
+        [When(@"I click Back to List")]
+        public void WhenIClickBackToList()
+        {
+            Website.AdminCourseDeletePage.BackToList();
+        }
+
+        [Then(@"I should be taken to the courses page")]
+        public void ThenIShouldBeTakenToTheCoursesPage()
+        {
+            Assert.That(Website.SeleniumDriver.Url.Contains("Course"));
+        }
+
+
         [Then(@"I should be taken to the delete course page")]
         public void ThenIShouldBeTakenToTheDeleteCoursePage()
         {

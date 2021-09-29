@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using OpenQA.Selenium;
 using System;
 using TechTalk.SpecFlow;
 
@@ -36,5 +37,11 @@ namespace Eng91FinalProject.BDD
             Assert.That(Website.AdminCoursesPage.SearchResult(formatCourse), Is.EqualTo(course));
         }
 
+        [Then(@"'(.*)' does not appear")]
+        public void ThenDoesNotAppear(string course)
+        {
+            string formatCourse = Website.AdminCoursesPage.FormatSearch(course);
+            Assert.Throws<NoSuchElementException>(delegate { Website.AdminCoursesPage.SearchResult(formatCourse); });
+        }
     }
 }

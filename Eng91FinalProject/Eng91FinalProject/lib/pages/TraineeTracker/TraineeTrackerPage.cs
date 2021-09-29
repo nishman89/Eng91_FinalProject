@@ -15,6 +15,7 @@ namespace Eng91FinalProject.lib.pages
         #region Properties
 
         private IWebDriver _seleniumDriver;
+        private IWebElement _trackerButton => _seleniumDriver.FindElement(By.LinkText("Tracker"));
         private IWebElement _selfCheckFeedback_Week => _seleniumDriver.FindElement(By.Id("weekSelector"));
         private IWebElement _editButton_BenHoward_Engineering79 => _seleniumDriver.FindElement(By.CssSelector("[href *= '/TraineeTracker/TrainerEdit/20']"));
         private IWebElement _stopBox => _seleniumDriver.FindElement(By.Id("stop"));
@@ -36,7 +37,7 @@ namespace Eng91FinalProject.lib.pages
         public void ManageContinue(string message) => _stopBox.SendKeys(message);
         public void SaveChanges() => _saveChangesButton.Click();
         public void ClickEditButton() => _editButton_BenHoward_Engineering79.Click();
-
+        public void PressTrackerButton() => _trackerButton.Click();
         public void Select_Skill_A() => _aSkill.Click();
         public void Select_Skill_B() => _bSkill.Click();
         public void Select_Skill_C() => _cSkill.Click();
@@ -46,5 +47,17 @@ namespace Eng91FinalProject.lib.pages
         public void Select_Consultant_C() => _cConsultant.Click();
         public void Select_Consultant_D() => _dConsultant.Click();
         public void SetSweek(int weekNumber) => _selfCheckFeedback_Week.SendKeys(weekNumber.ToString());
+        public bool WhatIassumeToBeTheContentBox()
+        {
+            try
+            {
+                _seleniumDriver.FindElement(By.Id("selenium-ide-indicator"));
+                return true;
+            }
+            catch(NoSuchElementException)
+            {
+                return false;
+            }
+        }
     }
 }

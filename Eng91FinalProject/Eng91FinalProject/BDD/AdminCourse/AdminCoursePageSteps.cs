@@ -8,8 +8,10 @@ namespace Eng91FinalProject.BDD
     [Scope(Tag = "AdminCourse")]
     public class AdminCoursePageSteps : SharedLoginSteps
     {
+
         [Given(@"I click Courses")]
         public void GivenIClickCourses()
+
         {
             Website.TrainerNavbar.ClickAdminDropdownButton();
             Website.TrainerNavbar.ClickAdminDropdownCoursesButton();

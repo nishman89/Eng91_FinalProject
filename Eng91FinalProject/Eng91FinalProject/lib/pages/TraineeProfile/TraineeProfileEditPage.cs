@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using Eng91FinalProject.utils;
 
 namespace Eng91FinalProject.lib.pages.TraineeProfile
 {
@@ -36,5 +37,21 @@ namespace Eng91FinalProject.lib.pages.TraineeProfile
         public void InputLinkedIn(string linkedIn) => _linkedinBox.SendKeys(linkedIn);
         public void InputGithub(string github) => _githubBox.SendKeys(github);
         public void ChooseFile() => _chooseFileButton.Click();
+
+        public void InputFormDetails(TraineeProfileDetails traineeProfileDetails)
+        {
+            InputSummary(traineeProfileDetails.Summary);
+            InputLifeStory(traineeProfileDetails.LifeStory);
+            InputCareerMotivation(traineeProfileDetails.CareerMotivation);
+            InputSkills(traineeProfileDetails.Skills);
+            InputInterests(traineeProfileDetails.Interests);
+            InputEducation(traineeProfileDetails.Education);
+            InputCertifications(traineeProfileDetails.Certifications);
+            InputAdditionalAchievements(traineeProfileDetails.AdditionalAchievements);
+            InputRecentEmployment(traineeProfileDetails.RecentEmployment);
+            InputVolunteering(traineeProfileDetails.Volunteering);
+            InputLinkedIn(traineeProfileDetails.LinkedIn);
+            InputGithub(traineeProfileDetails.Github);
+        }
     }
 }

@@ -12,7 +12,7 @@ namespace Eng91FinalProject.lib.pages.Navbar
         private IWebDriver _seleniumDriver { get; set; }
         private IWebElement _logoutButton => _seleniumDriver.FindElement(By.LinkText("Logout"));
         private IWebElement _homeButton => _seleniumDriver.FindElement(By.LinkText("Home"));
-        private IWebElement _spartaGlobal => _seleniumDriver.FindElement(By.ClassName("navbar-brand pt-0 pb-0"));
+        private IWebElement _spartaGlobal => _seleniumDriver.FindElement(By.CssSelector("img"));
 
         public SharedNavbar(IWebDriver seleniumDriver) => _seleniumDriver = seleniumDriver;
         

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,18 +7,12 @@ using NUnit.Framework;
 using Eng91FinalProject.utils;
 using TechTalk.SpecFlow.Assist;
 
-namespace Eng91FinalProject.BDD
+namespace Eng91FinalProject.BDD.TraineeProfile
 {
     [Binding]
-    [Scope(Feature = "TraineeProfileEdit")]
-    public class TraineeProfileEditSteps : SharedLoginSteps
+    [Scope(Feature = "TraineeProfileEditPage")]
+    public class TraineeProfileEditPageSteps : SharedNavbarSteps
     {
-        [When(@"I click my name to view my Profile Page")]
-        public void WhenIClickMyNameToViewMyProfilePage()
-        {
-            base.Website.TraineeNavbar.ClickTraineeProfile();
-        }
-
         [When(@"I click ‘EDIT’")]
         public void WhenIClickEDIT()
         {
@@ -35,6 +29,7 @@ namespace Eng91FinalProject.BDD
         [When(@"I click ‘SAVE’")]
         public void WhenIClickSAVE()
         {
+            Website.TraineeProfileEditPage.ScrollToSave();
             Website.TraineeProfileEditPage.ClickSaveButton();
         }
 
@@ -43,6 +38,5 @@ namespace Eng91FinalProject.BDD
         {
             Assert.That(Website.TraineeProfilePage.GetSummaryBoxText(), Does.Contain("test"));
         }
-
     }
 }

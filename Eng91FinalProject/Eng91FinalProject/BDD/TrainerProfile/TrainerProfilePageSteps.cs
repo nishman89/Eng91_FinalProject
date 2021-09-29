@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿
 using TechTalk.SpecFlow;
 using NUnit.Framework;
 using Eng91FinalProject.utils;
 using TechTalk.SpecFlow.Assist;
+using System.Threading;
 
 namespace Eng91FinalProject.BDD.TrainerProfile
 {
@@ -18,7 +16,9 @@ namespace Eng91FinalProject.BDD.TrainerProfile
         [When(@"I click my name to view my Profile Page")]
         public void WhenIClickMyNameToViewMyProfilePage()
         {
+            
             base.Website.TrainerNavbar.ClickTrainerProfileButton();
+            base.Website.SeleniumDriver.Manage().Window.FullScreen();
         }
 
         [When(@"I click EDIT")]
@@ -32,6 +32,7 @@ namespace Eng91FinalProject.BDD.TrainerProfile
         {
             _trainerProfileDetails = table.CreateInstance<TrainerProfileDetails>();
             base.Website.TrainerProfileEditPage.InputFormDetails(_trainerProfileDetails);
+            //Thread.Sleep(5000);
         }
 
         [When(@"I click SAVE")]

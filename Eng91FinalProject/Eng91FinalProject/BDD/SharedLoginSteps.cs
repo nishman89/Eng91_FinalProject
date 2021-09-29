@@ -12,6 +12,7 @@ namespace Eng91FinalProject
     {
         public Website<ChromeDriver> Website { get; } = new Website<ChromeDriver>();
         protected Credentials _credentials;
+        protected TraineeProfileDetails _traineeProfileDetails;
 
         [Given(@"I am logged in")]
         public void GivenIAmLoggedIn(Table table)

@@ -7,9 +7,9 @@ using OpenQA.Selenium;
 
 namespace Eng91FinalProject.lib.pages
 {
-    public class HomePage
-    {
-		public HomePage (IWebDriver seleniumDriver) => _seleniumDriver = seleniumDriver;
+	public class HomePage
+	{
+		public HomePage(IWebDriver seleniumDriver) => _seleniumDriver = seleniumDriver;
 
 		#region Properties
 		private IWebDriver _seleniumDriver;
@@ -40,7 +40,7 @@ namespace Eng91FinalProject.lib.pages
 		private IWebElement _OOPTestExpandable => _expandableTestContainers.ElementAt(1);
 		private IWebElement _SQLTestExpandable => _expandableTestContainers.ElementAt(2);
 
-		private IReadOnlyCollection<IWebElement> _testListItems => _seleniumDriver.FindElements(By.ClassName("mb-2")); 
+		private IReadOnlyCollection<IWebElement> _testListItems => _seleniumDriver.FindElements(By.ClassName("mb-2"));
 
 		#endregion
 
@@ -48,10 +48,16 @@ namespace Eng91FinalProject.lib.pages
 		private IWebElement _trainee1ResultsContainer => _seleniumDriver.FindElement(By.Id("trainee_1_results_container"));
 		private IWebElement _progressTrackerButton => _seleniumDriver.FindElement(By.Id("btn-tracker"));
 		private IWebElement _expandAndHideAllButton => _seleniumDriver.FindElement(By.Id("btn-course-1-accordion"));
-		private IWebElement  _courseAttendanceButton => _seleniumDriver.FindElement(By.ClassName("btn btn-primary float-right"));
+		private IWebElement _courseAttendanceButton => _seleniumDriver.FindElement(By.ClassName("btn btn-primary float-right"));
 
 		private IWebElement _expandedconditionBen => _seleniumDriver.FindElement(By.XPath("/html/body/div/main/div/div/div/div/div/div/div/div[1]/div/div[1]/h4/a"));
 		private IWebElement _expandedconditionPhoebe => _seleniumDriver.FindElement(By.XPath("/html/body/div/main/div/div/div/div/div/div/div/div[3]/div/div[1]/h4/a"));
+
+		private IWebElement _expandedconditionStevie => _seleniumDriver.FindElement(By.XPath("/html/body/div/main/div/div/div/div/div/div/div/div[12]/div/div[1]/h4/a"));
+
+		private List<int> expandableContainersNumber = new List<int> { };
+
+		
 
 		#endregion
 
@@ -94,9 +100,21 @@ namespace Eng91FinalProject.lib.pages
 		public void ClickProgressTrackerButton() => _progressTrackerButton.Click();
 		public void ClickExpandAndHideAllButton() => _expandAndHideAllButton.Click();
 		public void ClickCourseAttendanceButton() => _courseAttendanceButton.Click();
-
 		public bool IsExpandedBen() => _expandedconditionBen.GetAttribute("aria - expanded").Contains("true") ? true : false;
 		public bool IsExpandedPhoebe() => _expandedconditionPhoebe.GetAttribute("aria - expanded").Contains("true") ? true : false;
+
+		public bool IsExpandedAll()
+		{
+			foreach (var container in _expandableTestContainers)
+			{
+
+				if (container.GetAttribute("aria - expanded").Contains("true") == false)
+				{
+					return false;
+				}
+			}
+			return true;
+		}
 
 		#endregion
 		#region HomePage Check

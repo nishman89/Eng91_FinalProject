@@ -109,13 +109,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppConfigReader.cs" />
-    <Compile Include="BDD\AdminCourseCreatePageSteps.cs" />
-    <Compile Include="BDD\AdminCourseDeletePageSteps.cs" />
-    <Compile Include="BDD\AdminCourseEditPageSteps.cs" />
-    <Compile Include="BDD\AdminCoursePageSteps.cs" />
+    <Compile Include="BDD\AdminCourse\AdminCourseCreatePage.feature.cs" />
+    <Compile Include="BDD\AdminCourse\AdminCourseCreatePageSteps.cs" />
+    <Compile Include="BDD\AdminCourse\AdminCourseDeletePage.feature.cs" />
+    <Compile Include="BDD\AdminCourse\AdminCourseDeletePageSteps.cs" />
+    <Compile Include="BDD\AdminCourse\AdminCourseEditPage.feature.cs" />
+    <Compile Include="BDD\AdminCourse\AdminCourseEditPageSteps.cs" />
+    <Compile Include="BDD\AdminCourse\AdminCoursePage.feature.cs" />
+    <Compile Include="BDD\AdminCourse\AdminCoursePageSteps.cs" />
     <Compile Include="BDD\LoginSteps.cs" />
     <Compile Include="BDD\TraineeProfileEditSteps.cs" />
     <Compile Include="BDD\TraineeProfileSteps.cs" />
+    <Compile Include="BDD\TrainerHomePageSteps.cs" />
     <Compile Include="BDD\TraineeTrackerAsTraineeSteps.cs" />
     <Compile Include="BDD\TrainerProfile\TrainerProfilePageSteps.cs" />
     <Compile Include="BDD\TrainerHomePage.feature.cs" />
@@ -161,10 +166,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="BDD\AdminCourseCreatePage.feature" />
-    <None Include="BDD\AdminCourseDeletePage.feature" />
-    <None Include="BDD\AdminCourseEditPage.feature" />
-    <None Include="BDD\AdminCoursePage.feature" />
+    <None Include="BDD\AdminCourse\AdminCourseCreatePage.feature" />
+    <None Include="BDD\AdminCourse\AdminCourseDeletePage.feature" />
+    <None Include="BDD\AdminCourse\AdminCourseEditPage.feature" />
+    <None Include="BDD\AdminCourse\AdminCoursePage.feature" />
     <None Include="BDD\Login.feature" />
     <None Include="BDD\TraineeProfile.feature" />
     <None Include="BDD\TraineeProfileEdit.feature" />

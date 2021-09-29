@@ -105,14 +105,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 8
- testRunner.Given("I am logged in", ((string)(null)), table4, "Given ");
-                TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table7.AddRow(new string[] {
+                table8.AddRow(new string[] {
                             "bhoward@spartaglobal.com",
                             "Password123!"});
+#line 8
+ testRunner.Given("I am logged in", ((string)(null)), table8, "Given ");
 #line hidden
 #line 11
  testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -155,14 +155,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 16
- testRunner.Given("I am logged in", ((string)(null)), table5, "Given ");
-                TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table8.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "bhoward@spartaglobal.com",
                             "Password123!"});
+#line 16
+ testRunner.Given("I am logged in", ((string)(null)), table9, "Given ");
 #line hidden
 #line 19
  testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");

@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Eng91FinalProject.BDD
+namespace Eng91FinalProject.BDD.TraineeProfile
 {
     using TechTalk.SpecFlow;
     using System;
@@ -20,22 +20,23 @@ namespace Eng91FinalProject.BDD
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("TraineeTrackerAsTrainee")]
-    public partial class TraineeTrackerAsTraineeFeature
+    [NUnit.Framework.DescriptionAttribute("TraineeProfile")]
+    public partial class TraineeProfileFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "TraineeTrackerAsTrainee.feature"
+#line 1 "TraineeProfile.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BDD", "TraineeTrackerAsTrainee", "\tAutomation Task - View trainee tracker as trainee", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BDD/TraineeProfile", "TraineeProfile", "\tAs a trainee, \r\n\tI want to be able to view my profile, \r\n\tso that I can view my " +
+                    "details", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -74,15 +75,17 @@ namespace Eng91FinalProject.BDD
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Check tracker")]
-        [NUnit.Framework.CategoryAttribute("Login_As_Trainee")]
-        public virtual void CheckTracker()
+        [NUnit.Framework.DescriptionAttribute("View Trainee Profile")]
+        [NUnit.Framework.CategoryAttribute("TraineeProfilePage")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
+        public virtual void ViewTraineeProfile()
         {
             string[] tagsOfScenario = new string[] {
-                    "Login_As_Trainee"};
+                    "TraineeProfilePage",
+                    "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check tracker", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 5
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("View Trainee Profile", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -102,35 +105,37 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table15 = new TechTalk.SpecFlow.Table(new string[] {
-                            "email",
-                            "password"});
-                table15.AddRow(new string[] {
-                            "pbridgers@spartaglobal.com",
+                TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Email",
+                            "Password"});
+                table8.AddRow(new string[] {
+                            "bhoward@spartaglobal.com",
                             "Password123!"});
-#line 6
- testRunner.Given("I am logged in", ((string)(null)), table15, "Given ");
+#line 8
+ testRunner.Given("I am logged in", ((string)(null)), table8, "Given ");
 #line hidden
-#line 9
- testRunner.When("I press Tracker", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 11
+ testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 10
- testRunner.Then("I should see my tracker/s", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 12
+ testRunner.Then("I am taken to my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit tracker")]
-        [NUnit.Framework.CategoryAttribute("Trainee_EditTracker")]
-        public virtual void EditTracker()
+        [NUnit.Framework.DescriptionAttribute("Navigate to Edit Trainee Profile")]
+        [NUnit.Framework.CategoryAttribute("TraineeProfilePage")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
+        public virtual void NavigateToEditTraineeProfile()
         {
             string[] tagsOfScenario = new string[] {
-                    "Trainee_EditTracker"};
+                    "TraineeProfilePage",
+                    "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit tracker", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 14
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigate to Edit Trainee Profile", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 15
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -150,23 +155,23 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table16 = new TechTalk.SpecFlow.Table(new string[] {
-                            "email",
-                            "password"});
-                table16.AddRow(new string[] {
-                            "pbridgers@spartaglobal.com",
+                TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Email",
+                            "Password"});
+                table9.AddRow(new string[] {
+                            "bhoward@spartaglobal.com",
                             "Password123!"});
-#line 15
- testRunner.Given("I am logged in", ((string)(null)), table16, "Given ");
-#line hidden
-#line 18
- testRunner.When("I press Tracker", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 16
+ testRunner.Given("I am logged in", ((string)(null)), table9, "Given ");
 #line hidden
 #line 19
- testRunner.And("I press Edit", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 20
- testRunner.Then("The window to edit the tracker appears", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("I click ‘EDIT’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 21
+ testRunner.Then("I am taken to my Profile Edit Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

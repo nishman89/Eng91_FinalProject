@@ -11,5 +11,7 @@ Scenario: Edit trainee profile
 	When I click my name to view my Profile Page
 	And I click ‘EDIT’
 	And I update my details
+	| Summary | LifeStory | CareerMotivation | Skills | Interests | Education | Certifications | AdditionalAchievements | RecentEmployment | Volunteering | LinkedIn | Github |
+	| test    | test      | test             | test   | test      | test      | test           | test                   | test             | test         | test     | test   |
 	And I click ‘SAVE’
 	Then my profile is updated

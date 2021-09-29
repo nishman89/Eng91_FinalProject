@@ -19,6 +19,7 @@ namespace Eng91FinalProject.lib.pages
         private IWebElement _profilesButton => _seleniumDriver.FindElement(By.LinkText("Profiles"));
         private IWebElement _trackerButton => _seleniumDriver.FindElement(By.LinkText("Tracker"));
         private IWebElement _logoutButton => _seleniumDriver.FindElement(By.LinkText("Logout"));
+        private IWebElement _summaryBox => _seleniumDriver.FindElement(By.ClassName("d-flex align-items-center mb-3"));
 
         public TraineeProfilePage(IWebDriver seleniumDriver) => _seleniumDriver = seleniumDriver;
 
@@ -28,5 +29,6 @@ namespace Eng91FinalProject.lib.pages
         public void ClickProfilesButton() => _profilesButton.Click();
         public void ClickTrackerButton() => _trackerButton.Click();
         public void ClickLogoutButton() => _logoutButton.Click();
+        public string GetSummaryBoxText() => _summaryBox.Text;
     }
 }

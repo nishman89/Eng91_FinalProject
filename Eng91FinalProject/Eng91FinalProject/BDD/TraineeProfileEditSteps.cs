@@ -1,6 +1,11 @@
 ﻿using System;
-using NUnit.Framework;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using TechTalk.SpecFlow;
+using NUnit.Framework;
+using Eng91FinalProject.utils;
+using TechTalk.SpecFlow.Assist;
 
 namespace Eng91FinalProject.BDD
 {
@@ -8,16 +13,10 @@ namespace Eng91FinalProject.BDD
     [Scope(Feature = "TraineeProfileEdit")]
     public class TraineeProfileEditSteps : SharedLoginSteps
     {
-        [Given(@"I am logged in")]
-        public void GivenIAmLoggedIn(Table table)
-        {
-            ScenarioContext.Current.Pending();
-        }
-
         [When(@"I click my name to view my Profile Page")]
         public void WhenIClickMyNameToViewMyProfilePage()
         {
-            ScenarioContext.Current.Pending();
+            base.Website.TraineeNavbar.ClickTraineeProfile();
         }
 
         [When(@"I click ‘EDIT’")]
@@ -27,22 +26,10 @@ namespace Eng91FinalProject.BDD
         }
 
         [When(@"I update my details")]
-        public void WhenIUpdateMyDetails()
+        public void WhenIUpdateMyDetails(Table table)
         {
-            /*
-            Website.TraineeProfileEditPage.InputSummary(string summary);
-            Website.TraineeProfileEditPage.InputLifeStory(string lifeStory);
-            Website.TraineeProfileEditPage.InputCareerMotivation(string careerMotivation);
-            Website.TraineeProfileEditPage.InputSkills(string skills);
-            Website.TraineeProfileEditPage.InputInterests(string interests);
-            Website.TraineeProfileEditPage.InputEducation(string education);
-            Website.TraineeProfileEditPage.InputCertifications(string certifications);
-            Website.TraineeProfileEditPage.InputAdditionalAchievements(string additionalAchievements);
-            Website.TraineeProfileEditPage.InputRecentEmployment(string recentEmployment);
-            Website.TraineeProfileEditPage.InputVolunteering(string volunteering);
-            Website.TraineeProfileEditPage.InputLinkedIn(string linkedIn);
-            Website.TraineeProfileEditPage.InputGithub(string github);
-            */
+            _traineeProfileDetails = table.CreateInstance<TraineeProfileDetails>();
+            Website.TraineeProfileEditPage.InputFormDetails(_traineeProfileDetails);
         }
 
         [When(@"I click ‘SAVE’")]
@@ -54,7 +41,8 @@ namespace Eng91FinalProject.BDD
         [Then(@"my profile is updated")]
         public void ThenMyProfileIsUpdated()
         {
-            ScenarioContext.Current.Pending();
+            Assert.That(Website.TraineeProfilePage.GetSummaryBoxText(), Does.Contain("test"));
         }
+
     }
 }

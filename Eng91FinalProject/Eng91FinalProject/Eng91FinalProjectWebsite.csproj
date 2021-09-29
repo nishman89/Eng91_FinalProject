@@ -116,6 +116,7 @@
     <Compile Include="BDD\LoginSteps.cs" />
     <Compile Include="BDD\TraineeProfileEditSteps.cs" />
     <Compile Include="BDD\TraineeProfileSteps.cs" />
+    <Compile Include="BDD\TraineeTrackerAsTraineeSteps.cs" />
     <Compile Include="BDD\TrainerProfile\TrainerProfilePageSteps.cs" />
     <Compile Include="BDD\TrainerHomePage.feature.cs" />
     <Compile Include="lib\driver_config\SeleniumDriverConfig.cs" />
@@ -155,6 +156,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BDD\SharedLoginSteps.cs" />
     <Compile Include="utils\Credentials.cs" />
+    <Compile Include="utils\TraineeProfileDetails.cs" />
     <Compile Include="utils\TrainerProfileDetails.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -166,6 +168,7 @@
     <None Include="BDD\Login.feature" />
     <None Include="BDD\TraineeProfile.feature" />
     <None Include="BDD\TraineeProfileEdit.feature" />
+    <None Include="BDD\TraineeTrackerAsTrainee.feature" />
     <None Include="BDD\TrainerHomePage.feature" />
     <None Include="BDD\TrainerProfile\TrainerProfile.feature" />
     <None Include="packages.config" />

@@ -105,25 +105,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-<<<<<<< HEAD
-                TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table10 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table9.AddRow(new string[] {
+                table10.AddRow(new string[] {
                             "bhoward@spartaglobal.com",
                             "Password123!"});
 #line 8
- testRunner.Given("I am logged in", ((string)(null)), table9, "Given ");
-=======
-                TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Email",
-                            "Password"});
-                table6.AddRow(new string[] {
-                            "bhoward@spartaglobal.com",
-                            "Password123!"});
-#line 8
- testRunner.Given("I am logged in", ((string)(null)), table6, "Given ");
->>>>>>> 6c7900ff30846230d1d879e9c29e39f571795d76
+ testRunner.Given("I am logged in", ((string)(null)), table10, "Given ");
 #line hidden
 #line 11
  testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -131,7 +120,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 12
  testRunner.And("I click ‘EDIT’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
                             "Summary",
                             "LifeStory",
                             "CareerMotivation",
@@ -144,7 +133,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "Volunteering",
                             "LinkedIn",
                             "Github"});
-                table7.AddRow(new string[] {
+                table11.AddRow(new string[] {
                             "test",
                             "test",
                             "test",
@@ -158,7 +147,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "test",
                             "test"});
 #line 13
- testRunner.And("I update my details", ((string)(null)), table7, "And ");
+ testRunner.And("I update my details", ((string)(null)), table11, "And ");
 #line hidden
 #line 16
  testRunner.And("I click ‘SAVE’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

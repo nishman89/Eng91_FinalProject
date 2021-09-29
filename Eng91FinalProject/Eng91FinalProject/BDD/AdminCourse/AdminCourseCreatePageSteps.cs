@@ -14,17 +14,29 @@ namespace Eng91FinalProject.BDD
             Website.TrainerNavbar.ClickAdminDropdownButton();
             Website.TrainerNavbar.ClickAdminDropdownCoursesButton();
         }
-        
+
         [When(@"I click New")]
         public void WhenIClickNew()
         {
             Website.AdminCoursesPage.CreateNewCourse();
         }
-        
+
+        [When(@"I click Create")]
+        public void WhenIClickCreate()
+        {
+            Website.AdminCourseCreatePage.ClickCreateButton();
+        }
+
+        [Then(@"I won't be returned to the course page")]
+        public void ThenIWonTBeReturnedToTheCoursePage()
+        {
+            Website.SeleniumDriver.Url.Contains("Create");
+        }
+
         [Then(@"I am taken to the Course create page")]
         public void ThenIAmTakenToTheCourseCreatePage()
         {
             Assert.That(Website.SeleniumDriver.Url.Contains("Create"));
         }
-    }
+    }            
 }

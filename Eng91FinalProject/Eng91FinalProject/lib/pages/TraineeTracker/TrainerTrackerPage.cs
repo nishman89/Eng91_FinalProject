@@ -20,9 +20,9 @@ namespace Eng91FinalProject.lib.pages
         private IWebElement _deleteButton_BenHoward_Engineering79 => _seleniumDriver.FindElement(By.CssSelector("[href *= '/TraineeTracker/Delete/1']"));
         private IWebElement _editButton_BenHoward_Engineering79 => _seleniumDriver.FindElement(By.CssSelector("[href *= '/TraineeTracker/TrainerEdit/1']"));
         private IWebElement _commentBox => _seleniumDriver.FindElement(By.Id("comment"));
-        private IWebElement _techGrades => _seleniumDriver.FindElement(By.Name("TrainerTechnicalGrade"));
-        private IWebElement _consultGrades => _seleniumDriver.FindElement(By.Name("consuTrainerConsultantGradeltgrades"));
-        private IWebElement _overallGrades => _seleniumDriver.FindElement(By.Name("OverallGrade"));
+        private IWebElement _techGrades => _seleniumDriver.FindElement(By.Id("techgrades"));
+        private IWebElement _consultGrades => _seleniumDriver.FindElement(By.Id("consultgrades"));
+        private IWebElement _overallGrades => _seleniumDriver.FindElement(By.CssSelector("td:nth-child(3) > #consultgrades"));
         private SelectElement _techGradeSelected => new SelectElement(_techGrades);
         private SelectElement _consultGradeSelected => new SelectElement(_consultGrades);
         private SelectElement _overallGradeSelected => new SelectElement(_overallGrades);
@@ -50,9 +50,9 @@ namespace Eng91FinalProject.lib.pages
         }
         public void MaxTechGradeByText()
         {
-            _techGradeSelected.SelectByText("A+");
-            _consultGradeSelected.SelectByText("A+");
-            _overallGradeSelected.SelectByText("A+");
+            _techGradeSelected.SelectByIndex(0);
+            _consultGradeSelected.SelectByIndex(0);
+            _overallGradeSelected.SelectByIndex(0);
         }
 
         public void SaveChanges() => _saveChangesButton.Click();

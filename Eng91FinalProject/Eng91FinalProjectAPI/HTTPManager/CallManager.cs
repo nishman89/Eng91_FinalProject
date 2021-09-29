@@ -1,4 +1,5 @@
 ﻿using APIMiniProject;
+using Newtonsoft.Json.Linq;
 using RestSharp;
 using System.Threading.Tasks;
 
@@ -11,6 +12,7 @@ namespace Eng91FinalProjectAPI.HTTPManager
         public int StatusCode { get; private set; }
         public int JSONStatusCode { get; private set; }
         public string AuthorisationToken { get; set; } = "/raHHLG3CkngPn73rvHVj1AsQpMxoJvD8Ck93GwnCK4=";
+        public string APIKey { get; set; } = "SexLEYatCnW5x3lri//G6EnE3a9egpV3U2xIsLINR3M=";
         public enum GetMethods
         {
             Trainees,
@@ -29,6 +31,23 @@ namespace Eng91FinalProjectAPI.HTTPManager
             request.AddHeader("Content-Type", "application/json");
             request.Resource = $"{method.ToString().ToLower()}";
             request.AddHeader("Authorization", $"Bearer {AuthorisationToken}");
+            IRestResponse response = await _client.ExecuteAsync(request);
+            StatusCode = (int)response.StatusCode;
+            if (StatusCode == 200)
+            {
+                JSONStatusCode = int.Parse(response.Content.Substring(26, 3));
+            }
+            return response.Content;
+        }
+
+        public async Task<string> MakePostTokenRequest()
+        {
+            var request = new RestRequest(Method.POST);
+            request.AddHeader("Content-Type", "application/json");
+            request.Resource = $"token";
+            request.AddJsonBody(new JObject {
+            new JProperty("apiKey", APIKey)
+            }.ToString());
             IRestResponse response = await _client.ExecuteAsync(request);
             StatusCode = (int)response.StatusCode;
             if (StatusCode == 200)

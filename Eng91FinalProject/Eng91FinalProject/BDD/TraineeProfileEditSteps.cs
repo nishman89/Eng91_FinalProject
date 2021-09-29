@@ -29,6 +29,7 @@ namespace Eng91FinalProject.BDD
         [When(@"I update my details")]
         public void WhenIUpdateMyDetails()
         {
+            /*
             Website.TraineeProfileEditPage.InputSummary(string summary);
             Website.TraineeProfileEditPage.InputLifeStory(string lifeStory);
             Website.TraineeProfileEditPage.InputCareerMotivation(string careerMotivation);
@@ -41,6 +42,7 @@ namespace Eng91FinalProject.BDD
             Website.TraineeProfileEditPage.InputVolunteering(string volunteering);
             Website.TraineeProfileEditPage.InputLinkedIn(string linkedIn);
             Website.TraineeProfileEditPage.InputGithub(string github);
+            */
         }
 
         [When(@"I click ‘SAVE’")]

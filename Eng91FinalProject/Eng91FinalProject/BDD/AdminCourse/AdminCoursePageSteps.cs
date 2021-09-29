@@ -11,6 +11,7 @@ namespace Eng91FinalProject.BDD
         [Given(@"I click Courses")]
         public void GivenIClickCourses()
         {
+            Website.TrainerNavbar.ClickAdminDropdownButton();
             Website.TrainerNavbar.ClickAdminDropdownCoursesButton();
         }
 
@@ -29,8 +30,8 @@ namespace Eng91FinalProject.BDD
         [Then(@"the result should show '(.*)'")]
         public void ThenTheResultShouldShow(string course)
         {
-            Website.AdminCoursesPage.FormatSearch(course);
-            Assert.That(Website.AdminCoursesPage.SearchResult(course), Is.EqualTo(course));
+            string formatCourse = Website.AdminCoursesPage.FormatSearch(course);
+            Assert.That(Website.AdminCoursesPage.SearchResult(formatCourse), Is.EqualTo(course));
         }
 
     }

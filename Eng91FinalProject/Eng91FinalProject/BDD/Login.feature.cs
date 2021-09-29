@@ -109,14 +109,14 @@ this.ScenarioInitialize(scenarioInfo);
 #line 8
     testRunner.And("I click ‘Login’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table1.AddRow(new string[] {
+                table5.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 9
-    testRunner.When("I enter the correct credentials", ((string)(null)), table1, "When ");
+    testRunner.When("I enter the correct credentials", ((string)(null)), table5, "When ");
 #line hidden
 #line 12
     testRunner.And("I click ‘LOGIN’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -136,20 +136,20 @@ this.ScenarioInitialize(scenarioInfo);
 #line 19
     testRunner.And("I click the login button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table2.AddRow(new string[] {
+                table6.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
-                table2.AddRow(new string[] {
+                table6.AddRow(new string[] {
                             "bhoward@spartaglobal.com",
                             "Password123!"});
-                table2.AddRow(new string[] {
+                table6.AddRow(new string[] {
                             "bpitt@spartaglobal.com",
                             "Password123!"});
 #line 20
-    testRunner.Then("I should be logged in and sent to the main page", ((string)(null)), table2, "Then ");
+    testRunner.Then("I should be logged in and sent to the main page", ((string)(null)), table6, "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

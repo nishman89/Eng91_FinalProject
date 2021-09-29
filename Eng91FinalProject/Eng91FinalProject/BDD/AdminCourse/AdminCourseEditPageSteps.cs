@@ -11,14 +11,15 @@ namespace Eng91FinalProject.BDD
         [Given(@"I click Courses")]
         public void GivenIClickCourses()
         {
+            Website.TrainerNavbar.ClickAdminDropdownButton();
             Website.TrainerNavbar.ClickAdminDropdownCoursesButton();
         }
 
         [When(@"I click Edit on '(.*)'")]
         public void WhenIClickEditOn(string course)
         {
-            Website.AdminCoursesPage.FormatSearch(course);
-            Website.AdminCoursesPage.EditCourse(course);
+            string formatCourse = Website.AdminCoursesPage.FormatSearch(course);
+            Website.AdminCoursesPage.EditCourse(formatCourse);
         }
 
         [Then(@"the selected course can be edited")]

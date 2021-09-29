@@ -47,7 +47,10 @@ namespace Eng91FinalProject.BDD
         [Then(@"his grades are maxed")]
         public void ThenHisGradesAreMaxed_()
         {
-            Assert.That(Website.TrainerTrackerPage.ReturnGrades, Is.EqualTo("333"));
+            var tupple = Website.TrainerTrackerPage.ReturnGrades();
+            Assert.That(tupple.Item1, Is.EqualTo("A+"));
+            Assert.That(tupple.Item2, Is.EqualTo("A+"));
+            Assert.That(tupple.Item3, Is.EqualTo("A+"));
         }
 
 

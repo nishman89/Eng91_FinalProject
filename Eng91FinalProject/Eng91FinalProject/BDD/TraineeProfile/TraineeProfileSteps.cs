@@ -8,11 +8,7 @@ namespace Eng91FinalProject.BDD
     [Scope(Feature = "TraineeProfile")]
     public class TraineeProfileSteps : SharedNavbarSteps
     {
-        [Then(@"I am taken to my Profile Page")]
-        public void ThenIAmTakenToMyProfilePage()
-        {
-            Assert.That(base.Website.SeleniumDriver.Url, Does.Contain("Profile/View"));
-        }
+        
         
         [Then(@"I am taken to my Profile Edit Page")]
         public void ThenIAmTakenToMyProfileEditPage()

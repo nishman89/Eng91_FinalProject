@@ -128,7 +128,7 @@ namespace Eng91FinalProject.lib.pages
 		{
 			try
 			{
-				_mainContainer.FindElement(By.ClassName("banner hero-video-background"));
+				_mainContainer.FindElement(By.CssSelector(".banner"));
 				return true;
 			}
 			catch (NoSuchElementException)

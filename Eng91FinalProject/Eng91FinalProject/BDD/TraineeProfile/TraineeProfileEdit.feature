@@ -45,3 +45,23 @@ Scenario: Navigate to profiles from trainee profile edit page
 	And I click ‘EDIT’
 	And I click 'Profiles'
 	Then I am taken to the Profiles Page
+
+@TraineeProfileEditPage @Happy
+Scenario: Log out when on trainee profile edit page
+	Given I am logged in
+	| Email                    | Password     |
+	| bhoward@spartaglobal.com | Password123! |
+	When I click my name to view my Profile Page
+	And I click ‘EDIT’
+	And I click 'Logout'
+	Then I am logged out and sent to the Splash Page
+
+@TraineeProfileEditPage @Happy
+Scenario: Navigate to trainee profile page when on trainee profile edit page
+	Given I am logged in
+	| Email                    | Password     |
+	| bhoward@spartaglobal.com | Password123! |
+	When I click my name to view my Profile Page
+	And I click ‘EDIT’
+	And I click my name to view my Profile Page
+	Then I am taken to my Profile Page

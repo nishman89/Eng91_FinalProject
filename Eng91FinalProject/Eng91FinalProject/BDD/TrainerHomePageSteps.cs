@@ -5,6 +5,7 @@ using System;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
 using NUnit.Framework;
+using System.Threading;
 
 namespace Eng91FinalProject.BDD
 {
@@ -19,30 +20,27 @@ namespace Eng91FinalProject.BDD
         {
             Website.HomePage.ClickExpandAndHideAllButton();
         }
-        
-        [When(@"I click Ben Howard")]
-        public void WhenIClickBenHoward()
+
+        [When(@"I click a trainee")]
+        public void WhenIClickATrainee()
         {
             Website.HomePage.ClickTrainee1ResultsContainer();
-        }
-        
-        [When(@"I click Phoebe Bridgers")]
-        public void WhenIClickPhoebeBridgers()
-        {
-            ScenarioContext.Current.Pending();
         }
         
         [Then(@"all test results are shown")]
         public void ThenAllTestResultsAreShown()
         {
+            Thread.Sleep(5000);
             Assert.That(Website.HomePage.IsExpandedAll, Is.EqualTo(true));
             
-        }
-        
-        [Then(@"Ben and Phoebe’s Test Results are shown")]
-        public void ThenBenAndPhoebeSTestResultsAreShown()
+        }  
+
+        [Then(@"That trainee's test results are shown")]
+        public void ThenThatTraineeSTestResultsAreShown()
         {
-            ScenarioContext.Current.Pending();
+            Thread.Sleep(5000);
+            Assert.True(Website.HomePage.IsExpandedBen());
         }
+
     }
 }

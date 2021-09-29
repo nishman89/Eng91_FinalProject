@@ -120,6 +120,7 @@
     <Compile Include="BDD\LoginSteps.cs" />
     <Compile Include="BDD\TraineeProfileEditSteps.cs" />
     <Compile Include="BDD\TraineeProfileSteps.cs" />
+    <Compile Include="BDD\TrainerHomePageSteps.cs" />
     <Compile Include="BDD\TraineeTrackerAsTraineeSteps.cs" />
     <Compile Include="BDD\TrainerProfile\TrainerProfilePageSteps.cs" />
     <Compile Include="BDD\TrainerHomePage.feature.cs" />

@@ -22,7 +22,7 @@ namespace Eng91FinalProject.BDD
         [Then(@"I should see my tracker/s")]
         public void ThenTIShouldSeeMyTrackerS()
         {
-            Assert.That(Website.TraineeTrackerPage.WhatIassumeToBeTheContentBox(), Is.True);
+            Assert.That(Website.TraineeTrackerPage.CanICreateNewTracker(), Is.True);
         }
         [When(@"I press Edit")]
         public void WhenIPressEdit()

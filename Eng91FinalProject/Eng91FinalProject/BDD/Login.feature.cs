@@ -196,6 +196,17 @@ this.ScenarioInitialize(scenarioInfo);
                 table6.AddRow(new string[] {
                             "",
                             "Password123!"});
+                table6.AddRow(new string[] {
+                            "jsmith@spartaglobal.com",
+                            "Password123!"});
+                table6.AddRow(new string[] {
+                            "bhoward@spartaglobal.com",
+                            "Password123!"});
+                table6.AddRow(new string[] {
+                            "bpitt@spartaglobal.com",
+                            "Password123!"});
+#line 20
+    testRunner.Then("I should be logged in and sent to the main page", ((string)(null)), table6, "Then ");
 #line 19
     testRunner.When("I enter the following credentials", ((string)(null)), table6, "When ");
 #line hidden

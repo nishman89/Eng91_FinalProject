@@ -4,9 +4,10 @@
 	So that I can edit the details of a course
 
 @Happy @AdminCourseEdit
-Scenario: Admin edits page
+Scenario: Admin edits course
 	Given I am logged in
-	And I click Admin
+	| email                    | password     |
+    | jsmith@spartaglobal.com  | Password123! |
 	And I click Courses
-	When I click Edit
+	When I click Edit on 'Engineering 81'
 	Then the selected course can be edited

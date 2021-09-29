@@ -63,6 +63,10 @@ namespace Eng91FinalProject.lib.pages.TrainerProfile
 
         public void InputFormDetails(TrainerProfileDetails trainerProfileDetails)
         {
+            _email.Clear();
+            _firstName.Clear();
+            _lastName.Clear();
+            _location.Clear();
             SetFirstName(trainerProfileDetails.FirstName);
             SetLastName(trainerProfileDetails.LastName);
             SetLocation(trainerProfileDetails.Location);

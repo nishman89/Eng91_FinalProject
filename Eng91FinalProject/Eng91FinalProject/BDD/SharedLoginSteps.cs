@@ -12,13 +12,14 @@ namespace Eng91FinalProject
     {
         public Website<ChromeDriver> Website { get; } = new Website<ChromeDriver>();
         protected Credentials _credentials;
+        protected TraineeProfileDetails _traineeProfileDetails;
 
         [Given(@"I am logged in")]
         public void GivenIAmLoggedIn(Table table)
         {
             GivenIAmOnTheSplashPage();
             GivenIClickLogin();
-            WhenIEnterTheCorrectCredentials(table);
+            WhenIEnterTheFollowingCredentials(table);
             WhenIClickLOGIN();
             ThenIAmTakenToTheHomePage();
         }
@@ -35,15 +36,16 @@ namespace Eng91FinalProject
             Website.LoginPage.Login();
         }
         
-        [When(@"I enter the correct credentials")]
-        public void WhenIEnterTheCorrectCredentials(Table table)
+        [When(@"I enter the following credentials")]
+        public void WhenIEnterTheFollowingCredentials(Table table)
         {
             _credentials = table.CreateInstance<Credentials>();
 
             Website.LoginPage.InputEmail(_credentials.Email);
             Website.LoginPage.InputPassword(_credentials.Password);
         }
-        
+
+
         [When(@"I click ‘LOGIN’")]
         public void WhenIClickLOGIN()
         {

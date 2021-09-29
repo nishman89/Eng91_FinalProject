@@ -6,8 +6,9 @@
 @Happy @AdminCourse
 Scenario: Admin wants to search for a course
 	Given I am logged in
-	And I click 'Admin'
-	And  I click 'Courses'
+	| email                    | password     |
+    | jsmith@spartaglobal.com  | Password123! |
+	And  I click Courses
 	When I type 'Engineering 81' in search bar
-	And I click 'Search'
+	And I click Search
 	Then the result should show 'Engineering 81'

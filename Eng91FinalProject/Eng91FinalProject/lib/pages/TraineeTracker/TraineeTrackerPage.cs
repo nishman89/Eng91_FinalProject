@@ -17,6 +17,7 @@ namespace Eng91FinalProject.lib.pages
         private IWebDriver _seleniumDriver;
         private IWebElement _trackerButton => _seleniumDriver.FindElement(By.LinkText("Tracker"));
         private IWebElement _selfCheckFeedback_Week => _seleniumDriver.FindElement(By.Id("weekSelector"));
+        private IWebElement _editTrackerButton => _seleniumDriver.FindElement(By.Id("EditTracker"));
         private IWebElement _editButton_BenHoward_Engineering79 => _seleniumDriver.FindElement(By.CssSelector("[href *= '/TraineeTracker/TrainerEdit/20']"));
         private IWebElement _stopBox => _seleniumDriver.FindElement(By.Id("stop"));
         private IWebElement _startBox => _seleniumDriver.FindElement(By.Id("start"));
@@ -37,6 +38,7 @@ namespace Eng91FinalProject.lib.pages
         public void ManageContinue(string message) => _stopBox.SendKeys(message);
         public void SaveChanges() => _saveChangesButton.Click();
         public void ClickEditButton() => _editButton_BenHoward_Engineering79.Click();
+        public void PressEditTrackerButton() => _editTrackerButton.Click();
         public void PressTrackerButton() => _trackerButton.Click();
         public void Select_Skill_A() => _aSkill.Click();
         public void Select_Skill_B() => _bSkill.Click();
@@ -55,6 +57,18 @@ namespace Eng91FinalProject.lib.pages
                 return true;
             }
             catch(NoSuchElementException)
+            {
+                return false;
+            }
+        }
+        public bool IsInEditPage()
+        {
+            try
+            {
+                _seleniumDriver.FindElement(By.XPath("//h1[contains(.,'Tracker - Week 1')]"));
+                return true;
+            }
+            catch (NoSuchElementException)
             {
                 return false;
             }

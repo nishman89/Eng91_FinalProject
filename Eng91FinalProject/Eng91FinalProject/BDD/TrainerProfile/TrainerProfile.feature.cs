@@ -102,14 +102,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table14 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table16 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table14.AddRow(new string[] {
+                table16.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 6
-testRunner.Given("I am logged in", ((string)(null)), table14, "Given ");
+testRunner.Given("I am logged in", ((string)(null)), table16, "Given ");
 #line hidden
 #line 9
 testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -150,14 +150,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table15 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table17 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table15.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 14
-testRunner.Given("I am logged in", ((string)(null)), table15, "Given ");
+testRunner.Given("I am logged in", ((string)(null)), table17, "Given ");
 #line hidden
 #line 17
 testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -165,24 +165,309 @@ testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((T
 #line 18
 testRunner.And("I click EDIT", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table16 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table18 = new TechTalk.SpecFlow.Table(new string[] {
                             "FirstName",
                             "LastName",
                             "Email",
                             "Location"});
-                table16.AddRow(new string[] {
+                table18.AddRow(new string[] {
                             "Test",
                             "Name",
                             "test@snailmail.com",
                             "North Pole"});
 #line 19
-testRunner.And("I update my details with the following information", ((string)(null)), table16, "And ");
+testRunner.And("I update my details with the following information", ((string)(null)), table18, "And ");
 #line hidden
 #line 22
 testRunner.And("I click SAVE", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 23
 testRunner.Then("my profile is updated", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("change stream to C# dev")]
+        [NUnit.Framework.CategoryAttribute("Trainer_page")]
+        public virtual void ChangeStreamToCDev()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Trainer_page"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("change stream to C# dev", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 26
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table19 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Email",
+                            "Password"});
+                table19.AddRow(new string[] {
+                            "jsmith@spartaglobal.com",
+                            "Password123!"});
+#line 27
+testRunner.Given("I am logged in", ((string)(null)), table19, "Given ");
+#line hidden
+#line 30
+testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 31
+testRunner.And("I click EDIT", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 32
+testRunner.And("change my stream to \'C# Developer\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 33
+testRunner.And("I click SAVE", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 34
+testRunner.Then("my profile details for course stream should show \'C# Developer\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("change stream to C# SDET")]
+        [NUnit.Framework.CategoryAttribute("Trainer_page")]
+        public virtual void ChangeStreamToCSDET()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Trainer_page"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("change stream to C# SDET", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 37
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table20 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Email",
+                            "Password"});
+                table20.AddRow(new string[] {
+                            "jsmith@spartaglobal.com",
+                            "Password123!"});
+#line 38
+testRunner.Given("I am logged in", ((string)(null)), table20, "Given ");
+#line hidden
+#line 41
+testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 42
+testRunner.And("I click EDIT", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 43
+testRunner.And("change my stream to \'C# SDET\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 44
+testRunner.And("I click SAVE", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 45
+testRunner.Then("my profile details for course stream should show \'C# SDET\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("change stream to Java Developer")]
+        [NUnit.Framework.CategoryAttribute("Trainer_page")]
+        public virtual void ChangeStreamToJavaDeveloper()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Trainer_page"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("change stream to Java Developer", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 48
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table21 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Email",
+                            "Password"});
+                table21.AddRow(new string[] {
+                            "jsmith@spartaglobal.com",
+                            "Password123!"});
+#line 49
+testRunner.Given("I am logged in", ((string)(null)), table21, "Given ");
+#line hidden
+#line 52
+testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 53
+testRunner.And("I click EDIT", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 54
+testRunner.And("change my stream to \'Java Developer\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 55
+testRunner.And("I click SAVE", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 56
+testRunner.Then("my profile details for course stream should show \'Java Developer\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("change stream to DevOps")]
+        [NUnit.Framework.CategoryAttribute("Trainer_page")]
+        public virtual void ChangeStreamToDevOps()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Trainer_page"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("change stream to DevOps", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 59
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table22 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Email",
+                            "Password"});
+                table22.AddRow(new string[] {
+                            "jsmith@spartaglobal.com",
+                            "Password123!"});
+#line 60
+testRunner.Given("I am logged in", ((string)(null)), table22, "Given ");
+#line hidden
+#line 63
+testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 64
+testRunner.And("I click EDIT", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 65
+testRunner.And("change my stream to \'DevOps\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 66
+testRunner.And("I click SAVE", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 67
+testRunner.Then("my profile details for course stream should show \'DevOps\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("change stream to Business Analyst")]
+        [NUnit.Framework.CategoryAttribute("Trainer_page")]
+        public virtual void ChangeStreamToBusinessAnalyst()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Trainer_page"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("change stream to Business Analyst", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 70
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table23 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Email",
+                            "Password"});
+                table23.AddRow(new string[] {
+                            "jsmith@spartaglobal.com",
+                            "Password123!"});
+#line 71
+testRunner.Given("I am logged in", ((string)(null)), table23, "Given ");
+#line hidden
+#line 74
+testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 75
+testRunner.And("I click EDIT", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 76
+testRunner.And("change my stream to \'Business Analyst\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 77
+testRunner.And("I click SAVE", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 78
+testRunner.Then("my profile details for course stream should show \'Business Analyst\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

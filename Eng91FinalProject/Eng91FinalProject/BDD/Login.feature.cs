@@ -124,33 +124,6 @@ this.ScenarioInitialize(scenarioInfo);
 #line 13
     testRunner.Then("I am taken to the Home Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 16
-    testRunner.Given("I am on the login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 17
-    testRunner.And("I enter the following <email> and <password>", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 18
-    testRunner.When("I enter these credentials", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 19
-    testRunner.And("I click the login button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
-                            "email",
-                            "password"});
-                table2.AddRow(new string[] {
-                            "jsmith@spartaglobal.com",
-                            "Password123!"});
-                table2.AddRow(new string[] {
-                            "bhoward@spartaglobal.com",
-                            "Password123!"});
-                table2.AddRow(new string[] {
-                            "bpitt@spartaglobal.com",
-                            "Password123!"});
-#line 20
-    testRunner.Then("I should be logged in and sent to the main page", ((string)(null)), table2, "Then ");
-#line hidden
             }
             this.ScenarioCleanup();
         }
@@ -196,17 +169,6 @@ this.ScenarioInitialize(scenarioInfo);
                 table6.AddRow(new string[] {
                             "",
                             "Password123!"});
-                table6.AddRow(new string[] {
-                            "jsmith@spartaglobal.com",
-                            "Password123!"});
-                table6.AddRow(new string[] {
-                            "bhoward@spartaglobal.com",
-                            "Password123!"});
-                table6.AddRow(new string[] {
-                            "bpitt@spartaglobal.com",
-                            "Password123!"});
-#line 20
-    testRunner.Then("I should be logged in and sent to the main page", ((string)(null)), table6, "Then ");
 #line 19
     testRunner.When("I enter the following credentials", ((string)(null)), table6, "When ");
 #line hidden

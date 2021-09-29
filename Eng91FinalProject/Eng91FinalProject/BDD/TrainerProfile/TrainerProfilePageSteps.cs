@@ -23,7 +23,9 @@ namespace Eng91FinalProject.BDD.TrainerProfile
 
         [When(@"I click EDIT")]
         public void WhenIClick()
+
         {
+            base.Website.SeleniumDriver.Manage().Window.FullScreen();
             base.Website.TrainerProfilePage.ClickEditButton();
         }
 
@@ -40,6 +42,16 @@ namespace Eng91FinalProject.BDD.TrainerProfile
         {
             base.Website.TraineeProfileEditPage.ClickSaveButton();
         }
+
+        //[When(@"change my stream to C\# Developer")]
+        //public void WhenChangeMyStreamToCDeveloper()
+        //{
+        //    base.Website.TrainerProfileEditPage.ClearStreamsSelection();
+        //    base.Website.TrainerProfileEditPage.SelectStreamsDropdown();
+        //    base.Website.TrainerProfileEditPage.SelectStreamsDropdownSelectCsharpDev();
+        //    base.Website.TrainerProfileEditPage.SelectStreamsDropdown();
+        //    Thread.Sleep(5000);
+        //}
 
         [Then(@"I am taken to my Profile Page")]
         public void ThenIAmTakenToMyProfilePage()
@@ -60,6 +72,25 @@ namespace Eng91FinalProject.BDD.TrainerProfile
             Assert.That(testLocation, Is.EqualTo(_trainerProfileDetails.Location));
             Assert.That(testName, Is.EqualTo($"{_trainerProfileDetails.FirstName} {_trainerProfileDetails.LastName}"));
         }
+
+        [When(@"change my stream to '(.*)'")]
+        public void WhenChangeMyStreamTo(string course)
+        {
+            base.Website.TrainerProfileEditPage.ClearStreamsDropdown();
+            base.Website.TrainerProfileEditPage.SelectStream(course);
+            Thread.Sleep(5000);
+        }
+
+        [Then(@"my profile details for course stream should show '(.*)'")]
+        public void ThenMyProfileDetailsForCourseStreamShouldShow(string course)
+        {
+            Assert.That(base.Website.TrainerProfilePage.GetStreams(),Is.EqualTo(course));
+        }
+
+
+
+
+
 
     }
 }

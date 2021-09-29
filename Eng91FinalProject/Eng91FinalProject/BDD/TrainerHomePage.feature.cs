@@ -160,13 +160,10 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("I am logged in", ((string)(null)), table18, "Given ");
 #line hidden
 #line 18
- testRunner.When("I click Ben Howard", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I click a trainee", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 20
- testRunner.And("I click Phoebe Bridgers", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 22
- testRunner.Then("Ben and Phoebe’s Test Results are shown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("That trainee\'s test results are shown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

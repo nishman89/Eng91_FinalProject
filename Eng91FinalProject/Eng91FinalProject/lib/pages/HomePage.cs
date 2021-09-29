@@ -45,15 +45,16 @@ namespace Eng91FinalProject.lib.pages
 		#endregion
 
 		#region Stream Student Details
+		public IWebElement _courseTestContainer => _seleniumDriver.FindElement(By.Id("course_1_container"));
 		private IWebElement _trainee1ResultsContainer => _seleniumDriver.FindElement(By.Id("trainee_1_results_container"));
 		private IWebElement _progressTrackerButton => _seleniumDriver.FindElement(By.Id("btn-tracker"));
 		private IWebElement _expandAndHideAllButton => _seleniumDriver.FindElement(By.Id("btn-course-1-accordion"));
 		private IWebElement _courseAttendanceButton => _seleniumDriver.FindElement(By.ClassName("btn btn-primary float-right"));
 
-		private IWebElement _expandedconditionBen => _seleniumDriver.FindElement(By.XPath("/html/body/div/main/div/div/div/div/div/div/div/div[1]/div/div[1]/h4/a"));
-		private IWebElement _expandedconditionPhoebe => _seleniumDriver.FindElement(By.XPath("/html/body/div/main/div/div/div/div/div/div/div/div[3]/div/div[1]/h4/a"));
+		private IWebElement _expandedconditionBen => _seleniumDriver.FindElement(By.Id("collapse1"));
+		private IWebElement _expandedconditionPhoebe => _seleniumDriver.FindElement(By.XPath("collapse2"));
 
-		private IWebElement _expandedconditionStevie => _seleniumDriver.FindElement(By.XPath("/html/body/div/main/div/div/div/div/div/div/div/div[12]/div/div[1]/h4/a"));
+		private IWebElement _expandedconditionStevie => _seleniumDriver.FindElement(By.XPath("collapse12"));
 
 		private List<int> expandableContainersNumber = new List<int> { };
 
@@ -100,18 +101,23 @@ namespace Eng91FinalProject.lib.pages
 		public void ClickProgressTrackerButton() => _progressTrackerButton.Click();
 		public void ClickExpandAndHideAllButton() => _expandAndHideAllButton.Click();
 		public void ClickCourseAttendanceButton() => _courseAttendanceButton.Click();
-		public bool IsExpandedBen() => _expandedconditionBen.GetAttribute("aria - expanded").Contains("true") ? true : false;
+		public bool IsExpandedBen() => _expandedconditionBen.GetAttribute("class").Contains("group-1-collapse collapse show");
 		public bool IsExpandedPhoebe() => _expandedconditionPhoebe.GetAttribute("aria - expanded").Contains("true") ? true : false;
 
 		public bool IsExpandedAll()
 		{
+			int num = 0;
 			foreach (var container in _expandableTestContainers)
-			{
 
-				if (container.GetAttribute("aria - expanded").Contains("true") == false)
+			{
+				num += 1;
+				IWebElement w = _courseTestContainer.FindElement(By.Id($"trainee_{num}_results_container"));
+				IWebElement x = (w).FindElement(By.Id($"collapse{num}"));
+				if (x.GetAttribute("class").Contains("group-1-collapse collapse show") == false)
 				{
 					return false;
 				}
+
 			}
 			return true;
 		}

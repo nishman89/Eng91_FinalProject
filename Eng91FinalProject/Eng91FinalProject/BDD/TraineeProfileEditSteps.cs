@@ -6,7 +6,7 @@ namespace Eng91FinalProject.BDD
 {
     [Binding]
     [Scope(Feature = "TraineeProfileEdit")]
-    public class TraineeProfileEditSteps : SharedSteps
+    public class TraineeProfileEditSteps : SharedLoginSteps
     {
         [Given(@"I am logged in")]
         public void GivenIAmLoggedIn(Table table)

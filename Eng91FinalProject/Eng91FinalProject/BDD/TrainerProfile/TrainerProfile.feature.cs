@@ -165,18 +165,31 @@ testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((T
 #line 18
 testRunner.And("I click EDIT", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
+<<<<<<< HEAD
+                TechTalk.SpecFlow.Table table10 = new TechTalk.SpecFlow.Table(new string[] {
+=======
                 TechTalk.SpecFlow.Table table12 = new TechTalk.SpecFlow.Table(new string[] {
+>>>>>>> 6c7900ff30846230d1d879e9c29e39f571795d76
                             "FirstName",
                             "LastName",
                             "Email",
                             "Location"});
+<<<<<<< HEAD
+                table10.AddRow(new string[] {
+=======
                 table12.AddRow(new string[] {
+>>>>>>> 6c7900ff30846230d1d879e9c29e39f571795d76
                             "Test",
                             "Name",
                             "test@snailmail.com",
                             "North Pole"});
+<<<<<<< HEAD
+#line 15
+testRunner.And("I update my details with the following information", ((string)(null)), table10, "And ");
+=======
 #line 19
 testRunner.And("I update my details with the following information", ((string)(null)), table12, "And ");
+>>>>>>> 6c7900ff30846230d1d879e9c29e39f571795d76
 #line hidden
 #line 22
 testRunner.And("I click SAVE", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

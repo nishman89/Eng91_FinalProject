@@ -11,14 +11,15 @@ namespace Eng91FinalProject.BDD
         [Given(@"I click Courses")]
         public void GivenIClickCourses()
         {
+            Website.TrainerNavbar.ClickAdminDropdownButton();
             Website.TrainerNavbar.ClickAdminDropdownCoursesButton();
         }
 
         [When(@"I click Delete on '(.*)'")]
         public void WhenIClickDeleteOn(string course)
         {
-            Website.AdminCoursesPage.FormatSearch(course);
-            Website.AdminCoursesPage.DeleteCourse(course);
+            string formatCourse = Website.AdminCoursesPage.FormatSearch(course);
+            Website.AdminCoursesPage.DeleteCourse(formatCourse);
         }
 
         [Then(@"I should be taken to the delete course page")]

@@ -1,9 +1,4 @@
-﻿using Eng91FinalProject.lib.pages;
-using Eng91FinalProject.utils;
-using OpenQA.Selenium.Chrome;
-using System;
-using TechTalk.SpecFlow;
-using TechTalk.SpecFlow.Assist;
+﻿using TechTalk.SpecFlow;
 using NUnit.Framework;
 
 namespace Eng91FinalProject.BDD
@@ -19,7 +14,7 @@ namespace Eng91FinalProject.BDD
             Website.TraineeTrackerPage.PressTrackerButton();
         }
         
-        [Then(@"I should see my tracker/s")]
+        [Then(@"I should see my trackers")]
         public void ThenTIShouldSeeMyTrackerS()
         {
             Assert.That(Website.TraineeTrackerPage.CanICreateNewTracker(), Is.True);
@@ -35,6 +30,30 @@ namespace Eng91FinalProject.BDD
         {
             Assert.That(Website.TraineeTrackerPage.IsInEditPage(), Is.True);
         }
+        [When(@"I manage the Stop section with the feedback (.*)")]
+        public void WhenIManageTheStopSectionWithTheFeedback(string message)
+        {
+            Website.TraineeTrackerPage.ManageStop(message);
+        }
+
+        [When(@"I press save")]
+        public void WhenIPressSave()
+        {
+            Website.TraineeTrackerPage.SaveChanges();
+        }
+        [When(@"I manage the Start section with the feedback (.*)")]
+        public void WhenIManageTheStartSectionWithTheFeedback(string message)
+        {
+            Website.TraineeTrackerPage.ManageStart(message);
+        }
+        [When(@"I manage the Continue section with the feedback (.*)")]
+        public void WhenIManageTheContinueSectionWithTheFeedback(string message)
+        {
+            Website.TraineeTrackerPage.ManageContinue(message);
+        }
+
+
+
 
     }
 }

@@ -23,7 +23,7 @@ namespace Eng91FinalProject.lib.pages
         private IWebElement _stopBox => _seleniumDriver.FindElement(By.Id("stop"));
         private IWebElement _startBox => _seleniumDriver.FindElement(By.Id("start"));
         private IWebElement _continueBox => _seleniumDriver.FindElement(By.Id("continue"));
-        private IWebElement _saveChangesButton => _seleniumDriver.FindElement(By.XPath("xpath=//input[@value='Save']"));
+        private IWebElement _saveChangesButton => _seleniumDriver.FindElement(By.XPath("//input[@value='Save']"));
         private IWebElement _aSkill => _seleniumDriver.FindElement(By.Id("Atech"));
         private IWebElement _bSkill => _seleniumDriver.FindElement(By.Id("Btech"));
         private IWebElement _cSkill => _seleniumDriver.FindElement(By.Id("Ctech"));
@@ -34,9 +34,6 @@ namespace Eng91FinalProject.lib.pages
         private IWebElement _dConsultant => _seleniumDriver.FindElement(By.Id("Dconsultant"));
 
         #endregion
-        public void ManageStop(string message) => _stopBox.SendKeys(message);
-        public void ManageStart(string message) => _stopBox.SendKeys(message);
-        public void ManageContinue(string message) => _stopBox.SendKeys(message);
         public void SaveChanges() => _saveChangesButton.Click();
         public void ClickEditButton() => _editButton_BenHoward_Engineering79.Click();
         public void PressEditTrackerButton() => _editTrackerButton.Click();
@@ -50,6 +47,21 @@ namespace Eng91FinalProject.lib.pages
         public void Select_Consultant_C() => _cConsultant.Click();
         public void Select_Consultant_D() => _dConsultant.Click();
         public void SetSweek(int weekNumber) => _selfCheckFeedback_Week.SendKeys(weekNumber.ToString());
+        public void ManageStop(string message)
+        {
+            _stopBox.Clear();
+            _stopBox.SendKeys(message);
+        }
+        public void ManageStart(string message)
+        {
+            _startBox.Clear();
+            _startBox.SendKeys(message);
+        }
+        public void ManageContinue(string message)
+        {
+            _continueBox.Clear();
+            _continueBox.SendKeys(message);
+        }
         public bool CanICreateNewTracker()
         {
             try

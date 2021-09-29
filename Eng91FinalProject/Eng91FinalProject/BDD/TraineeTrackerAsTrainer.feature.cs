@@ -20,23 +20,22 @@ namespace Eng91FinalProject.BDD
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Login")]
-    public partial class LoginFeature
+    [NUnit.Framework.DescriptionAttribute("TraineeTrackerAsTrainer")]
+    public partial class TraineeTrackerAsTrainerFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "Login.feature"
+#line 1 "TraineeTrackerAsTrainer.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BDD", "Login", "\tIn order to be able to observe different parts of the website\r\n\tI want to be abl" +
-                    "e to sign in with particular accounts", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BDD", "TraineeTrackerAsTrainer", "\tAutomation Task - View trainee tracker as trainer", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -75,15 +74,15 @@ namespace Eng91FinalProject.BDD
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Valid Login - Admin")]
-        [NUnit.Framework.CategoryAttribute("Login")]
-        public virtual void ValidLogin_Admin()
+        [NUnit.Framework.DescriptionAttribute("Check tracker as Trainer")]
+        [NUnit.Framework.CategoryAttribute("Login_As_Trainer")]
+        public virtual void CheckTrackerAsTrainer()
         {
             string[] tagsOfScenario = new string[] {
-                    "Login"};
+                    "Login_As_Trainer"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Valid Login - Admin", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 6
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check tracker as Trainer", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 5
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -103,41 +102,43 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 7
-    testRunner.Given("I am on the Splash Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 8
-    testRunner.And("I click ‘Login’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-                TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table23 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table11.AddRow(new string[] {
+                table23.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
+#line 6
+ testRunner.Given("I am logged in", ((string)(null)), table23, "Given ");
+#line hidden
 #line 9
-    testRunner.When("I enter the following credentials", ((string)(null)), table11, "When ");
+ testRunner.When("I press Trainee Tracker", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 12
-    testRunner.And("I click ‘LOGIN’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 13
-    testRunner.Then("I am taken to the Home Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 10
+ testRunner.Then("I should see my trainee trackers", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Invalid Login - No username")]
-        [NUnit.Framework.CategoryAttribute("login")]
-        public virtual void InvalidLogin_NoUsername()
+        [NUnit.Framework.DescriptionAttribute("Manage comment")]
+        [NUnit.Framework.CategoryAttribute("Trainee_EditTracker")]
+        [NUnit.Framework.TestCaseAttribute("Tom Howard is better though", null)]
+        [NUnit.Framework.TestCaseAttribute("He\'s great", null)]
+        public virtual void ManageComment(string comment, string[] exampleTags)
         {
-            string[] tagsOfScenario = new string[] {
-                    "login"};
+            string[] @__tags = new string[] {
+                    "Trainee_EditTracker"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Invalid Login - No username", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 16
+            argumentsOfScenario.Add("comment", comment);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Manage comment", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 13
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -157,42 +158,44 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
+                TechTalk.SpecFlow.Table table24 = new TechTalk.SpecFlow.Table(new string[] {
+                            "email",
+                            "password"});
+                table24.AddRow(new string[] {
+                            "jsmith@spartaglobal.com",
+                            "Password123!"});
+#line 14
+ testRunner.Given("I am logged in", ((string)(null)), table24, "Given ");
+#line hidden
 #line 17
-    testRunner.Given("I am on the Splash Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.When("I press Trainee Tracker", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 18
-    testRunner.And("I click ‘Login’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I press Edit", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table12 = new TechTalk.SpecFlow.Table(new string[] {
-                            "email",
-                            "password"});
-                table12.AddRow(new string[] {
-                            "",
-                            "Password123!"});
 #line 19
-    testRunner.When("I enter the following credentials", ((string)(null)), table12, "When ");
+ testRunner.And(string.Format("I manage the {0} section", comment), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 22
-    testRunner.And("I click ‘LOGIN’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 20
+ testRunner.And("I press save", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 23
-    testRunner.Then("I should see an alert containing the error message \"The Email field is required.\"" +
-                        "", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 21
+ testRunner.Then("I should see my trainee trackers", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Invalid Login - No password")]
-        [NUnit.Framework.CategoryAttribute("login")]
-        public virtual void InvalidLogin_NoPassword()
+        [NUnit.Framework.DescriptionAttribute("Manage grades")]
+        [NUnit.Framework.CategoryAttribute("Trainee_EditTracker")]
+        public virtual void ManageGrades()
         {
             string[] tagsOfScenario = new string[] {
-                    "login"};
+                    "Trainee_EditTracker"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Invalid Login - No password", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 26
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Manage grades", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 28
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -212,27 +215,32 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 27
-    testRunner.Given("I am on the Splash Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 28
-    testRunner.And("I click ‘Login’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-                TechTalk.SpecFlow.Table table13 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table25 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table13.AddRow(new string[] {
-                            "ajolie@spartaglobal.com",
-                            ""});
+                table25.AddRow(new string[] {
+                            "jsmith@spartaglobal.com",
+                            "Password123!"});
 #line 29
-    testRunner.When("I enter the following credentials", ((string)(null)), table13, "When ");
+ testRunner.Given("I am logged in", ((string)(null)), table25, "Given ");
 #line hidden
 #line 32
-    testRunner.And("I click ‘LOGIN’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("I press Trainee Tracker", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 33
-    testRunner.Then("I should see an alert containing the error message \"The Password field is require" +
-                        "d.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("I press Edit", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 34
+ testRunner.And("I max the first user grades", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 35
+ testRunner.And("I press save", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 36
+ testRunner.Then("I should see my trainee trackers", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 37
+ testRunner.And("his grades are maxed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();

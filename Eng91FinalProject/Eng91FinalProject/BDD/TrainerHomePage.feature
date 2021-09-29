@@ -15,8 +15,6 @@ Scenario: As Trainer, view individual test results
 	Given I am logged in
 	| email                    | password     |
     | jsmith@spartaglobal.com  | Password123! |
-	When I click Ben Howard
+	When I click a trainee
 
-	And I click Phoebe Bridgers 
-
-	Then Ben and Phoebe’s Test Results are shown
+	Then That trainee's test results are shown

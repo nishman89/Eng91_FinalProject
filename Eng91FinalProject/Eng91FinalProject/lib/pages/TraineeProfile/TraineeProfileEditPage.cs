@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using Eng91FinalProject.utils;
+using OpenQA.Selenium.Interactions;
 
 namespace Eng91FinalProject.lib.pages.TraineeProfile
 {
@@ -8,7 +9,7 @@ namespace Eng91FinalProject.lib.pages.TraineeProfile
         private IWebDriver _seleniumDriver { get; set; }
         public TraineeProfileEditPage(IWebDriver seleniumDriver) => _seleniumDriver = seleniumDriver;
 
-        private IWebElement _saveButton => _seleniumDriver.FindElement(By.Id("submitChanges"));
+        private IWebElement _saveButton => _seleniumDriver.FindElement(By.CssSelector(".btn"));
         private IWebElement _summaryBox => _seleniumDriver.FindElement(By.Id("Summary"));
         private IWebElement _lifeStoryBox => _seleniumDriver.FindElement(By.Id("LifeStory"));
         private IWebElement _careerMotivationBox => _seleniumDriver.FindElement(By.Id("WorkMotivation"));
@@ -52,6 +53,14 @@ namespace Eng91FinalProject.lib.pages.TraineeProfile
             InputVolunteering(traineeProfileDetails.Volunteering);
             InputLinkedIn(traineeProfileDetails.LinkedIn);
             InputGithub(traineeProfileDetails.Github);
+        }
+
+        public void ScrollToSave()
+        {
+            var element = _seleniumDriver.FindElement(By.CssSelector(".btn"));
+            Actions actions = new Actions(_seleniumDriver);
+            actions.MoveToElement(element);
+            actions.Perform();
         }
     }
 }

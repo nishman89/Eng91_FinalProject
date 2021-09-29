@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Eng91FinalProject
+namespace Eng91FinalProject.BDD.AdminCourse
 {
     using TechTalk.SpecFlow;
     using System;
@@ -20,23 +20,23 @@ namespace Eng91FinalProject
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Login")]
-    public partial class LoginFeature
+    [NUnit.Framework.DescriptionAttribute("AdminCourseEditPage")]
+    public partial class AdminCourseEditPageFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "Login.feature"
+#line 1 "AdminCourseEditPage.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "", "Login", "\tIn order to be able to observe different parts of the website\r\n\tI want to be abl" +
-                    "e to sign in with particular accounts", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BDD/AdminCourse", "AdminCourseEditPage", "\tAs an admin\r\n\tI want to Edit a course \r\n\tSo that I can edit the details of a cou" +
+                    "rse", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -75,15 +75,17 @@ namespace Eng91FinalProject
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Valid Login - Admin")]
-        [NUnit.Framework.CategoryAttribute("Login")]
-        public virtual void ValidLogin_Admin()
+        [NUnit.Framework.DescriptionAttribute("Admin edits course")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
+        [NUnit.Framework.CategoryAttribute("AdminCourseEdit")]
+        public virtual void AdminEditsCourse()
         {
             string[] tagsOfScenario = new string[] {
-                    "Login"};
+                    "Happy",
+                    "AdminCourseEdit"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Valid Login - Admin", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 6
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Admin edits course", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -103,26 +105,23 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 7
-    testRunner.Given("I am on the Splash Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 8
-    testRunner.And("I click ‘Login’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-                TechTalk.SpecFlow.Table table17 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table17.AddRow(new string[] {
+                table3.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
-#line 9
-    testRunner.When("I enter the correct credentials", ((string)(null)), table17, "When ");
+#line 8
+ testRunner.Given("I am logged in", ((string)(null)), table3, "Given ");
+#line hidden
+#line 11
+ testRunner.And("I click Courses", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 12
-    testRunner.And("I click ‘LOGIN’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("I click Edit on \'Engineering 81\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 13
-    testRunner.Then("I am taken to the Home Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the selected course can be edited", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

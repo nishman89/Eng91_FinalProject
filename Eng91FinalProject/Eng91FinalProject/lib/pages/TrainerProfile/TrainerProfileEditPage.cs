@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using Eng91FinalProject.utils;
+using OpenQA.Selenium;
 
 
 namespace Eng91FinalProject.lib.pages.TrainerProfile
@@ -59,5 +60,14 @@ namespace Eng91FinalProject.lib.pages.TrainerProfile
         public void SelectStreamsDropdownSelectDevOps() => _streamsDropdownSelectDevOps.Click();
         public void SelectStreamsDropdownSelectBusinessAnalyst() => _streamsDropdownSelectBusinessAnalyst.Click();
         public void SelectStreamsDropdownSelectJavaDev() => _streamsDropdownSelectJavaDev.Click();
+
+        public void InputFormDetails(TrainerProfileDetails trainerProfileDetails)
+        {
+            SetFirstName(trainerProfileDetails.FirstName);
+            SetLastName(trainerProfileDetails.LastName);
+            SetLocation(trainerProfileDetails.Location);
+            SetEmail(trainerProfileDetails.Email);
+
+        }
     }
 }

@@ -13,16 +13,21 @@ namespace Eng91FinalProject.lib.pages.TrainerProfile
         private IWebElement _email => _seleniumDriver.FindElement(By.Id("Email"));
         private IWebElement _location => _seleniumDriver.FindElement(By.Id("Location"));
         private IWebElement _streams => _seleniumDriver.FindElement(By.Id("TrainerStreams"));
-        private IWebElement _profileName => _seleniumDriver.FindElement(By.ClassName("mt-3"));
-
+        private IWebElement _profileName => _seleniumDriver.FindElement(By.ClassName("card"));
+        private IWebElement _pageTitle => _seleniumDriver.FindElement(By.TagName("title"));
+        
+        
 
         //Methods
         public void ClickEditButton() => _editButton.Click();
-        public string GetEmailText() => _email.Text;
-        public string GetLocationText() => _location.Text;
-        public string GetStreamsText() => _streams.Text;
-        public string GetProfileNameText() => _profileName.Text;
+        public string GetEmail() => _email.Text;
+        public string GetLocation() => _location.Text;
+        public string GetStreams() => _streams.Text;
+        public string GetProfileName() => _profileName.Text;
 
+        public string GetPageTitle() => _pageTitle.Text;
+
+        
 
     }
 }

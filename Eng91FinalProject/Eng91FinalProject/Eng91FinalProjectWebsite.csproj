@@ -175,6 +175,7 @@
     <None Include="BDD\TraineeProfile\TraineeProfile.feature" />
     <None Include="BDD\TraineeProfile\TraineeProfileEdit.feature" />
     <None Include="BDD\TraineeTrackerAsTrainee.feature" />
+    <None Include="BDD\TraineeTrackerAsTrainer.feature" />
     <None Include="BDD\TrainerHomePage.feature" />
     <None Include="BDD\TrainerProfile\TrainerProfile.feature" />
     <None Include="packages.config" />

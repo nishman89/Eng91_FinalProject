@@ -22,6 +22,14 @@ namespace Eng91FinalProjectAPI.Data
             public string[] errors { get; set; }
         }
 
+
+        public class TokenResponse : IResponse
+        {
+            public Response response { get; set; }
+            public bool success { get; set; }
+            public string token { get; set; }
+        }
+
         public class Response
         {
             public int statusCode { get; set; }

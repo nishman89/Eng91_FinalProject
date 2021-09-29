@@ -30,6 +30,30 @@ namespace Eng91FinalProject.BDD
         {
             Assert.That(Website.TraineeTrackerPage.IsInEditPage(), Is.True);
         }
+        [When(@"I manage the Stop section with the feedback (.*)")]
+        public void WhenIManageTheStopSectionWithTheFeedback(string message)
+        {
+            Website.TraineeTrackerPage.ManageStop(message);
+        }
+
+        [When(@"I press save")]
+        public void WhenIPressSave()
+        {
+            Website.TraineeTrackerPage.SaveChanges();
+        }
+        [When(@"I manage the Start section with the feedback (.*)")]
+        public void WhenIManageTheStartSectionWithTheFeedback(string message)
+        {
+            Website.TraineeTrackerPage.ManageStart(message);
+        }
+        [When(@"I manage the Continue section with the feedback (.*)")]
+        public void WhenIManageTheContinueSectionWithTheFeedback(string message)
+        {
+            Website.TraineeTrackerPage.ManageContinue(message);
+        }
+
+
+
 
     }
 }

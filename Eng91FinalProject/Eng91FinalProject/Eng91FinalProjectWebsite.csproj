@@ -109,6 +109,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppConfigReader.cs" />
+    <Compile Include="BDD\AdminCourseCreatePageSteps.cs" />
+    <Compile Include="BDD\AdminCourseDeletePageSteps.cs" />
     <Compile Include="BDD\AdminCourseEditPageSteps.cs" />
     <Compile Include="BDD\AdminCoursePageSteps.cs" />
     <Compile Include="BDD\LoginSteps.cs" />

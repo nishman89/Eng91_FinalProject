@@ -8,34 +8,30 @@ namespace Eng91FinalProject.BDD
     [Scope(Tag = "AdminCourse")]
     public class AdminCoursePageSteps : SharedLoginSteps
     {
-        [Given(@"I am logged in")]
-        public void GivenIAmLoggedIn()
-        {
-
-        }
-
-        [Given(@"I click '(.*)'")]
-        public void GivenIClick(string p0)
+        [Given(@"I click Courses")]
+        public void GivenIClickCourses()
         {
             Website.TrainerNavbar.ClickAdminDropdownCoursesButton();
         }
-        
+
         [When(@"I type '(.*)' in search bar")]
         public void WhenITypeInSearchBar(string course)
         {
             Website.AdminCoursesPage.Search(course);
         }
-        
-        [When(@"I click '(.*)'")]
-        public void WhenIClick(string page)
+
+        [When(@"I click Search")]
+        public void WhenIClickSearch()
         {
             Website.AdminCoursesPage.ClickSearch();
         }
-        
+
         [Then(@"the result should show '(.*)'")]
-        public void ThenTheResultShouldShow(string expected)
+        public void ThenTheResultShouldShow(string course)
         {
-            Assert.That(Website.AdminCoursesPage.SearchResult(), Is.EqualTo(expected));
+            Website.AdminCoursesPage.FormatSearch(course);
+            Assert.That(Website.AdminCoursesPage.SearchResult(course), Is.EqualTo(course));
         }
+
     }
 }

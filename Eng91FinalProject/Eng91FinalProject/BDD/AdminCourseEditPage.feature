@@ -6,7 +6,6 @@
 @Happy @AdminCourseEdit
 Scenario: Admin edits page
 	Given I am logged in
-	And I click Admin
 	And I click Courses
-	When I click Edit
+	When I click Edit on 'Engineering 81'
 	Then the selected course can be edited

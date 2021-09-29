@@ -6,7 +6,7 @@ namespace Eng91FinalProject.BDD
 {
     [Binding]
     [Scope(Feature = "TraineeProfile")]
-    public class TraineeProfileSteps : SharedLoginSteps
+    public class TraineeProfileSteps : SharedNavbarSteps
     {
         [Then(@"I am taken to my Profile Page")]
         public void ThenIAmTakenToMyProfilePage()
@@ -18,6 +18,12 @@ namespace Eng91FinalProject.BDD
         public void ThenIAmTakenToMyProfileEditPage()
         {
             Assert.That(base.Website.SeleniumDriver.Url, Does.Contain("Profile/Edit"));
+        }
+
+        [When(@"I click ‘EDIT’")]
+        public void WhenIClickEDIT()
+        {
+            Website.TraineeProfilePage.ClickEditButton();
         }
     }
 }

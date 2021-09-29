@@ -14,7 +14,20 @@ namespace Eng91FinalProjectAPI.Tests
         {
             _traineeService.CallManager.APIKey = "SexLEYatCnW5x3lri//G6EnE3a9egpV3U2xIsLINR3M=";
         }
-        
+
+        [Given(@"I have an invalid key")]
+        public void GivenIHaveAnInvalidKey()
+        {
+            _traineeService.CallManager.APIKey = "notavalidkey";
+        }
+
+        [Given(@"I have a disabled key")]
+        public void GivenIHaveADisabledKey()
+        {
+            _traineeService.CallManager.APIKey = "fjl5KAoIdOSYsuZw6P5Tso9zw0evbPWxuRxePf2kaXM=";
+        }
+
+
         [Given(@"I make a request for a token")]
         public async Task GivenIMakeARequestForAToken()
         {

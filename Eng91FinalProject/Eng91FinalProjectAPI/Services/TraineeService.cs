@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Eng91FinalProjectAPI.Data;
 using Eng91FinalProjectAPI.HTTPManager;
 using Newtonsoft.Json.Linq;
@@ -49,6 +50,10 @@ namespace Eng91FinalProjectAPI.Services
             if (CallManager.StatusCode == 200)
             {
                 TokenResponseDTO.Deserialize(RequestResponse);
+            }
+            if (CallManager.StatusCode == 400)
+            {
+                CallManager.JSONStatusCode = Int32.Parse(JsonResponse["status"].ToString());
             }
         }
 

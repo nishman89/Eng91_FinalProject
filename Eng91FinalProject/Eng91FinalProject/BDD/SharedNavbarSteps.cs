@@ -5,6 +5,7 @@ using System;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
 using NUnit.Framework;
+using System.Threading;
 
 namespace Eng91FinalProject.BDD
 {
@@ -28,7 +29,6 @@ namespace Eng91FinalProject.BDD
             Website.SharedNavbar.ClickHomeButton();
         }
 
-
         [Then(@"I am taken to the Profiles Page")]
         public void ThenIAmTakenToTheProfilesPage()
         {
@@ -39,6 +39,24 @@ namespace Eng91FinalProject.BDD
         public void WhenIClick()
         {
             Website.TrainerNavbar.ClickProfilesButton();
+        }
+
+        [When(@"I click 'Logout'")]
+        public void WhenIClickLogout()
+        {
+            Website.SharedNavbar.ClickLogoutButton();
+        }
+
+        [Then(@"I am logged out and sent to the Splash Page")]
+        public void ThenIAmLoggedOutAndSentToTheSplashPage()
+        {
+            Assert.That(Website.HomePage.IsOnSplashPage(), Is.True);
+        }
+
+        [Then(@"I am taken to my Profile Page")]
+        public void ThenIAmTakenToMyProfilePage()
+        {
+            Assert.That(base.Website.SeleniumDriver.Url, Does.Contain("Profile/View"));
         }
     }
 }

@@ -13,5 +13,9 @@ namespace Eng91FinalProject.lib.pages
         private IWebDriver _seleniumDriver;
 
         public SplashPage(IWebDriver seleniumDriver) => _seleniumDriver = seleniumDriver;
+
+
+        private IWebElement _banner => _seleniumDriver.FindElement(By.CssSelector(".banner"));
+        
     }
 }

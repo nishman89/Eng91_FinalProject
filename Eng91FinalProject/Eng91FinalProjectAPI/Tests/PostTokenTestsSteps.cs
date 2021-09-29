@@ -34,8 +34,8 @@ namespace Eng91FinalProjectAPI.Tests
             await _traineeService.MakeTokenRequestAsync();
         }
         
-        [Then(@"I should recieve a valid token")]
-        public void ThenIShouldRecieveAValidToken()
+        [Then(@"I should receive a valid token")]
+        public void ThenIShouldReceiveAValidToken()
         {
             Assert.That(_traineeService.TokenResponseDTO.Response.token, Is.EqualTo("/raHHLG3CkngPn73rvHVj1AsQpMxoJvD8Ck93GwnCK4="));
         }

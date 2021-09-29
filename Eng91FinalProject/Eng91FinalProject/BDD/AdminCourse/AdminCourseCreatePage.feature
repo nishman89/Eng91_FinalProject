@@ -6,6 +6,8 @@
 @Happy @AdminCourseCreate
 Scenario: Admin creates a course
 	Given I am logged in
+	| email                    | password     |
+    | jsmith@spartaglobal.com  | Password123! |
 	And I click Courses
 	When I click New
 	Then I am taken to the Course create page

@@ -11,6 +11,7 @@ namespace Eng91FinalProject.BDD
         [Given(@"I click Courses")]
         public void GivenIClickCourses()
         {
+            Website.TrainerNavbar.ClickAdminDropdownButton();
             Website.TrainerNavbar.ClickAdminDropdownCoursesButton();
         }
         

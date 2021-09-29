@@ -4,12 +4,16 @@
 @Trainer_page
 Scenario: Navigate to trainer profile page
 Given I am logged in
+| Email                   | Password     |
+| jsmith@spartaglobal.com | Password123! |
 When I click my name to view my Profile Page
 Then I am taken to my Profile Page
 
 @Trainer_page
 Scenario: Edit and Save changes
 Given I am logged in
+| Email                   | Password     |
+| jsmith@spartaglobal.com | Password123! |
 When I click my name to view my Profile Page
 And I click EDIT
 And I update my details with the following information

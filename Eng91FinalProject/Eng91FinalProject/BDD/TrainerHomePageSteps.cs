@@ -24,8 +24,6 @@ namespace Eng91FinalProject.BDD
         [When(@"I click a trainee")]
         public void WhenIClickATrainee()
         {
-            base.Website.SeleniumDriver.Manage().Window.Maximize();
-            Website.SeleniumDriver.Manage().Window.FullScreen();
             Website.HomePage.ClickTrainee1ResultsContainer();
         }
         

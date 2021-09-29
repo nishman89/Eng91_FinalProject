@@ -2,12 +2,12 @@
 	Automation Task - View trainee tracker as trainee
 
 @Login_As_Trainee
-Scenario: Check tracker
+Scenario: Check tracker as Trainee
 	Given I am logged in
 	| email                      | password     |
 	| pbridgers@spartaglobal.com | Password123! |
 	When I press Tracker
-	Then I should see my tracker/s
+	Then I should see my trackers
 
 	
 @Trainee_EditTracker

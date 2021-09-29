@@ -19,10 +19,10 @@ namespace Eng91FinalProject.BDD
             Website.TraineeTrackerPage.PressTrackerButton();
         }
         
-        [Then(@"I should see my tracker/s")]
+        [Then(@"I should see my trackers")]
         public void ThenTIShouldSeeMyTrackerS()
         {
-            Assert.That(Website.TraineeTrackerPage.WhatIassumeToBeTheContentBox(), Is.True);
+            Assert.That(Website.TraineeTrackerPage.CanICreateNewTracker(), Is.True);
         }
         [When(@"I press Edit")]
         public void WhenIPressEdit()

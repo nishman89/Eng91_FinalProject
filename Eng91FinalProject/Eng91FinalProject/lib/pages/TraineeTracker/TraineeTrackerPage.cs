@@ -15,6 +15,7 @@ namespace Eng91FinalProject.lib.pages
         #region Properties
 
         private IWebDriver _seleniumDriver;
+        private IWebElement _newTrackerButton => _seleniumDriver.FindElement(By.Id("CreateNewTrackerButton"));
         private IWebElement _trackerButton => _seleniumDriver.FindElement(By.LinkText("Tracker"));
         private IWebElement _selfCheckFeedback_Week => _seleniumDriver.FindElement(By.Id("weekSelector"));
         private IWebElement _editTrackerButton => _seleniumDriver.FindElement(By.Id("EditTracker"));
@@ -49,11 +50,11 @@ namespace Eng91FinalProject.lib.pages
         public void Select_Consultant_C() => _cConsultant.Click();
         public void Select_Consultant_D() => _dConsultant.Click();
         public void SetSweek(int weekNumber) => _selfCheckFeedback_Week.SendKeys(weekNumber.ToString());
-        public bool WhatIassumeToBeTheContentBox()
+        public bool CanICreateNewTracker()
         {
             try
             {
-                _seleniumDriver.FindElement(By.Id("selenium-ide-indicator"));
+                _seleniumDriver.FindElement(By.Id("CreateNewTrackerButton"));
                 return true;
             }
             catch(NoSuchElementException)

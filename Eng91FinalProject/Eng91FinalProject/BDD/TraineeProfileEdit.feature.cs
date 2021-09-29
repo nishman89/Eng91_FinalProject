@@ -105,14 +105,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table5.AddRow(new string[] {
+                table6.AddRow(new string[] {
                             "bhoward@spartaglobal.com",
                             "Password123!"});
 #line 8
- testRunner.Given("I am logged in", ((string)(null)), table5, "Given ");
+ testRunner.Given("I am logged in", ((string)(null)), table6, "Given ");
 #line hidden
 #line 11
  testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -120,13 +120,39 @@ this.ScenarioInitialize(scenarioInfo);
 #line 12
  testRunner.And("I click ‘EDIT’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
+                TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Summary",
+                            "LifeStory",
+                            "CareerMotivation",
+                            "Skills",
+                            "Interests",
+                            "Education",
+                            "Certifications",
+                            "AdditionalAchievements",
+                            "RecentEmployment",
+                            "Volunteering",
+                            "LinkedIn",
+                            "Github"});
+                table7.AddRow(new string[] {
+                            "test",
+                            "test",
+                            "test",
+                            "test",
+                            "test",
+                            "test",
+                            "test",
+                            "test",
+                            "test",
+                            "test",
+                            "test",
+                            "test"});
 #line 13
- testRunner.And("I update my details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I update my details", ((string)(null)), table7, "And ");
 #line hidden
-#line 14
+#line 16
  testRunner.And("I click ‘SAVE’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 15
+#line 17
  testRunner.Then("my profile is updated", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

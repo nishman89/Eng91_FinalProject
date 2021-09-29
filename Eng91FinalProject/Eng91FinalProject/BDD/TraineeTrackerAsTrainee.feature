@@ -7,7 +7,7 @@ Scenario: Check tracker
 	| email                      | password     |
 	| pbridgers@spartaglobal.com | Password123! |
 	When I press Tracker
-	Then I should see my tracker/s
+	Then I should see my trackers
 
 	
 @Trainee_EditTracker

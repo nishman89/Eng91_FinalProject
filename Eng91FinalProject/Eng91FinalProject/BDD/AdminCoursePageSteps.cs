@@ -8,11 +8,11 @@ namespace Eng91FinalProject.BDD
     [Scope(Tag = "AdminCourse")]
     public class AdminCoursePageSteps : SharedLoginSteps
     {
-        [Given(@"I am logged in")]
-        public void GivenIAmLoggedIn()
-        {
+        //[Given(@"I am logged in")]
+        //public void GivenIAmLoggedIn()
+        //{
 
-        }
+        //}
 
         [Given(@"I click '(.*)'")]
         public void GivenIClick(string p0)

@@ -10,11 +10,11 @@ namespace Eng91FinalProject.lib.pages.TrainerProfile
         //Methods
         public TrainerProfilePage(IWebDriver seleniumDriver) => _seleniumDriver = seleniumDriver;
         private IWebElement _editButton => _seleniumDriver.FindElement(By.Id("EditButton"));
-        private IWebElement _email => _seleniumDriver.FindElement(By.Id("Email"));
-        private IWebElement _location => _seleniumDriver.FindElement(By.Id("Location"));
+        private IWebElement _email => _seleniumDriver.FindElement(By.Id("EmailLabel"));
+        private IWebElement _location => _seleniumDriver.FindElement(By.Id("LocationLabel"));
         private IWebElement _streams => _seleniumDriver.FindElement(By.Id("TrainerStreams"));
         private IWebElement _profileName => _seleniumDriver.FindElement(By.ClassName("card"));
-        private IWebElement _pageTitle => _seleniumDriver.FindElement(By.TagName("title"));
+        //private IWebElement _pageTitle => _seleniumDriver.Title;
         
         
 
@@ -25,7 +25,7 @@ namespace Eng91FinalProject.lib.pages.TrainerProfile
         public string GetStreams() => _streams.Text;
         public string GetProfileName() => _profileName.Text;
 
-        public string GetPageTitle() => _pageTitle.Text;
+        public string GetPageTitle() => _seleniumDriver.Title;
 
         
 

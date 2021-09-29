@@ -6,22 +6,32 @@
 Scenario: Valid Login - Admin
     Given I am on the Splash Page
     And I click ‘Login’
-    When I enter the correct credentials
+    When I enter the following credentials
     | email                    | password     |
     | jsmith@spartaglobal.com  | Password123! |
     And I click ‘LOGIN’
     Then I am taken to the Home Page
 
+    @login
+Scenario: Invalid Login - No username
+    Given I am on the Splash Page
+    And I click ‘Login’
+    When I enter the following credentials
+    | Username | Password     |
+    |          | Password123! |
+    And I click ‘LOGIN’
+    Then I should see an alert containing the error message "The Email field is required."
 
-    Given I am on the login page
-    And I enter the following <email> and <password>
-    When I enter these credentials
-    And I click the login button
-    Then I should be logged in and sent to the main page
-    | email                    | password     |
-    | jsmith@spartaglobal.com  | Password123! |
-    | bhoward@spartaglobal.com | Password123! |
-    | bpitt@spartaglobal.com   | Password123! |
+    @login
+Scenario: Invalid Login - No password
+    Given I am on the Splash Page
+    And I click ‘Login’
+    When I enter the following credentials
+    | Username                | Password |
+    | ajolie@spartaglobal.com |          |
+    And I click ‘LOGIN’
+    Then I should see an alert containing the error message "The Password field is required."
+
 
 	
 

@@ -17,8 +17,8 @@ Scenario: Invalid Login - No username
     Given I am on the Splash Page
     And I click ‘Login’
     When I enter the following credentials
-    | Username | Password     |
-    |          | Password123! |
+    | email | password     |
+    |       | Password123! |
     And I click ‘LOGIN’
     Then I should see an alert containing the error message "The Email field is required."
 
@@ -27,7 +27,7 @@ Scenario: Invalid Login - No password
     Given I am on the Splash Page
     And I click ‘Login’
     When I enter the following credentials
-    | Username                | Password |
+    | email                   | password |
     | ajolie@spartaglobal.com |          |
     And I click ‘LOGIN’
     Then I should see an alert containing the error message "The Password field is required."

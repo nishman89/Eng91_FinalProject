@@ -120,6 +120,7 @@
     <Compile Include="BDD\LoginSteps.cs" />
     <Compile Include="BDD\TraineeProfileEditSteps.cs" />
     <Compile Include="BDD\TraineeProfileSteps.cs" />
+    <Compile Include="BDD\TraineeTrackerAsTrainerSteps.cs" />
     <Compile Include="BDD\TrainerHomePageSteps.cs" />
     <Compile Include="BDD\TraineeTrackerAsTraineeSteps.cs" />
     <Compile Include="BDD\TrainerProfile\TrainerProfilePageSteps.cs" />
@@ -174,6 +175,7 @@
     <None Include="BDD\TraineeProfile.feature" />
     <None Include="BDD\TraineeProfileEdit.feature" />
     <None Include="BDD\TraineeTrackerAsTrainee.feature" />
+    <None Include="BDD\TraineeTrackerAsTrainer.feature" />
     <None Include="BDD\TrainerHomePage.feature" />
     <None Include="BDD\TrainerProfile\TrainerProfile.feature" />
     <None Include="packages.config" />

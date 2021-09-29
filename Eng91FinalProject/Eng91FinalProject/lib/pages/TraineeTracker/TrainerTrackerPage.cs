@@ -16,7 +16,6 @@ namespace Eng91FinalProject.lib.pages
         #region Properties
 
         private IWebDriver _seleniumDriver;
-
         private IWebElement _traineeTrackerLink => _seleniumDriver.FindElement(By.LinkText("Trainee Tracker"));
         private IWebElement _deleteButton_BenHoward_Engineering79 => _seleniumDriver.FindElement(By.CssSelector("[href *= '/TraineeTracker/Delete/1']"));
         private IWebElement _editButton_BenHoward_Engineering79 => _seleniumDriver.FindElement(By.CssSelector("[href *= '/TraineeTracker/TrainerEdit/1']"));
@@ -29,10 +28,18 @@ namespace Eng91FinalProject.lib.pages
         private SelectElement _overallGradeSelected => new SelectElement(_overallGrades);
         private IWebElement _saveChangesButton => _seleniumDriver.FindElement(By.Id("create-button"));
 
+        private IWebElement _savedTechnical => _seleniumDriver.FindElement(By.CssSelector("tr:nth-child(1) > td:nth-child(6)"));
+        private IWebElement _savedConsultancy => _seleniumDriver.FindElement(By.CssSelector("tr:nth-child(1) > td:nth-child(7)"));
+        private IWebElement _savedOverall => _seleniumDriver.FindElement(By.CssSelector("tr:nth-child(1) > td:nth-child(8)"));
+
         #endregion
         public void ClickCreateNewTracker() => _deleteButton_BenHoward_Engineering79.Click();
-        public void ClickEditButton() => _editButton_BenHoward_Engineering79.Click();
-        public void ManageComment(string message) => _commentBox.SendKeys(message);
+        public void ClickEditButton_BenHoward() => _editButton_BenHoward_Engineering79.Click();
+        public void ManageComment(string message)
+        {
+            _commentBox.Clear();
+            _commentBox.SendKeys(message);
+        }
         public void TraineeTrackerButton() => _traineeTrackerLink.Click();
 
         public void MaxTechGradeByValue()
@@ -43,13 +50,27 @@ namespace Eng91FinalProject.lib.pages
         }
         public void MaxTechGradeByText()
         {
-            _techGradeSelected.SelectByValue("A+");
-            _consultGradeSelected.SelectByValue("A+");
+            _techGradeSelected.SelectByText("A+");
+            _consultGradeSelected.SelectByText("A+");
             _overallGradeSelected.SelectByText("A+");
         }
 
         public void SaveChanges() => _saveChangesButton.Click();
 
+        public bool IsInTrackerPage()
+        {
+            try
+            {
+                _seleniumDriver.FindElement(By.CssSelector("th:nth-child(1)"));
+                return true;
+            }
+            catch(NoSuchElementException)
+            {
+                return false;
+            }
+        }
+
+        public (string, string, string) ReturnGrades() => (_savedTechnical.Text, _savedConsultancy.Text, _savedOverall.Text);
 
     }
 }

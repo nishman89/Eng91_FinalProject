@@ -40,18 +40,17 @@ namespace Eng91FinalProject.BDD.TrainerProfile
         [When(@"I click SAVE")]
         public void WhenIClickSAVE()
         {
-            base.Website.TraineeProfileEditPage.ClickSaveButton();
+            base.Website.TrainerProfileEditPage.ClickSave();
         }
 
-        //[When(@"change my stream to C\# Developer")]
-        //public void WhenChangeMyStreamToCDeveloper()
-        //{
-        //    base.Website.TrainerProfileEditPage.ClearStreamsSelection();
-        //    base.Website.TrainerProfileEditPage.SelectStreamsDropdown();
-        //    base.Website.TrainerProfileEditPage.SelectStreamsDropdownSelectCsharpDev();
-        //    base.Website.TrainerProfileEditPage.SelectStreamsDropdown();
-        //    Thread.Sleep(5000);
-        //}
+        [When(@"change my stream to '(.*)'")]
+        public void WhenChangeMyStreamTo(string course)
+        {
+            base.Website.TrainerProfileEditPage.ClearStreamsDropdown();
+            base.Website.TrainerProfileEditPage.SelectStream(course);
+            Thread.Sleep(5000);
+        }
+
 
         [Then(@"I am taken to my Profile Page")]
         public void ThenIAmTakenToMyProfilePage()
@@ -73,13 +72,7 @@ namespace Eng91FinalProject.BDD.TrainerProfile
             Assert.That(testName, Is.EqualTo($"{_trainerProfileDetails.FirstName} {_trainerProfileDetails.LastName}"));
         }
 
-        [When(@"change my stream to '(.*)'")]
-        public void WhenChangeMyStreamTo(string course)
-        {
-            base.Website.TrainerProfileEditPage.ClearStreamsDropdown();
-            base.Website.TrainerProfileEditPage.SelectStream(course);
-            Thread.Sleep(5000);
-        }
+
 
         [Then(@"my profile details for course stream should show '(.*)'")]
         public void ThenMyProfileDetailsForCourseStreamShouldShow(string course)

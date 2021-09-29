@@ -158,6 +158,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "Password123!"});
 #line 15
  testRunner.Given("I am logged in", ((string)(null)), table19, "Given ");
+
 #line hidden
 #line 18
  testRunner.When("I press Tracker", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");

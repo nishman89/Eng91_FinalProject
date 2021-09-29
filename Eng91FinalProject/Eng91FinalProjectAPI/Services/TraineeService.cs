@@ -11,6 +11,7 @@ namespace Eng91FinalProjectAPI.Services
         public CallManager CallManager { get; set; }
         public JObject JsonResponse { get; set; }
         public DTO<TraineeResponse> TraineeResponseDTO { get; set; }
+        public DTO<TokenResponse> TokenResponseDTO { get; set; }
         public DTO<ErrorResponse> ErrorResponseDTO { get; set; }
         public string RequestResponse { get; set; }
 
@@ -19,30 +20,46 @@ namespace Eng91FinalProjectAPI.Services
             CallManager = new CallManager();
             TraineeResponseDTO = new DTO<TraineeResponse>();
             ErrorResponseDTO = new DTO<ErrorResponse>();
+            TokenResponseDTO = new DTO<TokenResponse>();
         }
 
         public async Task MakeTraineeRequestAsync()
         {
             RequestResponse = await CallManager.MakeGetRequestAsync(CallManager.GetMethods.Trainees);
-            ParseObjects();
+            JsonResponse = JObject.Parse(RequestResponse);
+            ParseProfileObject();
         }
 
         public async Task MakeProfileRequestAsync()
         {
             RequestResponse = await CallManager.MakeGetRequestAsync(CallManager.GetMethods.Profiles);
-            ParseObjects();
+            JsonResponse = JObject.Parse(RequestResponse);
+            ParseProfileObject();
         }
 
-        private void ParseObjects()
+        public async Task MakeTokenRequestAsync()
+        {
+            RequestResponse = await CallManager.MakePostTokenRequest();
+            JsonResponse = JObject.Parse(RequestResponse);
+            ParseTokenObject();
+        }
+
+        private void ParseTokenObject()
+        {
+            if (CallManager.StatusCode == 200)
+            {
+                TokenResponseDTO.Deserialize(RequestResponse);
+            }
+        }
+
+        private void ParseProfileObject()
         {
             if (CallManager.JSONStatusCode == 200)
             {
-                JsonResponse = JObject.Parse(RequestResponse);
                 TraineeResponseDTO.Deserialize(RequestResponse);
             }
             if (CallManager.JSONStatusCode == 400)
             {
-                JsonResponse = JObject.Parse(RequestResponse);
                 ErrorResponseDTO.Deserialize(RequestResponse);
             }
         }

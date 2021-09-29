@@ -1,4 +1,4 @@
-﻿Feature: MyProfilePage
+﻿Feature: TraineeProfile
 	As a trainee, 
 	I want to be able to view my profile, 
 	so that I can view my details

@@ -129,14 +129,14 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Invalid Login - No username")]
-        [NUnit.Framework.CategoryAttribute("login")]
-        public virtual void InvalidLogin_NoUsername()
+        [NUnit.Framework.DescriptionAttribute("Valid Login - User")]
+        [NUnit.Framework.CategoryAttribute("Login")]
+        public virtual void ValidLogin_User()
         {
             string[] tagsOfScenario = new string[] {
-                    "login"};
+                    "Login"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Invalid Login - No username", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Valid Login - User", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 16
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -167,7 +167,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "email",
                             "password"});
                 table12.AddRow(new string[] {
-                            "",
+                            "ajolie@spartaglobal.com",
                             "Password123!"});
 #line 19
     testRunner.When("I enter the following credentials", ((string)(null)), table12, "When ");
@@ -176,22 +176,21 @@ this.ScenarioInitialize(scenarioInfo);
     testRunner.And("I click ‘LOGIN’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 23
-    testRunner.Then("I should see an alert containing the error message \"The Email field is required.\"" +
-                        "", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("I am taken to the Home Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Invalid Login - No password")]
+        [NUnit.Framework.DescriptionAttribute("Invalid Login - No username")]
         [NUnit.Framework.CategoryAttribute("login")]
-        public virtual void InvalidLogin_NoPassword()
+        public virtual void InvalidLogin_NoUsername()
         {
             string[] tagsOfScenario = new string[] {
                     "login"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Invalid Login - No password", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Invalid Login - No username", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 26
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -222,8 +221,8 @@ this.ScenarioInitialize(scenarioInfo);
                             "email",
                             "password"});
                 table13.AddRow(new string[] {
-                            "ajolie@spartaglobal.com",
-                            ""});
+                            "",
+                            "Password123!"});
 #line 29
     testRunner.When("I enter the following credentials", ((string)(null)), table13, "When ");
 #line hidden
@@ -231,6 +230,61 @@ this.ScenarioInitialize(scenarioInfo);
     testRunner.And("I click ‘LOGIN’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 33
+    testRunner.Then("I should see an alert containing the error message \"The Email field is required.\"" +
+                        "", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Invalid Login - No password")]
+        [NUnit.Framework.CategoryAttribute("login")]
+        public virtual void InvalidLogin_NoPassword()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "login"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Invalid Login - No password", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 36
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 37
+    testRunner.Given("I am on the Splash Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 38
+    testRunner.And("I click ‘Login’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table14 = new TechTalk.SpecFlow.Table(new string[] {
+                            "email",
+                            "password"});
+                table14.AddRow(new string[] {
+                            "ajolie@spartaglobal.com",
+                            ""});
+#line 39
+    testRunner.When("I enter the following credentials", ((string)(null)), table14, "When ");
+#line hidden
+#line 42
+    testRunner.And("I click ‘LOGIN’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 43
     testRunner.Then("I should see an alert containing the error message \"The Password field is require" +
                         "d.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden

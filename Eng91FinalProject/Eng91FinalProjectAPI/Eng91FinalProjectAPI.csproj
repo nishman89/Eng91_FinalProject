@@ -125,6 +125,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="APITestFramework.cd" />
     <None Include="packages.config" />
     <None Include="Tests\GetProfileTests.feature" />
     <None Include="Tests\GetTraineeTests.feature" />

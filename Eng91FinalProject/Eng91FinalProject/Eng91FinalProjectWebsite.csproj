@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\NUnit3TestAdapter.4.0.0\build\net35\NUnit3TestAdapter.props" Condition="Exists('..\packages\NUnit3TestAdapter.4.0.0\build\net35\NUnit3TestAdapter.props')" />
   <Import Project="..\packages\SpecFlow.Plus.LivingDocPlugin.3.9.57\build\SpecFlow.Plus.LivingDocPlugin.props" Condition="Exists('..\packages\SpecFlow.Plus.LivingDocPlugin.3.9.57\build\SpecFlow.Plus.LivingDocPlugin.props')" />
@@ -114,20 +114,30 @@
     <Compile Include="BDD\AdminAPI\AdminAPIPageSteps.cs" />
     <Compile Include="BDD\AdminCourse\AdminCourseCreatePage.feature.cs" />
     <Compile Include="BDD\AdminCourse\AdminCourseCreatePageSteps.cs" />
-    <Compile Include="BDD\AdminCourse\AdminCourseDeletePage.feature.cs" />
     <Compile Include="BDD\AdminCourse\AdminCourseDeletePageSteps.cs" />
-    <Compile Include="BDD\AdminCourse\AdminCourseEditPage.feature.cs" />
     <Compile Include="BDD\AdminCourse\AdminCourseEditPageSteps.cs" />
-    <Compile Include="BDD\AdminCourse\AdminCoursePage.feature.cs" />
     <Compile Include="BDD\AdminCourse\AdminCoursePageSteps.cs" />
+    <Compile Include="BDD\AdminStream\AdminStreamCreateSteps.cs" />
+    <Compile Include="BDD\AdminStream\AdminStreamDeleteSteps.cs" />
+    <Compile Include="BDD\AdminStream\AdminStreamEditSteps.cs" />
+    <Compile Include="BDD\AdminStream\AdminStreamPageSteps.cs" />
+    <Compile Include="BDD\AdminUsers\AdminUsersCreatePageSteps.cs" />
+    <Compile Include="BDD\AdminUsers\AdminUsersDeleteSteps.cs" />
+    <Compile Include="BDD\AdminUsers\AdminUsersEditSteps.cs" />
+    <Compile Include="BDD\AdminUsers\AdminUsersPageSteps.cs" />
     <Compile Include="BDD\LoginSteps.cs" />
+    <Compile Include="BDD\Profiles\ProfilesSteps.cs" />
     <Compile Include="BDD\SharedNavbarSteps.cs" />
     <Compile Include="BDD\TraineeProfile\TraineeProfileEditPageSteps.cs" />
     <Compile Include="BDD\TraineeProfile\TraineeProfileSteps.cs" />
+    <Compile Include="BDD\TraineeTrackerAsTrainerSteps.cs" />
     <Compile Include="BDD\TrainerHomePageSteps.cs" />
     <Compile Include="BDD\TraineeTrackerAsTraineeSteps.cs" />
     <Compile Include="BDD\TrainerProfile\TrainerProfilePageSteps.cs" />
     <Compile Include="BDD\TrainerHomePage.feature.cs" />
+    <Compile Include="BDD\UserJourney_TrainerLogin_Tracker_ChangeGradesSteps.cs" />
+    <Compile Include="BDD\UserJourney_TraineeLogin_Tracker_CreateNewTrackerSteps.cs" />
+    <Compile Include="BDD\UserJourney_TrainerLogin_Courses_AddNewCourseSteps.cs" />
     <Compile Include="lib\driver_config\SeleniumDriverConfig.cs" />
     <Compile Include="lib\pages\AdminAPI\AdminAPICreatePage.cs" />
     <Compile Include="lib\pages\AdminAPI\AdminAPIEditPage.cs" />
@@ -141,12 +151,14 @@
     <Compile Include="lib\pages\BulkImport\BulkImportProfilesPage.cs" />
     <Compile Include="lib\pages\BulkImport\BulkImportUsersPage.cs" />
     <Compile Include="lib\pages\LoginPage.cs" />
+    <Compile Include="lib\pages\Profiles\ProfilesPage.cs" />
+    <Compile Include="lib\pages\ProgressPage.cs" />
+	<Compile Include="lib\pages\CourseAttendancePage.cs" />
     <Compile Include="lib\pages\TraineeProfile\TraineeProfileEditPage.cs" />
     <Compile Include="lib\pages\TraineeProfile\TraineeProfilePage.cs" />
     <Compile Include="lib\pages\Navbar\SharedNavbar.cs" />
     <Compile Include="lib\pages\Navbar\TraineeNavbar.cs" />
     <Compile Include="lib\pages\Navbar\TrainerNavbar.cs" />
-    <Compile Include="lib\pages\ProfilesPage.cs" />
     <Compile Include="lib\pages\SplashPage.cs" />
     <Compile Include="lib\pages\HomePage.cs" />
     <Compile Include="lib\pages\AdminStream\AdminStreamCreatePage.cs" />
@@ -165,6 +177,7 @@
     <Compile Include="lib\pages\Website.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BDD\SharedLoginSteps.cs" />
+    <Compile Include="utils\CourseDetails.cs" />
     <Compile Include="utils\Credentials.cs" />
     <Compile Include="utils\TraineeProfileDetails.cs" />
     <Compile Include="utils\TrainerProfileDetails.cs" />
@@ -178,13 +191,24 @@
     <None Include="BDD\AdminCourse\AdminCourseDeletePage.feature" />
     <None Include="BDD\AdminCourse\AdminCourseEditPage.feature" />
     <None Include="BDD\AdminCourse\AdminCoursePage.feature" />
+    <None Include="BDD\AdminStream\AdminStreamCreate.feature" />
+    <None Include="BDD\AdminStream\AdminStreamDelete.feature" />
+    <None Include="BDD\AdminStream\AdminStreamEdit.feature" />
+    <None Include="BDD\AdminStream\AdminStreamPage.feature" />
+    <None Include="BDD\AdminUsers\AdminUsersCreatePage.feature" />
+    <None Include="BDD\AdminUsers\AdminUsersDelete.feature" />
+    <None Include="BDD\AdminUsers\AdminUsersEdit.feature" />
+    <None Include="BDD\AdminUsers\AdminUsersPage.feature" />
     <None Include="BDD\Login.feature" />
+    <None Include="BDD\Profiles\Profiles.feature" />
     <None Include="BDD\TraineeProfile\TraineeProfile.feature" />
     <None Include="BDD\TraineeProfile\TraineeProfileEdit.feature" />
     <None Include="BDD\TraineeTrackerAsTrainee.feature" />
     <None Include="BDD\TraineeTrackerAsTrainer.feature" />
     <None Include="BDD\TrainerHomePage.feature" />
     <None Include="BDD\TrainerProfile\TrainerProfile.feature" />
+    <None Include="BDD\UserJourney_TraineeLogin_Tracker_CreateNewTracker.feature" />
+    <None Include="BDD\UserJourney_TrainerLogin_Courses_AddNewCourse.feature" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />

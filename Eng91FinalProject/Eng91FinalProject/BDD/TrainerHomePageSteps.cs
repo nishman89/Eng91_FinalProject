@@ -42,5 +42,32 @@ namespace Eng91FinalProject.BDD
             Assert.True(Website.HomePage.IsExpandedBen());
         }
 
+
+        [When(@"I click PROGRESS TRACKER")]
+        public void WhenIClickPROGRESSTRACKER()
+        {
+            Website.HomePage.ClickProgressTrackerButton();
+        }
+
+        [Then(@"I am taken to the Progress Tracker page")]
+        public void WhenIAmTakenToTheProgressTrackerPage()
+        {
+            Assert.That(Website.SeleniumDriver.Url.Contains("Progress"));
+        }
+
+        [When(@"I Click Course Attendance")]
+        public void WhenIClickCourseAttendance()
+        {
+            Website.HomePage.ClickCourseAttendanceButton();
+        }
+
+        [Then(@"I am taken to the Course Attendance page")]
+        public void ThenIAmTakenToTheCourseAttendancePage()
+        {
+            Assert.That(Website.SeleniumDriver.Url.Contains("AttendanceIndex"));
+        }
+
+
+
     }
 }

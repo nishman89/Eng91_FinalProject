@@ -18,3 +18,20 @@ Scenario: As Trainer, view individual test results
 	When I click a trainee
 
 	Then That trainee's test results are shown
+
+@ProgressTrackerNavigation 
+Scenario: As Trainer, view Progress Tracker
+	Given I am logged in
+	| email                    | password     |
+    | jsmith@spartaglobal.com  | Password123! |
+	When I click PROGRESS TRACKER
+
+	Then I am taken to the Progress Tracker page
+
+@AttendanceNavigation
+Scenario: As Trainer, view Attendance Page
+	Given I am logged in
+	| email                    | password     |
+    | jsmith@spartaglobal.com  | Password123! |
+	When I Click Course Attendance
+	Then I am taken to the Course Attendance page

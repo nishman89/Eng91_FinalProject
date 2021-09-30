@@ -12,6 +12,16 @@ Scenario: Valid Login - Admin
     And I click ‘LOGIN’
     Then I am taken to the Home Page
 
+    @Login
+Scenario: Valid Login - User
+    Given I am on the Splash Page
+    And I click ‘Login’
+    When I enter the following credentials
+    | email                    | password     |
+    | ajolie@spartaglobal.com  | Password123! |
+    And I click ‘LOGIN’
+    Then I am taken to the Home Page
+
     @login
 Scenario: Invalid Login - No username
     Given I am on the Splash Page

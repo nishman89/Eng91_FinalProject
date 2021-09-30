@@ -20,23 +20,22 @@ namespace Eng91FinalProject.BDD
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("TraineeProfileEditPage")]
-    public partial class TraineeProfileEditPageFeature
+    [NUnit.Framework.DescriptionAttribute("UserJourney_TrainerLogin_Courses_AddNewCourse")]
+    public partial class UserJourney_TrainerLogin_Courses_AddNewCourseFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "TraineeProfileEdit.feature"
+#line 1 "UserJourney_TrainerLogin_Courses_AddNewCourse.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BDD", "TraineeProfileEditPage", "\tAs a trainee, \r\n\tI want to be able to edit my profile, \r\n\tso that I can update m" +
-                    "y details", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BDD", "UserJourney_TrainerLogin_Courses_AddNewCourse", "\tA user journey for adding a course", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -75,17 +74,15 @@ namespace Eng91FinalProject.BDD
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit trainee profile")]
-        [NUnit.Framework.CategoryAttribute("TraineeProfileEditPage")]
-        [NUnit.Framework.CategoryAttribute("Happy")]
-        public virtual void EditTraineeProfile()
+        [NUnit.Framework.DescriptionAttribute("Adding a course")]
+        [NUnit.Framework.CategoryAttribute("mytag")]
+        public virtual void AddingACourse()
         {
             string[] tagsOfScenario = new string[] {
-                    "TraineeProfileEditPage",
-                    "Happy"};
+                    "mytag"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit trainee profile", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 7
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adding a course", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 5
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -105,57 +102,55 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-
-                TechTalk.SpecFlow.Table table16 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Email",
-                            "Password"});
-                table16.AddRow(new string[] {
-                            "bhoward@spartaglobal.com",
+#line 6
+ testRunner.Given("I am on the Splash Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 7
+ testRunner.And("I click ‘Login’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table71 = new TechTalk.SpecFlow.Table(new string[] {
+                            "email",
+                            "password"});
+                table71.AddRow(new string[] {
+                            "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 8
- testRunner.Given("I am logged in", ((string)(null)), table16, "Given ");
-
+ testRunner.When("I enter the correct credentials", ((string)(null)), table71, "When ");
 #line hidden
 #line 11
- testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("I click ‘LOGIN’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 12
- testRunner.And("I click ‘EDIT’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I click ‘Admin’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table17 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Summary",
-                            "LifeStory",
-                            "CareerMotivation",
-                            "Skills",
-                            "Interests",
-                            "Education",
-                            "Certifications",
-                            "AdditionalAchievements",
-                            "RecentEmployment",
-                            "Volunteering",
-                            "LinkedIn",
-                            "Github"});
-                table17.AddRow(new string[] {
-                            "test",
-                            "test",
-                            "test",
-                            "test",
-                            "test",
-                            "test",
-                            "test",
-                            "test",
-                            "test",
-                            "test",
-                            "test",
-                            "test"});
 #line 13
- testRunner.And("I update my details", ((string)(null)), table17, "And ");
+ testRunner.And("I click ‘Courses’ in the drop-down menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 16
- testRunner.And("I click ‘SAVE’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 14
+ testRunner.And("I click ‘New’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 17
- testRunner.Then("my profile is updated", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+                TechTalk.SpecFlow.Table table72 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Name",
+                            "Trainer",
+                            "Stream",
+                            "Location",
+                            "CourseLength",
+                            "CourseStart"});
+                table72.AddRow(new string[] {
+                            "Eng92",
+                            "John",
+                            "C# SDET",
+                            "London",
+                            "12",
+                            "01012022"});
+#line 15
+ testRunner.And("I enter the desired course details", ((string)(null)), table72, "And ");
+#line hidden
+#line 18
+ testRunner.And("I click ‘CREATE’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 19
+ testRunner.Then("the new course is created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

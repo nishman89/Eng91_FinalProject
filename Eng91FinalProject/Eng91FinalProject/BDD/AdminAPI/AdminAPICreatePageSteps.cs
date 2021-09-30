@@ -36,23 +36,16 @@ namespace Eng91FinalProject.BDD.AdminAPI
             Website.AdminAPICreatePage.InputRequestLimit(limit);
         }
 
+        [When(@"I click ‘Disabled’")]
+        public void WhenIClickDisabled()
+        {
+            Website.AdminAPICreatePage.CheckDisabledBox();
+        }
 
         [When(@"I click ‘SAVE’")]
         public void WhenIClickSAVE()
         {
             Website.AdminAPICreatePage.ClickSaveButton();
-        }
-
-        [When(@"I click ‘DISABLE’")]
-        public void WhenIClickDISABLE(string api)
-        {
-            Website.AdminAPIPage.ClickDisableButton(api);
-        }
-
-        [When(@"I click ‘ENABLE’")]
-        public void WhenIClickENABLE(string api)
-        {
-            Website.AdminAPIPage.ClickEnableButton(api);
         }
 
         [Then(@"a new API Key & API Token is created")]
@@ -67,17 +60,16 @@ namespace Eng91FinalProject.BDD.AdminAPI
             Assert.That(Website.AdminAPICreatePage.GetPageTitle(), Does.Contain("New"));
         }
 
-        [Then(@"the selected API is disabled")]
-        public void ThenTheSelectedAPIIsDisabled(string api)
+        [Then(@"a new disabled API Key & API Token is created on '(.*)'")]
+        public void ThenANewDisabledAPIKeyAPITokenIsCreatedOn(string api)
         {
-            Assert.That(Website.AdminAPIPage.IsDisabled(api), Does.Contain("ENABLE"));
+             Assert.That(Website.AdminAPIPage.IsDisabled(api), Does.Contain("ENABLE"));
         }
 
-        [Then(@"the selected API is enabled")]
-        public void ThenTheSelectedAPIIsEnabled(string api)
+        [Then(@"I should see an alert containing the error message ""(.*)""")]
+        public void ThenIShouldSeeAnAlertContainingTheErrorMessage(string error)
         {
-            Assert.That(Website.AdminAPIPage.IsDisabled(api), Does.Contain("DISABLE"));
+            Assert.That(Website.AdminAPICreatePage.GetErrorMessage(), Does.Contain(error));
         }
-
     }
 }

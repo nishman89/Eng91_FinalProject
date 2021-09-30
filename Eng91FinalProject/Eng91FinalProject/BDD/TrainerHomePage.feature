@@ -19,7 +19,7 @@ Scenario: As Trainer, view individual test results
 
 	Then That trainee's test results are shown
 
-@ProgressTrackerNavigation 
+@ProgressTrackerNavigation @Happy
 Scenario: As Trainer, view Progress Tracker
 	Given I am logged in
 	| email                    | password     |

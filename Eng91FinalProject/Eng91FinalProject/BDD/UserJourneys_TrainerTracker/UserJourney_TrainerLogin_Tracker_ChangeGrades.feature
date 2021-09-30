@@ -1,7 +1,7 @@
 ﻿Feature: UserJourney_TrainerLogin_Tracker_ChangeGrades
 	Simple calculator for adding two numbers
 
-@EditGrade
+@EditGrade @Happy
 Scenario: Trainer - Manage trainee grade
 	Given I am on the Splash Page
     And I click ‘Login’

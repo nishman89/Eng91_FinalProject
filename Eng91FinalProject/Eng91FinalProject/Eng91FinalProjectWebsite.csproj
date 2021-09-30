@@ -140,6 +140,8 @@
     <Compile Include="BDD\UserJourneys_TrainerTracker\UserJourney_TrainerLogin_Tracker_ChangeGradesSteps.cs" />
     <Compile Include="BDD\UserJourneys_TraineeTracker\UserJourney_TraineeLogin_Tracker_UpdateTrackerSteps.cs" />
     <Compile Include="BDD\UserJourneys_TrainerTracker\UserJourney_TrainerLogin_Courses_AddNewCourseSteps.cs" />
+    <Compile Include="BDD\UserJourneys_ViewTraineeProfileAsTrainer\UserJourney_ViewTraineeProfileAsTrainer.feature.cs" />
+    <Compile Include="BDD\UserJourneys_ViewTraineeProfileAsTrainer\UserJourney_ViewTraineeProfileAsTrainerSteps.cs" />
     <Compile Include="lib\driver_config\SeleniumDriverConfig.cs" />
     <Compile Include="lib\pages\AdminAPI\AdminAPICreatePage.cs" />
     <Compile Include="lib\pages\AdminAPI\AdminAPIEditPage.cs" />
@@ -213,7 +215,9 @@
     <None Include="BDD\UserJourneys_TrainerTracker\UserJourney_TrainerLogin_Tracker_ChangeGrades.feature" />
     <None Include="BDD\UserJourneys_TrainerTracker\UserJourney_TrainerLogin_Courses_AddNewCourse.feature" />
     <None Include="BDD\UserJourneys_TrainerTracker\UserJourney_TrainerLogin_Tracker_Comment.feature" />
+    <None Include="BDD\UserJourneys_ViewTraineeProfileAsTrainer\UserJourney_ViewTraineeProfileAsTrainer.feature" />
     <None Include="packages.config" />
+    <None Include="POM Diagram.cd" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

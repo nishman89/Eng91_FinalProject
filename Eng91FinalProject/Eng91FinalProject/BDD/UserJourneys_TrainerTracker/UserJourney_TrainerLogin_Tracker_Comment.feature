@@ -1,7 +1,7 @@
 ﻿Feature: UserJourney_TrainerLogin_Tracker_Comment
 	Simple calculator for adding two numbers
 
-@EditComment
+@EditComment @Happy
 Scenario: Trainer - Manage comment section
 	Given I am on the Splash Page
     And I click ‘Login’

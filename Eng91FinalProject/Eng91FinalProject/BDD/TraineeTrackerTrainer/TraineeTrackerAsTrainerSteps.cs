@@ -7,12 +7,6 @@ namespace Eng91FinalProject.BDD
     [Scope(Feature = "TraineeTrackerAsTrainer")]
     public class TraineeTrackerAsTrainerSteps : SharedLoginSteps
     {
-        [When(@"I press Trainee Tracker")]
-        public void WhenIPressTraineeTracker()
-        {
-            Website.TrainerTrackerPage.TraineeTrackerButton();
-        }
-
         [When(@"I press Tracker")]
         public void WhenIPressTracker()
         {
@@ -57,8 +51,11 @@ namespace Eng91FinalProject.BDD
             Assert.That(tupple.Item2, Is.EqualTo("A+"));
             Assert.That(tupple.Item3, Is.EqualTo("A+"));
         }
-
-
+        [When(@"I press Trainee Tracker")]
+        public void WhenIPressTraineeTracker()
+        {
+            Website.TrainerTrackerPage.TraineeTrackerButton();
+        }
 
     }
 }

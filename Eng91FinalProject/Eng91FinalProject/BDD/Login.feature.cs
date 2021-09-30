@@ -77,10 +77,12 @@ namespace Eng91FinalProject.BDD
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Valid Login - Admin")]
         [NUnit.Framework.CategoryAttribute("Login")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         public virtual void ValidLogin_Admin()
         {
             string[] tagsOfScenario = new string[] {
-                    "Login"};
+                    "Login",
+                    "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Valid Login - Admin", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 6
@@ -131,10 +133,12 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Valid Login - User")]
         [NUnit.Framework.CategoryAttribute("Login")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         public virtual void ValidLogin_User()
         {
             string[] tagsOfScenario = new string[] {
-                    "Login"};
+                    "Login",
+                    "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Valid Login - User", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 16
@@ -185,10 +189,12 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Invalid Login - No username")]
         [NUnit.Framework.CategoryAttribute("login")]
+        [NUnit.Framework.CategoryAttribute("Sad")]
         public virtual void InvalidLogin_NoUsername()
         {
             string[] tagsOfScenario = new string[] {
-                    "login"};
+                    "login",
+                    "Sad"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Invalid Login - No username", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 26
@@ -240,10 +246,12 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Invalid Login - No password")]
         [NUnit.Framework.CategoryAttribute("login")]
+        [NUnit.Framework.CategoryAttribute("Sad")]
         public virtual void InvalidLogin_NoPassword()
         {
             string[] tagsOfScenario = new string[] {
-                    "login"};
+                    "login",
+                    "Sad"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Invalid Login - No password", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 36

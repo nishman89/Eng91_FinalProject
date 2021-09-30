@@ -76,10 +76,12 @@ namespace Eng91FinalProject.BDD.TraineeTrackerTrainer
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Check tracker as Trainer")]
         [NUnit.Framework.CategoryAttribute("Login_As_Trainer")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         public virtual void CheckTrackerAsTrainer()
         {
             string[] tagsOfScenario = new string[] {
-                    "Login_As_Trainer"};
+                    "Login_As_Trainer",
+                    "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check tracker as Trainer", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 5
@@ -124,12 +126,14 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Manage comment")]
         [NUnit.Framework.CategoryAttribute("Trainee_EditTracker")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         [NUnit.Framework.TestCaseAttribute("Tom Howard is better though", null)]
         [NUnit.Framework.TestCaseAttribute("He\'s great", null)]
         public virtual void ManageComment(string comment, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "Trainee_EditTracker"};
+                    "Trainee_EditTracker",
+                    "Happy"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
@@ -189,10 +193,12 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Manage grades")]
         [NUnit.Framework.CategoryAttribute("Trainee_EditTracker")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         public virtual void ManageGrades()
         {
             string[] tagsOfScenario = new string[] {
-                    "Trainee_EditTracker"};
+                    "Trainee_EditTracker",
+                    "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Manage grades", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 28

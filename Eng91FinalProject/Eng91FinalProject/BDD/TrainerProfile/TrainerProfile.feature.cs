@@ -76,10 +76,12 @@ namespace Eng91FinalProject.BDD.TrainerProfile
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Navigate to trainer profile page")]
         [NUnit.Framework.CategoryAttribute("Trainer_page")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         public virtual void NavigateToTrainerProfilePage()
         {
             string[] tagsOfScenario = new string[] {
-                    "Trainer_page"};
+                    "Trainer_page",
+                    "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigate to trainer profile page", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 5
@@ -105,7 +107,7 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table98 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table96.AddRow(new string[] {
+                table98.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 6
@@ -124,10 +126,12 @@ testRunner.Then("I am taken to my Profile Page", ((string)(null)), ((TechTalk.Sp
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Edit and Save changes")]
         [NUnit.Framework.CategoryAttribute("Trainer_page")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         public virtual void EditAndSaveChanges()
         {
             string[] tagsOfScenario = new string[] {
-                    "Trainer_page"};
+                    "Trainer_page",
+                    "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit and Save changes", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 13
@@ -153,11 +157,11 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table99 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table97.AddRow(new string[] {
+                table99.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 14
-testRunner.Given("I am logged in", ((string)(null)), table97, "Given ");
+testRunner.Given("I am logged in", ((string)(null)), table99, "Given ");
 #line hidden
 #line 17
 testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -191,10 +195,12 @@ testRunner.Then("my profile is updated", ((string)(null)), ((TechTalk.SpecFlow.T
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("change stream to C# dev")]
         [NUnit.Framework.CategoryAttribute("Trainer_page")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         public virtual void ChangeStreamToCDev()
         {
             string[] tagsOfScenario = new string[] {
-                    "Trainer_page"};
+                    "Trainer_page",
+                    "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("change stream to C# dev", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 26
@@ -220,7 +226,7 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table101 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table99.AddRow(new string[] {
+                table101.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 27
@@ -248,10 +254,12 @@ testRunner.Then("my profile details for course stream should show \'C# Developer
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("change stream to C# SDET")]
         [NUnit.Framework.CategoryAttribute("Trainer_page")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         public virtual void ChangeStreamToCSDET()
         {
             string[] tagsOfScenario = new string[] {
-                    "Trainer_page"};
+                    "Trainer_page",
+                    "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("change stream to C# SDET", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 37
@@ -277,11 +285,11 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table102 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table100.AddRow(new string[] {
+                table102.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 38
-testRunner.Given("I am logged in", ((string)(null)), table100, "Given ");
+testRunner.Given("I am logged in", ((string)(null)), table102, "Given ");
 #line hidden
 #line 41
 testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -305,10 +313,12 @@ testRunner.Then("my profile details for course stream should show \'C# SDET\'", 
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("change stream to Java Developer")]
         [NUnit.Framework.CategoryAttribute("Trainer_page")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         public virtual void ChangeStreamToJavaDeveloper()
         {
             string[] tagsOfScenario = new string[] {
-                    "Trainer_page"};
+                    "Trainer_page",
+                    "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("change stream to Java Developer", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 48
@@ -334,11 +344,11 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table103 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table101.AddRow(new string[] {
+                table103.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 49
-testRunner.Given("I am logged in", ((string)(null)), table101, "Given ");
+testRunner.Given("I am logged in", ((string)(null)), table103, "Given ");
 #line hidden
 #line 52
 testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -362,10 +372,12 @@ testRunner.Then("my profile details for course stream should show \'Java Develop
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("change stream to DevOps")]
         [NUnit.Framework.CategoryAttribute("Trainer_page")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         public virtual void ChangeStreamToDevOps()
         {
             string[] tagsOfScenario = new string[] {
-                    "Trainer_page"};
+                    "Trainer_page",
+                    "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("change stream to DevOps", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 59
@@ -391,11 +403,11 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table104 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table102.AddRow(new string[] {
+                table104.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 60
-testRunner.Given("I am logged in", ((string)(null)), table102, "Given ");
+testRunner.Given("I am logged in", ((string)(null)), table104, "Given ");
 #line hidden
 #line 63
 testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -419,10 +431,12 @@ testRunner.Then("my profile details for course stream should show \'DevOps\'", (
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("change stream to Business Analyst")]
         [NUnit.Framework.CategoryAttribute("Trainer_page")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         public virtual void ChangeStreamToBusinessAnalyst()
         {
             string[] tagsOfScenario = new string[] {
-                    "Trainer_page"};
+                    "Trainer_page",
+                    "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("change stream to Business Analyst", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 70
@@ -448,7 +462,7 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table105 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table103.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 71

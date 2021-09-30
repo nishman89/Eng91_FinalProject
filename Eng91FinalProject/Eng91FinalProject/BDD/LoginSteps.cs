@@ -12,9 +12,6 @@ namespace Eng91FinalProject
     [Scope(Feature = "Login")]
     public class LoginSteps : SharedLoginSteps
     {
-
-
-
         [Then(@"I should see an alert containing the error message ""(.*)""")]
         public void ThenIShouldSeeAnAlertContainingTheErrorMessage(string message)
         {

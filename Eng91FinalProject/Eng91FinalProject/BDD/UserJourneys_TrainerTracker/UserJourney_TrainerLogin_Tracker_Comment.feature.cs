@@ -76,12 +76,14 @@ namespace Eng91FinalProject.BDD.UserJourneys_TrainerTracker
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Trainer - Manage comment section")]
         [NUnit.Framework.CategoryAttribute("EditComment")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         [NUnit.Framework.TestCaseAttribute("Tom Howard is better though", null)]
         [NUnit.Framework.TestCaseAttribute("He\'s great", null)]
         public virtual void Trainer_ManageCommentSection(string comment, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "EditComment"};
+                    "EditComment",
+                    "Happy"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
@@ -116,14 +118,14 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
     testRunner.And("I click ‘Login’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table108 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table110 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table108.AddRow(new string[] {
+                table110.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 8
-    testRunner.When("I enter the following credentials", ((string)(null)), table108, "When ");
+    testRunner.When("I enter the following credentials", ((string)(null)), table110, "When ");
 #line hidden
 #line 11
     testRunner.And("I click ‘LOGIN’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

@@ -75,11 +75,13 @@ namespace Eng91FinalProject.BDD.UserJourneys_TrainerTracker
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Adding a course")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
+        [NUnit.Framework.CategoryAttribute("Courses")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         public virtual void AddingACourse()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
+                    "Courses",
+                    "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adding a course", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 5
@@ -108,14 +110,14 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
  testRunner.And("I click ‘Login’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table105 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table107 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table105.AddRow(new string[] {
+                table107.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 8
- testRunner.When("I enter the correct credentials", ((string)(null)), table105, "When ");
+ testRunner.When("I enter the correct credentials", ((string)(null)), table107, "When ");
 #line hidden
 #line 11
  testRunner.And("I click ‘LOGIN’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -126,14 +128,14 @@ this.ScenarioInitialize(scenarioInfo);
 #line 13
  testRunner.And("I click ‘New’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table106 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table108 = new TechTalk.SpecFlow.Table(new string[] {
                             "Name",
                             "Trainer",
                             "Stream",
                             "Location",
                             "CourseLength",
                             "CourseStart"});
-                table106.AddRow(new string[] {
+                table108.AddRow(new string[] {
                             "Eng92",
                             "John",
                             "C# SDET",
@@ -141,7 +143,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "1",
                             "01012022"});
 #line 14
- testRunner.And("I enter the desired course details", ((string)(null)), table106, "And ");
+ testRunner.And("I enter the desired course details", ((string)(null)), table108, "And ");
 #line hidden
 #line 17
  testRunner.And("I click ‘CREATE’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

@@ -1,7 +1,7 @@
 ﻿Feature: UserJourney_ViewTraineeProfileAsTrainer
 	View trainee profile as trainer
 
-@Trainer_profiles_page
+@Trainer_profiles_page @Happy
 Scenario: View student profile 1
 Given I am logged in
 | Email                   | Password     |

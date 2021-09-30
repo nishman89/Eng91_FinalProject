@@ -76,10 +76,12 @@ namespace Eng91FinalProject.BDD.TraineeTrackerTrainee
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Check tracker as Trainee")]
         [NUnit.Framework.CategoryAttribute("Login_As_Trainee")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         public virtual void CheckTrackerAsTrainee()
         {
             string[] tagsOfScenario = new string[] {
-                    "Login_As_Trainee"};
+                    "Login_As_Trainee",
+                    "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check tracker as Trainee", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 5
@@ -124,10 +126,12 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("See tracker")]
         [NUnit.Framework.CategoryAttribute("Trainee_EditTracker")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         public virtual void SeeTracker()
         {
             string[] tagsOfScenario = new string[] {
-                    "Trainee_EditTracker"};
+                    "Trainee_EditTracker",
+                    "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("See tracker", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 14
@@ -175,12 +179,14 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Edit tracker - Stop")]
         [NUnit.Framework.CategoryAttribute("Trainee_EditTracker")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         [NUnit.Framework.TestCaseAttribute("Being distracted", null)]
         [NUnit.Framework.TestCaseAttribute("Being late", null)]
         public virtual void EditTracker_Stop(string feedback, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "Trainee_EditTracker"};
+                    "Trainee_EditTracker",
+                    "Happy"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
@@ -240,12 +246,14 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Edit tracker - Start")]
         [NUnit.Framework.CategoryAttribute("Trainee_EditTracker")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         [NUnit.Framework.TestCaseAttribute("Asking more questions", null)]
         [NUnit.Framework.TestCaseAttribute("Studying more", null)]
         public virtual void EditTracker_Start(string feedback, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "Trainee_EditTracker"};
+                    "Trainee_EditTracker",
+                    "Happy"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
@@ -305,12 +313,14 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Edit tracker - Continue")]
         [NUnit.Framework.CategoryAttribute("Trainee_EditTracker")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         [NUnit.Framework.TestCaseAttribute("Asking questions", null)]
         [NUnit.Framework.TestCaseAttribute("Studying", null)]
         public virtual void EditTracker_Continue(string feedback, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "Trainee_EditTracker"};
+                    "Trainee_EditTracker",
+                    "Happy"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));

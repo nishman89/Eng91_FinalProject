@@ -6,6 +6,9 @@ using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
 using NUnit.Framework;
 
+[assembly: Parallelizable(ParallelScope.Fixtures)]
+[assembly: LevelOfParallelism(8)]
+
 namespace Eng91FinalProject
 {
     public class SharedLoginSteps

@@ -102,6 +102,7 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
+
                 TechTalk.SpecFlow.Table table62 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
@@ -150,6 +151,7 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
+
                 TechTalk.SpecFlow.Table table63 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
@@ -158,7 +160,6 @@ this.ScenarioInitialize(scenarioInfo);
                             "Password123!"});
 #line 14
 testRunner.Given("I am logged in", ((string)(null)), table63, "Given ");
-
 #line hidden
 #line 17
 testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -171,6 +172,7 @@ testRunner.And("I click EDIT", ((string)(null)), ((TechTalk.SpecFlow.Table)(null
                             "LastName",
                             "Email",
                             "Location"});
+
                 table64.AddRow(new string[] {
                             "Test",
                             "Name",
@@ -218,6 +220,7 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
+
                 TechTalk.SpecFlow.Table table65 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
@@ -341,7 +344,6 @@ this.ScenarioInitialize(scenarioInfo);
                             "Password123!"});
 #line 49
 testRunner.Given("I am logged in", ((string)(null)), table67, "Given ");
-
 #line hidden
 #line 52
 testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -391,6 +393,7 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
+
                 TechTalk.SpecFlow.Table table68 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
@@ -449,6 +452,7 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
+
                 TechTalk.SpecFlow.Table table69 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});

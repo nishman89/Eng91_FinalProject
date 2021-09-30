@@ -21,6 +21,6 @@ namespace Eng91FinalProject.lib.pages
         public void DeleteCourse(string course) => _seleniumDriver.FindElement(By.CssSelector($"#{course} .btn-danger")).Click();
         public void ClickSearch() => _searchButton.Click();
         public void Search(string course) => _searchBar.SendKeys(course);
-        public string SearchResult(string course) => _seleniumDriver.FindElement(By.CssSelector($"[data-target=\"#Eng91_Collapse\"]")).Text;
+        public string SearchResult(string course) => _seleniumDriver.FindElement(By.CssSelector($"[data-target=\"#{course}_Collapse\"]")).Text;
     }
 }

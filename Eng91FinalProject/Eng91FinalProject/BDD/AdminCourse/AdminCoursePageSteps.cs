@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using Eng91FinalProject.BDD.AdminCourse;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using System;
 using TechTalk.SpecFlow;
@@ -7,7 +8,7 @@ namespace Eng91FinalProject.BDD
 {
     [Binding]
     [Scope(Tag = "AdminCourse")]
-    public class AdminCoursePageSteps : SharedLoginSteps
+    public class AdminCoursePageSteps : AdminCourseSharedSteps
     {
 
         [Given(@"I click Courses")]
@@ -28,13 +29,6 @@ namespace Eng91FinalProject.BDD
         public void WhenIClickSearch()
         {
             Website.AdminCoursesPage.ClickSearch();
-        }
-
-        [Then(@"the result should show '(.*)'")]
-        public void ThenTheResultShouldShow(string course)
-        {
-            string formatCourse = Website.AdminCoursesPage.FormatSearch(course);
-            Assert.That(Website.AdminCoursesPage.SearchResult(formatCourse), Is.EqualTo(course));
         }
 
         [Then(@"'(.*)' does not appear")]

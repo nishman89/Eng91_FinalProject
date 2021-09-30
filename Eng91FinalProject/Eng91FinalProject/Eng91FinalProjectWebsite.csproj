@@ -122,6 +122,7 @@
     <Compile Include="BDD\AdminUsers\AdminUsersEditSteps.cs" />
     <Compile Include="BDD\AdminUsers\AdminUsersPageSteps.cs" />
     <Compile Include="BDD\LoginSteps.cs" />
+    <Compile Include="BDD\Profiles\ProfilesSteps.cs" />
     <Compile Include="BDD\SharedNavbarSteps.cs" />
     <Compile Include="BDD\TraineeProfile\TraineeProfileEditPageSteps.cs" />
     <Compile Include="BDD\TraineeProfile\TraineeProfileSteps.cs" />
@@ -145,6 +146,7 @@
     <Compile Include="lib\pages\BulkImport\BulkImportProfilesPage.cs" />
     <Compile Include="lib\pages\BulkImport\BulkImportUsersPage.cs" />
     <Compile Include="lib\pages\LoginPage.cs" />
+    <Compile Include="lib\pages\Profiles\ProfilesPage.cs" />
     <Compile Include="lib\pages\ProgressPage.cs" />
 	<Compile Include="lib\pages\CourseAttendancePage.cs" />
     <Compile Include="lib\pages\TraineeProfile\TraineeProfileEditPage.cs" />
@@ -152,7 +154,6 @@
     <Compile Include="lib\pages\Navbar\SharedNavbar.cs" />
     <Compile Include="lib\pages\Navbar\TraineeNavbar.cs" />
     <Compile Include="lib\pages\Navbar\TrainerNavbar.cs" />
-    <Compile Include="lib\pages\ProfilesPage.cs" />
     <Compile Include="lib\pages\SplashPage.cs" />
     <Compile Include="lib\pages\HomePage.cs" />
     <Compile Include="lib\pages\AdminStream\AdminStreamCreatePage.cs" />
@@ -191,6 +192,7 @@
     <None Include="BDD\AdminUsers\AdminUsersEdit.feature" />
     <None Include="BDD\AdminUsers\AdminUsersPage.feature" />
     <None Include="BDD\Login.feature" />
+    <None Include="BDD\Profiles\Profiles.feature" />
     <None Include="BDD\TraineeProfile\TraineeProfile.feature" />
     <None Include="BDD\TraineeProfile\TraineeProfileEdit.feature" />
     <None Include="BDD\TraineeTrackerAsTrainee.feature" />

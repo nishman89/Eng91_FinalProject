@@ -9,6 +9,7 @@ using Eng91FinalProject.lib.pages.TraineeTracker;
 using Eng91FinalProject.lib.pages.TrainerProfile;
 using Eng91FinalProject.lib.pages.TraineeProfile;
 using Eng91FinalProject.lib.pages.Navbar;
+using Eng91FinalProject.lib.pages.Profiles;
 
 namespace Eng91FinalProject.lib.pages
 {
@@ -47,6 +48,7 @@ namespace Eng91FinalProject.lib.pages
         public TrainerNavbar TrainerNavbar { get; set; }
         public TraineeNavbar TraineeNavbar { get;set; }
         public ProgressPage ProgressPage { get; set; }
+        
 
         public Website(int pageLoadInSecs = 10, int implicitWaitInSecs = 10)
         {

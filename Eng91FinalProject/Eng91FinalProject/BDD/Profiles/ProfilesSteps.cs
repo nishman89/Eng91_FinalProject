@@ -20,8 +20,7 @@ namespace Eng91FinalProject.BDD.Profiles
         public void WhenIClickOnATraineeProfile()
         {
             Website.ProfilesPage.SelectProfile(1);
-            Website.ProfilesPage.ClickSelectedProfile();
-          
+            Website.ProfilesPage.ClickSelectedProfile();          
         }
 
         [Then(@"I can view that trainee's profile")]

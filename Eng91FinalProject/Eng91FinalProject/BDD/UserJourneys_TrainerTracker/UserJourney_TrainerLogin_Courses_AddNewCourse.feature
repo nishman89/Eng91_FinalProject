@@ -1,7 +1,7 @@
 ﻿Feature: UserJourney_TrainerLogin_Courses_AddNewCourse
 	A user journey for adding a course
 
-@mytag
+@Courses @Happy
 Scenario: Adding a course
 	Given I am on the Splash Page
 	And I click ‘Login’

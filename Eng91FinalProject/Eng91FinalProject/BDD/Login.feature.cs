@@ -77,10 +77,12 @@ namespace Eng91FinalProject.BDD
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Valid Login - Admin")]
         [NUnit.Framework.CategoryAttribute("Login")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         public virtual void ValidLogin_Admin()
         {
             string[] tagsOfScenario = new string[] {
-                    "Login"};
+                    "Login",
+                    "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Valid Login - Admin", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 6
@@ -109,14 +111,14 @@ this.ScenarioInitialize(scenarioInfo);
 #line 8
     testRunner.And("I click ‘Login’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table62 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table64 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table62.AddRow(new string[] {
+                table64.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 9
-    testRunner.When("I enter the following credentials", ((string)(null)), table62, "When ");
+    testRunner.When("I enter the following credentials", ((string)(null)), table64, "When ");
 #line hidden
 #line 12
     testRunner.And("I click ‘LOGIN’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -131,10 +133,12 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Valid Login - User")]
         [NUnit.Framework.CategoryAttribute("Login")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         public virtual void ValidLogin_User()
         {
             string[] tagsOfScenario = new string[] {
-                    "Login"};
+                    "Login",
+                    "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Valid Login - User", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 16
@@ -163,14 +167,14 @@ this.ScenarioInitialize(scenarioInfo);
 #line 18
     testRunner.And("I click ‘Login’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table63 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table65 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table63.AddRow(new string[] {
+                table65.AddRow(new string[] {
                             "ajolie@spartaglobal.com",
                             "Password123!"});
 #line 19
-    testRunner.When("I enter the following credentials", ((string)(null)), table63, "When ");
+    testRunner.When("I enter the following credentials", ((string)(null)), table65, "When ");
 #line hidden
 #line 22
     testRunner.And("I click ‘LOGIN’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -185,10 +189,12 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Invalid Login - No username")]
         [NUnit.Framework.CategoryAttribute("login")]
+        [NUnit.Framework.CategoryAttribute("Sad")]
         public virtual void InvalidLogin_NoUsername()
         {
             string[] tagsOfScenario = new string[] {
-                    "login"};
+                    "login",
+                    "Sad"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Invalid Login - No username", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 26
@@ -217,14 +223,14 @@ this.ScenarioInitialize(scenarioInfo);
 #line 28
     testRunner.And("I click ‘Login’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table64 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table66 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table64.AddRow(new string[] {
+                table66.AddRow(new string[] {
                             "",
                             "Password123!"});
 #line 29
-    testRunner.When("I enter the following credentials", ((string)(null)), table64, "When ");
+    testRunner.When("I enter the following credentials", ((string)(null)), table66, "When ");
 #line hidden
 #line 32
     testRunner.And("I click ‘LOGIN’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -240,10 +246,12 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Invalid Login - No password")]
         [NUnit.Framework.CategoryAttribute("login")]
+        [NUnit.Framework.CategoryAttribute("Sad")]
         public virtual void InvalidLogin_NoPassword()
         {
             string[] tagsOfScenario = new string[] {
-                    "login"};
+                    "login",
+                    "Sad"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Invalid Login - No password", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 36
@@ -272,14 +280,14 @@ this.ScenarioInitialize(scenarioInfo);
 #line 38
     testRunner.And("I click ‘Login’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table65 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table67 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table65.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "ajolie@spartaglobal.com",
                             ""});
 #line 39
-    testRunner.When("I enter the following credentials", ((string)(null)), table65, "When ");
+    testRunner.When("I enter the following credentials", ((string)(null)), table67, "When ");
 #line hidden
 #line 42
     testRunner.And("I click ‘LOGIN’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

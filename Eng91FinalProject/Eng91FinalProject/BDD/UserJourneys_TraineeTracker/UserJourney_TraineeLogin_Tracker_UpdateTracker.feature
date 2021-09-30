@@ -1,7 +1,7 @@
 ﻿Feature: UserJourney_TraineeLogin_Tracker_UpdateTracker
 	Simple calculator for adding two numbers
 
-@UserJourney_TraineeTracker
+@UserJourney_TraineeTracker @Happy
 Scenario: Manage the tracker
 	Given I am on the Splash Page
     And I click ‘Login’

@@ -1,7 +1,7 @@
 ﻿Feature:TrainerHomePage
 	Simple tests conducted within the Trainer Home Page
 
-@HappyTrainerTestResults
+@TrainerTestResults @Happy
 Scenario: As Trainer, view all test results
 	Given I am logged in
 	| email                    | password     |
@@ -10,7 +10,7 @@ Scenario: As Trainer, view all test results
 
 	Then all test results are shown
 
-@HappyTrainerTestResults 
+@TrainerTestResults @Happy
 Scenario: As Trainer, view individual test results
 	Given I am logged in
 	| email                    | password     |
@@ -19,7 +19,7 @@ Scenario: As Trainer, view individual test results
 
 	Then That trainee's test results are shown
 
-@HappyProgressTrackerNavigation 
+@ProgressTrackerNavigation 
 Scenario: As Trainer, view Progress Tracker
 	Given I am logged in
 	| email                    | password     |
@@ -28,7 +28,7 @@ Scenario: As Trainer, view Progress Tracker
 
 	Then I am taken to the Progress Tracker page
 
-@HappyAttendanceNavigation
+@AttendanceNavigation @Happy
 Scenario: As Trainer, view Attendance Page
 	Given I am logged in
 	| email                    | password     |
@@ -36,7 +36,7 @@ Scenario: As Trainer, view Attendance Page
 	When I Click Course Attendance
 	Then I am taken to the Course Attendance page
 
-@HappyCourseAttendanceTests
+@CourseAttendanceTests @Happy
 Scenario: Check Correct Stream
 	Given I am logged in
 	| email                    | password     |
@@ -44,7 +44,7 @@ Scenario: Check Correct Stream
 	When I Click Course Attendance
 	Then Correct stream is shown
 
-@HappyCourseAttendanceTests
+@CourseAttendanceTests @Happy
 Scenario: Check Students
 	Given I am logged in
 	| email                    | password     |

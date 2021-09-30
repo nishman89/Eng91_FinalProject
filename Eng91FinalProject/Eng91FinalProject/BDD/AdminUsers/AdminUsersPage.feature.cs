@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Eng91FinalProject.BDD.AdminCourse
+namespace Eng91FinalProject.BDD.AdminUsers
 {
     using TechTalk.SpecFlow;
     using System;
@@ -20,23 +20,23 @@ namespace Eng91FinalProject.BDD.AdminCourse
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("AdminCourseDeletePage")]
-    public partial class AdminCourseDeletePageFeature
+    [NUnit.Framework.DescriptionAttribute("AdminUsersPage")]
+    public partial class AdminUsersPageFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "AdminCourseDeletePage.feature"
+#line 1 "AdminUsersPage.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BDD/AdminCourse", "AdminCourseDeletePage", "\tAs an admin\r\n\tI want to delete a course\r\n\tSo that I can remove a course from the" +
-                    " delete", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BDD/AdminUsers", "AdminUsersPage", "\tAs an admin\r\n\tI want to visit the Users page\r\n\tSo that I can view trainers and t" +
+                    "rainees", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -75,16 +75,16 @@ namespace Eng91FinalProject.BDD.AdminCourse
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Admin wants to delete a course")]
+        [NUnit.Framework.DescriptionAttribute("Admin wants to view the admin")]
         [NUnit.Framework.CategoryAttribute("Happy")]
-        [NUnit.Framework.CategoryAttribute("AdminCourseDelete")]
-        public virtual void AdminWantsToDeleteACourse()
+        [NUnit.Framework.CategoryAttribute("AdminUsers")]
+        public virtual void AdminWantsToViewTheAdmin()
         {
             string[] tagsOfScenario = new string[] {
                     "Happy",
-                    "AdminCourseDelete"};
+                    "AdminUsers"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Admin wants to delete a course", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Admin wants to view the admin", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -105,40 +105,43 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table28 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table5.AddRow(new string[] {
+                table28.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 8
- testRunner.Given("I am logged in", ((string)(null)), table5, "Given ");
+ testRunner.Given("I am logged in", ((string)(null)), table28, "Given ");
 #line hidden
 #line 11
- testRunner.And("I click Courses", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I click Admin", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 12
- testRunner.When("I click Delete on \'Engineering 81\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("I click Users", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 13
- testRunner.Then("I should be taken to the delete course page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.When("I enter \'JSmith\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 14
+ testRunner.Then("the result should show \'JSmith\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Admin wants to delete a different course")]
+        [NUnit.Framework.DescriptionAttribute("Admin wants to view the trainee")]
         [NUnit.Framework.CategoryAttribute("Happy")]
-        [NUnit.Framework.CategoryAttribute("AdminCourseDelete")]
-        public virtual void AdminWantsToDeleteADifferentCourse()
+        [NUnit.Framework.CategoryAttribute("AdminUsers")]
+        public virtual void AdminWantsToViewTheTrainee()
         {
             string[] tagsOfScenario = new string[] {
                     "Happy",
-                    "AdminCourseDelete"};
+                    "AdminUsers"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Admin wants to delete a different course", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 16
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Admin wants to view the trainee", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 17
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -158,79 +161,26 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table29 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table6.AddRow(new string[] {
+                table29.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
-#line 17
- testRunner.Given("I am logged in", ((string)(null)), table6, "Given ");
-#line hidden
-#line 20
- testRunner.And("I click Courses", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 18
+ testRunner.Given("I am logged in", ((string)(null)), table29, "Given ");
 #line hidden
 #line 21
- testRunner.When("I click Delete on \'Engineering 79\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("I click Admin", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 22
- testRunner.Then("I should be taken to the delete course page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("I click Users", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Admin wants to delete a course but return to the main course page")]
-        [NUnit.Framework.CategoryAttribute("Happy")]
-        [NUnit.Framework.CategoryAttribute("AdminCourseDelete")]
-        public virtual void AdminWantsToDeleteACourseButReturnToTheMainCoursePage()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "Happy",
-                    "AdminCourseDelete"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Admin wants to delete a course but return to the main course page", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 25
-this.ScenarioInitialize(scenarioInfo);
+#line 23
+ testRunner.When("I enter \'AJole\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-                TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
-                            "email",
-                            "password"});
-                table7.AddRow(new string[] {
-                            "jsmith@spartaglobal.com",
-                            "Password123!"});
-#line 26
- testRunner.Given("I am logged in", ((string)(null)), table7, "Given ");
-#line hidden
-#line 29
- testRunner.And("I click Courses", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 30
- testRunner.When("I click Delete on \'Engineering 79\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 31
- testRunner.And("I click Back to List", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 32
- testRunner.Then("I should be taken to the courses page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 24
+ testRunner.Then("the result should show \'AJole\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

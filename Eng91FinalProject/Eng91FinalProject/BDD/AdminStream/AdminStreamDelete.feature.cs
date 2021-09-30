@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Eng91FinalProject.BDD.AdminCourse
+namespace Eng91FinalProject.BDD.AdminStream
 {
     using TechTalk.SpecFlow;
     using System;
@@ -20,23 +20,23 @@ namespace Eng91FinalProject.BDD.AdminCourse
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("AdminCourseDeletePage")]
-    public partial class AdminCourseDeletePageFeature
+    [NUnit.Framework.DescriptionAttribute("AdminStreamDelete")]
+    public partial class AdminStreamDeleteFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "AdminCourseDeletePage.feature"
+#line 1 "AdminStreamDelete.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BDD/AdminCourse", "AdminCourseDeletePage", "\tAs an admin\r\n\tI want to delete a course\r\n\tSo that I can remove a course from the" +
-                    " delete", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BDD/AdminStream", "AdminStreamDelete", "\tAs an admin\r\n\tI want to delete a stream\r\n\tSo that I can edit the details of a st" +
+                    "ream", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -75,16 +75,16 @@ namespace Eng91FinalProject.BDD.AdminCourse
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Admin wants to delete a course")]
+        [NUnit.Framework.DescriptionAttribute("Admin wants to delete a C# Developer stream")]
         [NUnit.Framework.CategoryAttribute("Happy")]
-        [NUnit.Framework.CategoryAttribute("AdminCourseDelete")]
-        public virtual void AdminWantsToDeleteACourse()
+        [NUnit.Framework.CategoryAttribute("AdminStreamDelete")]
+        public virtual void AdminWantsToDeleteACDeveloperStream()
         {
             string[] tagsOfScenario = new string[] {
                     "Happy",
-                    "AdminCourseDelete"};
+                    "AdminStreamDelete"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Admin wants to delete a course", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Admin wants to delete a C# Developer stream", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -105,40 +105,43 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table14 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table5.AddRow(new string[] {
+                table14.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 8
- testRunner.Given("I am logged in", ((string)(null)), table5, "Given ");
+ testRunner.Given("I am logged in", ((string)(null)), table14, "Given ");
 #line hidden
 #line 11
- testRunner.And("I click Courses", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I click Admin", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 12
- testRunner.When("I click Delete on \'Engineering 81\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("I click Streams", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 13
- testRunner.Then("I should be taken to the delete course page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.When("I click Delete on \'C# Developer\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 14
+ testRunner.Then("I should be taken to the Delete page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Admin wants to delete a different course")]
+        [NUnit.Framework.DescriptionAttribute("Admin wants to edit a DevOps stream")]
         [NUnit.Framework.CategoryAttribute("Happy")]
-        [NUnit.Framework.CategoryAttribute("AdminCourseDelete")]
-        public virtual void AdminWantsToDeleteADifferentCourse()
+        [NUnit.Framework.CategoryAttribute("AdminStreamDelete")]
+        public virtual void AdminWantsToEditADevOpsStream()
         {
             string[] tagsOfScenario = new string[] {
                     "Happy",
-                    "AdminCourseDelete"};
+                    "AdminStreamDelete"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Admin wants to delete a different course", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 16
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Admin wants to edit a DevOps stream", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 17
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -158,40 +161,43 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table13 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table6.AddRow(new string[] {
+                table13.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
-#line 17
- testRunner.Given("I am logged in", ((string)(null)), table6, "Given ");
-#line hidden
-#line 20
- testRunner.And("I click Courses", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 18
+ testRunner.Given("I am logged in", ((string)(null)), table13, "Given ");
 #line hidden
 #line 21
- testRunner.When("I click Delete on \'Engineering 79\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("I click Admin", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 22
- testRunner.Then("I should be taken to the delete course page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("I click Streams", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 23
+ testRunner.When("I click Delete on \'DevOps\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 24
+ testRunner.Then("I should be taken to the Delete page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Admin wants to delete a course but return to the main course page")]
+        [NUnit.Framework.DescriptionAttribute("Admin wants to edit a Business Analyst stream")]
         [NUnit.Framework.CategoryAttribute("Happy")]
-        [NUnit.Framework.CategoryAttribute("AdminCourseDelete")]
-        public virtual void AdminWantsToDeleteACourseButReturnToTheMainCoursePage()
+        [NUnit.Framework.CategoryAttribute("AdminStreamDelete")]
+        public virtual void AdminWantsToEditABusinessAnalystStream()
         {
             string[] tagsOfScenario = new string[] {
                     "Happy",
-                    "AdminCourseDelete"};
+                    "AdminStreamDelete"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Admin wants to delete a course but return to the main course page", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 25
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Admin wants to edit a Business Analyst stream", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 27
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -211,26 +217,82 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table14 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table7.AddRow(new string[] {
+                table14.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
-#line 26
- testRunner.Given("I am logged in", ((string)(null)), table7, "Given ");
-#line hidden
-#line 29
- testRunner.And("I click Courses", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 30
- testRunner.When("I click Delete on \'Engineering 79\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 28
+ testRunner.Given("I am logged in", ((string)(null)), table14, "Given ");
 #line hidden
 #line 31
- testRunner.And("I click Back to List", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I click Admin", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 32
- testRunner.Then("I should be taken to the courses page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("I click Streams", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 33
+ testRunner.When("I click Delete on \'Business Analyst\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 34
+ testRunner.Then("I should be taken to the Delete page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Admin wants to edit a Java Developer stream")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
+        [NUnit.Framework.CategoryAttribute("AdminStreamDelete")]
+        public virtual void AdminWantsToEditAJavaDeveloperStream()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Happy",
+                    "AdminStreamDelete"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Admin wants to edit a Java Developer stream", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 37
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table15 = new TechTalk.SpecFlow.Table(new string[] {
+                            "email",
+                            "password"});
+                table15.AddRow(new string[] {
+                            "jsmith@spartaglobal.com",
+                            "Password123!"});
+#line 38
+ testRunner.Given("I am logged in", ((string)(null)), table15, "Given ");
+#line hidden
+#line 41
+ testRunner.And("I click Admin", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 42
+ testRunner.And("I click Streams", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 43
+ testRunner.When("I click Delete on \'Java Developer\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 44
+ testRunner.Then("I should be taken to the Delete page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

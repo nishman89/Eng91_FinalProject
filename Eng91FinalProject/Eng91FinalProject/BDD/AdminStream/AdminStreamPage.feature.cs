@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Eng91FinalProject.BDD
+namespace Eng91FinalProject.BDD.AdminStream
 {
     using TechTalk.SpecFlow;
     using System;
@@ -20,22 +20,23 @@ namespace Eng91FinalProject.BDD
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("TraineeTrackerAsTrainee")]
-    public partial class TraineeTrackerAsTraineeFeature
+    [NUnit.Framework.DescriptionAttribute("AdminStreamPage")]
+    public partial class AdminStreamPageFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "TraineeTrackerAsTrainee.feature"
+#line 1 "AdminStreamPage.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BDD", "TraineeTrackerAsTrainee", "\tAutomation Task - View trainee tracker as trainee", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BDD/AdminStream", "AdminStreamPage", "\tAs an admin\r\n\tI want to visit the streams page\r\n\tSo that I can amend any streams" +
+                    ", add or search", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -74,15 +75,17 @@ namespace Eng91FinalProject.BDD
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Check tracker as Trainee")]
-        [NUnit.Framework.CategoryAttribute("Login_As_Trainee")]
-        public virtual void CheckTrackerAsTrainee()
+        [NUnit.Framework.DescriptionAttribute("Admin wants to view C# Developer stream")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
+        [NUnit.Framework.CategoryAttribute("AdminStream")]
+        public virtual void AdminWantsToViewCDeveloperStream()
         {
             string[] tagsOfScenario = new string[] {
-                    "Login_As_Trainee"};
+                    "Happy",
+                    "AdminStream"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check tracker as Trainee", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 5
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Admin wants to view C# Developer stream", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -102,167 +105,105 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-
-                TechTalk.SpecFlow.Table table48 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table20 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table48.AddRow(new string[] {
-                            "pbridgers@spartaglobal.com",
+                table20.AddRow(new string[] {
+                            "jsmith@spartaglobal.com",
                             "Password123!"});
-#line 6
- testRunner.Given("I am logged in", ((string)(null)), table48, "Given ");
-
+#line 8
+ testRunner.Given("I am logged in", ((string)(null)), table20, "Given ");
 #line hidden
-#line 9
- testRunner.When("I press Tracker", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 11
+ testRunner.And("I click Admin", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 10
- testRunner.Then("I should see my trackers", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 12
+ testRunner.And("I click Streams", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("See tracker")]
-        [NUnit.Framework.CategoryAttribute("Trainee_EditTracker")]
-        public virtual void SeeTracker()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "Trainee_EditTracker"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("See tracker", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 13
+ testRunner.When("I type in \'C# Developer\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
 #line 14
-this.ScenarioInitialize(scenarioInfo);
+ testRunner.And("I click Search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-
-
-                TechTalk.SpecFlow.Table table49 = new TechTalk.SpecFlow.Table(new string[] {
-                            "email",
-                            "password"});
-                table49.AddRow(new string[] {
-                            "pbridgers@spartaglobal.com",
-                            "Password123!"});
 #line 15
- testRunner.Given("I am logged in", ((string)(null)), table49, "Given ");
-
-
+ testRunner.Then("\'C# Developer\' should be returned", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Admin wants to view C# SDET stream")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
+        [NUnit.Framework.CategoryAttribute("AdminStream")]
+        public virtual void AdminWantsToViewCSDETStream()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Happy",
+                    "AdminStream"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Admin wants to view C# SDET stream", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 18
- testRunner.When("I press Tracker", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+this.ScenarioInitialize(scenarioInfo);
 #line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table21 = new TechTalk.SpecFlow.Table(new string[] {
+                            "email",
+                            "password"});
+                table21.AddRow(new string[] {
+                            "jsmith@spartaglobal.com",
+                            "Password123!"});
 #line 19
- testRunner.And("I press Edit", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I am logged in", ((string)(null)), table21, "Given ");
 #line hidden
-#line 20
- testRunner.Then("The window to edit the tracker appears", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 22
+ testRunner.And("I click Admin", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit tracker - Stop")]
-        [NUnit.Framework.CategoryAttribute("Trainee_EditTracker")]
-        [NUnit.Framework.TestCaseAttribute("Being distracted", null)]
-        [NUnit.Framework.TestCaseAttribute("Being late", null)]
-        public virtual void EditTracker_Stop(string feedback, string[] exampleTags)
-        {
-            string[] @__tags = new string[] {
-                    "Trainee_EditTracker"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            string[] tagsOfScenario = @__tags;
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            argumentsOfScenario.Add("feedback", feedback);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit tracker - Stop", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 23
-this.ScenarioInitialize(scenarioInfo);
+ testRunner.And("I click Streams", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-
-                TechTalk.SpecFlow.Table table41 = new TechTalk.SpecFlow.Table(new string[] {
-                            "email",
-                            "password"});
-                table50.AddRow(new string[] {
-                            "pbridgers@spartaglobal.com",
-                            "Password123!"});
 #line 24
- testRunner.Given("I am logged in", ((string)(null)), table50, "Given ");
-
+ testRunner.When("I type in \'C# SDET\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 27
- testRunner.When("I press Tracker", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 25
+ testRunner.And("I click Search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 28
- testRunner.And("I press Edit", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 29
- testRunner.And(string.Format("I manage the Stop section with the feedback {0}", feedback), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 30
- testRunner.And("I press save", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 31
- testRunner.Then("I should see my trackers", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 26
+ testRunner.Then("\'C# SDET\' should be returned", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit tracker - Start")]
-        [NUnit.Framework.CategoryAttribute("Trainee_EditTracker")]
-        [NUnit.Framework.TestCaseAttribute("Asking more questions", null)]
-        [NUnit.Framework.TestCaseAttribute("Studying more", null)]
-        public virtual void EditTracker_Start(string feedback, string[] exampleTags)
+        [NUnit.Framework.DescriptionAttribute("Admin wants to view DevOps stream")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
+        [NUnit.Framework.CategoryAttribute("AdminStream")]
+        public virtual void AdminWantsToViewDevOpsStream()
         {
-            string[] @__tags = new string[] {
-                    "Trainee_EditTracker"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            string[] tagsOfScenario = @__tags;
+            string[] tagsOfScenario = new string[] {
+                    "Happy",
+                    "AdminStream"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            argumentsOfScenario.Add("feedback", feedback);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit tracker - Start", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 38
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Admin wants to view DevOps stream", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 29
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -282,54 +223,105 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-
-                TechTalk.SpecFlow.Table table51 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table22 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table51.AddRow(new string[] {
-                            "pbridgers@spartaglobal.com",
+                table22.AddRow(new string[] {
+                            "jsmith@spartaglobal.com",
                             "Password123!"});
-#line 39
- testRunner.Given("I am logged in", ((string)(null)), table51, "Given ");
-
+#line 30
+ testRunner.Given("I am logged in", ((string)(null)), table22, "Given ");
 #line hidden
-#line 42
- testRunner.When("I press Tracker", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 33
+ testRunner.And("I click Admin", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 43
- testRunner.And("I press Edit", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 34
+ testRunner.And("I click Streams", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 35
+ testRunner.When("I type in \'DevOps\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 36
+ testRunner.And("I click Search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 37
+ testRunner.Then("\'DevOps\' should be returned", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Admin wants to view Business Analyst stream")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
+        [NUnit.Framework.CategoryAttribute("AdminStream")]
+        public virtual void AdminWantsToViewBusinessAnalystStream()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Happy",
+                    "AdminStream"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Admin wants to view Business Analyst stream", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 40
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table23 = new TechTalk.SpecFlow.Table(new string[] {
+                            "email",
+                            "password"});
+                table23.AddRow(new string[] {
+                            "jsmith@spartaglobal.com",
+                            "Password123!"});
+#line 41
+ testRunner.Given("I am logged in", ((string)(null)), table23, "Given ");
 #line hidden
 #line 44
- testRunner.And(string.Format("I manage the Start section with the feedback {0}", feedback), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I click Admin", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 45
- testRunner.And("I press save", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I click Streams", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 46
- testRunner.Then("I should see my trackers", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.When("I type in \'Business Analyst\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 47
+ testRunner.And("I click Search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 48
+ testRunner.Then("\'Business Analyst\' should be returned", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit tracker - Continue")]
-        [NUnit.Framework.CategoryAttribute("Trainee_EditTracker")]
-        [NUnit.Framework.TestCaseAttribute("Asking questions", null)]
-        [NUnit.Framework.TestCaseAttribute("Studying", null)]
-        public virtual void EditTracker_Continue(string feedback, string[] exampleTags)
+        [NUnit.Framework.DescriptionAttribute("Admin wants to view Java Developer stream")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
+        [NUnit.Framework.CategoryAttribute("AdminStream")]
+        public virtual void AdminWantsToViewJavaDeveloperStream()
         {
-            string[] @__tags = new string[] {
-                    "Trainee_EditTracker"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            string[] tagsOfScenario = @__tags;
+            string[] tagsOfScenario = new string[] {
+                    "Happy",
+                    "AdminStream"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            argumentsOfScenario.Add("feedback", feedback);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit tracker - Continue", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 53
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Admin wants to view Java Developer stream", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 51
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -349,31 +341,29 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-
-                TechTalk.SpecFlow.Table table43 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table24 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table43.AddRow(new string[] {
-                            "pbridgers@spartaglobal.com",
+                table24.AddRow(new string[] {
+                            "jsmith@spartaglobal.com",
                             "Password123!"});
-#line 54
- testRunner.Given("I am logged in", ((string)(null)), table43, "Given ");
-
+#line 52
+ testRunner.Given("I am logged in", ((string)(null)), table24, "Given ");
+#line hidden
+#line 55
+ testRunner.And("I click Admin", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 56
+ testRunner.And("I click Streams", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 57
- testRunner.When("I press Tracker", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I type in \'Java Developer\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 58
- testRunner.And("I press Edit", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I click Search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 59
- testRunner.And(string.Format("I manage the Continue section with the feedback {0}", feedback), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 60
- testRunner.And("I press save", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 61
- testRunner.Then("I should see my trackers", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("\'Java Developer\' should be returned", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

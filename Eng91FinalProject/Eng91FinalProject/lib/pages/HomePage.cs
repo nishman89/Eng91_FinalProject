@@ -49,7 +49,7 @@ namespace Eng91FinalProject.lib.pages
 		private IWebElement _trainee1ResultsContainer => _seleniumDriver.FindElement(By.Id("trainee_1_results_container"));
 		private IWebElement _progressTrackerButton => _seleniumDriver.FindElement(By.Id("btn-tracker"));
 		private IWebElement _expandAndHideAllButton => _seleniumDriver.FindElement(By.Id("btn-course-1-accordion"));
-		private IWebElement _courseAttendanceButton => _seleniumDriver.FindElement(By.ClassName("btn btn-primary float-right"));
+		private IWebElement _courseAttendanceButton => _seleniumDriver.FindElement(By.XPath("/html/body/div/main/div/div/div/div/div/div/h3/a[2]"));
 
 		private IWebElement _expandedconditionBen => _seleniumDriver.FindElement(By.Id("collapse1"));
 		private IWebElement _expandedconditionPhoebe => _seleniumDriver.FindElement(By.XPath("collapse2"));

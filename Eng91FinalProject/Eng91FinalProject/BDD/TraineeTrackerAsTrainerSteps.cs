@@ -13,6 +13,11 @@ namespace Eng91FinalProject.BDD
             Website.TrainerTrackerPage.TraineeTrackerButton();
         }
 
+        [When(@"I press Tracker")]
+        public void WhenIPressTracker()
+        {
+            Website.TrainerTrackerPage.TraineeTrackerButton();
+        }
         [Then(@"I should see my trainee trackers")]
         public void ThenIShouldSeeMyTraineeTrackers()
         {

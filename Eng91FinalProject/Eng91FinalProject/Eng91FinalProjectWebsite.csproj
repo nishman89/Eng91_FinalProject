@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\NUnit3TestAdapter.4.0.0\build\net35\NUnit3TestAdapter.props" Condition="Exists('..\packages\NUnit3TestAdapter.4.0.0\build\net35\NUnit3TestAdapter.props')" />
   <Import Project="..\packages\SpecFlow.Plus.LivingDocPlugin.3.9.57\build\SpecFlow.Plus.LivingDocPlugin.props" Condition="Exists('..\packages\SpecFlow.Plus.LivingDocPlugin.3.9.57\build\SpecFlow.Plus.LivingDocPlugin.props')" />
@@ -122,6 +122,7 @@
     <Compile Include="BDD\AdminUsers\AdminUsersEditSteps.cs" />
     <Compile Include="BDD\AdminUsers\AdminUsersPageSteps.cs" />
     <Compile Include="BDD\LoginSteps.cs" />
+    <Compile Include="BDD\Profiles\ProfilesSteps.cs" />
     <Compile Include="BDD\SharedNavbarSteps.cs" />
     <Compile Include="BDD\TraineeProfile\TraineeProfileEditPageSteps.cs" />
     <Compile Include="BDD\TraineeProfile\TraineeProfileSteps.cs" />
@@ -130,6 +131,7 @@
     <Compile Include="BDD\TraineeTrackerAsTraineeSteps.cs" />
     <Compile Include="BDD\TrainerProfile\TrainerProfilePageSteps.cs" />
     <Compile Include="BDD\TrainerHomePage.feature.cs" />
+    <Compile Include="BDD\UserJourney_TrainerLogin_Tracker_ChangeGradesSteps.cs" />
     <Compile Include="BDD\UserJourney_TraineeLogin_Tracker_CreateNewTrackerSteps.cs" />
     <Compile Include="BDD\UserJourney_TrainerLogin_Courses_AddNewCourseSteps.cs" />
     <Compile Include="lib\driver_config\SeleniumDriverConfig.cs" />
@@ -144,6 +146,7 @@
     <Compile Include="lib\pages\BulkImport\BulkImportProfilesPage.cs" />
     <Compile Include="lib\pages\BulkImport\BulkImportUsersPage.cs" />
     <Compile Include="lib\pages\LoginPage.cs" />
+    <Compile Include="lib\pages\Profiles\ProfilesPage.cs" />
     <Compile Include="lib\pages\ProgressPage.cs" />
 	<Compile Include="lib\pages\CourseAttendancePage.cs" />
     <Compile Include="lib\pages\TraineeProfile\TraineeProfileEditPage.cs" />
@@ -151,7 +154,6 @@
     <Compile Include="lib\pages\Navbar\SharedNavbar.cs" />
     <Compile Include="lib\pages\Navbar\TraineeNavbar.cs" />
     <Compile Include="lib\pages\Navbar\TrainerNavbar.cs" />
-    <Compile Include="lib\pages\ProfilesPage.cs" />
     <Compile Include="lib\pages\SplashPage.cs" />
     <Compile Include="lib\pages\HomePage.cs" />
     <Compile Include="lib\pages\AdminStream\AdminStreamCreatePage.cs" />
@@ -190,6 +192,7 @@
     <None Include="BDD\AdminUsers\AdminUsersEdit.feature" />
     <None Include="BDD\AdminUsers\AdminUsersPage.feature" />
     <None Include="BDD\Login.feature" />
+    <None Include="BDD\Profiles\Profiles.feature" />
     <None Include="BDD\TraineeProfile\TraineeProfile.feature" />
     <None Include="BDD\TraineeProfile\TraineeProfileEdit.feature" />
     <None Include="BDD\TraineeTrackerAsTrainee.feature" />

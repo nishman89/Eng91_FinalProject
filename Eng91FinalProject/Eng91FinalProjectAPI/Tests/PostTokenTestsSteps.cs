@@ -19,7 +19,7 @@ namespace Eng91FinalProjectAPI.Tests
         [Given(@"I have an approved key")]
         public void GivenIHaveAnApprovedKey()
         {
-            _service.CallManager.APIKey = "SexLEYatCnW5x3lri//G6EnE3a9egpV3U2xIsLINR3M=";
+            _service.CallManager.APIKey = AppConfigReader.ApiKey;
         }
 
         [Given(@"I have an invalid key")]
@@ -31,7 +31,7 @@ namespace Eng91FinalProjectAPI.Tests
         [Given(@"I have a disabled key")]
         public void GivenIHaveADisabledKey()
         {
-            _service.CallManager.APIKey = "fjl5KAoIdOSYsuZw6P5Tso9zw0evbPWxuRxePf2kaXM=";
+            _service.CallManager.APIKey = AppConfigReader.DisabledAPIKey;
         }
 
 

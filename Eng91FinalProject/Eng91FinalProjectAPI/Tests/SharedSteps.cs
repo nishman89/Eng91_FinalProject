@@ -15,7 +15,7 @@ namespace Eng91FinalProjectAPI.Tests
         [Given(@"I have an approved token")]
         public void GivenIHaveAnApprovedToken()
         {
-            _service.CallManager.AuthorisationToken = "/raHHLG3CkngPn73rvHVj1AsQpMxoJvD8Ck93GwnCK4=";
+            _service.CallManager.AuthorisationToken = AppConfigReader.ApiToken;
         }
 
         [Given(@"I have an unapproved token")]
@@ -27,7 +27,7 @@ namespace Eng91FinalProjectAPI.Tests
         [Given(@"I have a disabled token")]
         public void GivenIHaveADisabledToken()
         {
-            _service.CallManager.AuthorisationToken = "/RvsKwG0qzXUfTCk+uJ5/gqaMOFLF8EGofabQQRKYIE=";
+            _service.CallManager.AuthorisationToken = AppConfigReader.DisabledAPIToken;
         }
 
         [Then(@"I should receive a status code ""(.*)""")]

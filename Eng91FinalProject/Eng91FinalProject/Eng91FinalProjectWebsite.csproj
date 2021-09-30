@@ -123,6 +123,7 @@
     <Compile Include="BDD\TrainerProfile\TrainerProfilePageSteps.cs" />
     <Compile Include="BDD\TrainerHomePage.feature.cs" />
     <Compile Include="BDD\UserJourney_TraineeLogin_Tracker_CreateNewTrackerSteps.cs" />
+    <Compile Include="BDD\UserJourney_TrainerLogin_Courses_AddNewCourseSteps.cs" />
     <Compile Include="lib\driver_config\SeleniumDriverConfig.cs" />
     <Compile Include="lib\pages\AdminAPI\AdminAPICreatePage.cs" />
     <Compile Include="lib\pages\AdminAPI\AdminAPIPage.cs" />
@@ -178,6 +179,7 @@
     <None Include="BDD\TrainerHomePage.feature" />
     <None Include="BDD\TrainerProfile\TrainerProfile.feature" />
     <None Include="BDD\UserJourney_TraineeLogin_Tracker_CreateNewTracker.feature" />
+    <None Include="BDD\UserJourney_TrainerLogin_Courses_AddNewCourse.feature" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />

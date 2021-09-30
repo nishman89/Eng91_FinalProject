@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Eng91FinalProject.BDD.AdminUsers
+namespace Eng91FinalProject.BDD.UserJourneys_TrainerTracker
 {
     using TechTalk.SpecFlow;
     using System;
@@ -20,23 +20,22 @@ namespace Eng91FinalProject.BDD.AdminUsers
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("AdminUsersEdit")]
-    public partial class AdminUsersEditFeature
+    [NUnit.Framework.DescriptionAttribute("UserJourney_TrainerLogin_Courses_AddNewCourse")]
+    public partial class UserJourney_TrainerLogin_Courses_AddNewCourseFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "AdminUsersEdit.feature"
+#line 1 "UserJourney_TrainerLogin_Courses_AddNewCourse.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BDD/AdminUsers", "AdminUsersEdit", "\tAs an admin\r\n\tI want to visit the Users page\r\n\tSo that I can edit trainers and t" +
-                    "rainees", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BDD/UserJourneys_TrainerTracker", "UserJourney_TrainerLogin_Courses_AddNewCourse", "\tA user journey for adding a course", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -75,17 +74,15 @@ namespace Eng91FinalProject.BDD.AdminUsers
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Admin wants to edit a trainer")]
-        [NUnit.Framework.CategoryAttribute("Happy")]
-        [NUnit.Framework.CategoryAttribute("AdminUsersEdit")]
-        public virtual void AdminWantsToEditATrainer()
+        [NUnit.Framework.DescriptionAttribute("Adding a course")]
+        [NUnit.Framework.CategoryAttribute("mytag")]
+        public virtual void AddingACourse()
         {
             string[] tagsOfScenario = new string[] {
-                    "Happy",
-                    "AdminUsersEdit"};
+                    "mytag"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Admin wants to edit a trainer", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 7
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adding a course", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 5
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -105,26 +102,55 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table29 = new TechTalk.SpecFlow.Table(new string[] {
+#line 6
+ testRunner.Given("I am on the Splash Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 7
+ testRunner.And("I click ‘Login’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table71 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table29.AddRow(new string[] {
+                table71.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 8
- testRunner.Given("I am logged in", ((string)(null)), table29, "Given ");
+ testRunner.When("I enter the correct credentials", ((string)(null)), table71, "When ");
 #line hidden
 #line 11
- testRunner.And("I click Admin", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I click ‘LOGIN’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 12
- testRunner.And("I click Users", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I click ‘Admin’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 13
- testRunner.When("I click Edit on \'JSmith\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("I click ‘Courses’ in the drop-down menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 14
- testRunner.Then("I should be taken to the edit page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("I click ‘New’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table72 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Name",
+                            "Trainer",
+                            "Stream",
+                            "Location",
+                            "CourseLength",
+                            "CourseStart"});
+                table72.AddRow(new string[] {
+                            "Eng92",
+                            "John",
+                            "C# SDET",
+                            "London",
+                            "12",
+                            "01012022"});
+#line 15
+ testRunner.And("I enter the desired course details", ((string)(null)), table72, "And ");
+#line hidden
+#line 18
+ testRunner.And("I click ‘CREATE’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 19
+ testRunner.Then("the new course is created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

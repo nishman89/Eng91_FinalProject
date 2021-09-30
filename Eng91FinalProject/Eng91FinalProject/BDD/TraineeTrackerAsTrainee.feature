@@ -1,7 +1,7 @@
 ﻿Feature: TraineeTrackerAsTrainee
 	Automation Task - View trainee tracker as trainee
 
-@Login_As_Trainee
+	@Login_As_Trainee
 Scenario: Check tracker as Trainee
 	Given I am logged in
 	| email                      | password     |
@@ -10,7 +10,7 @@ Scenario: Check tracker as Trainee
 	Then I should see my trackers
 
 	
-@Trainee_EditTracker
+	@Trainee_EditTracker
 Scenario: See tracker
 	Given I am logged in
 	| email                      | password     |
@@ -33,6 +33,7 @@ Scenario: Edit tracker - Stop
 	| feedback         |
 	| Being distracted |
 	| Being late       |
+
 	@Trainee_EditTracker
 Scenario: Edit tracker - Start
 	Given I am logged in
@@ -47,7 +48,9 @@ Scenario: Edit tracker - Start
 	| feedback              |
 	| Asking more questions |
 	| Studying more         |
-	Scenario: Edit tracker - Continue
+
+	@Trainee_EditTracker
+Scenario: Edit tracker - Continue
 	Given I am logged in
 	| email                      | password     |
 	| pbridgers@spartaglobal.com | Password123! |

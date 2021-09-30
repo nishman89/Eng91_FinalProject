@@ -5,7 +5,7 @@
 Scenario: Getting a token with valid key
 	Given I have an approved key
 	And I make a request for a token
-	Then I should recieve a valid token
+	Then I should receive a valid token
 
 @Happy @APIToken
 Scenario: Getting a 200 status code with valid key

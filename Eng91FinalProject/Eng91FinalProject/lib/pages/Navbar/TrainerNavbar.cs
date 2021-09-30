@@ -19,7 +19,7 @@ namespace Eng91FinalProject.lib.pages.Navbar
 
 
         //BulkImport
-        private IWebElement _bulkImportDropdownButton => _seleniumDriver.FindElement(By.Id(""));
+        private IWebElement _bulkImportDropdownButton => _seleniumDriver.FindElement(By.Id("bulkImportDropdown"));
         private IWebElement _bulkImportDropdownUsersButton => _seleniumDriver.FindElement(By.XPath("/html/body/header/nav/div/div/ul[2]/li[5]/div/a[2]"));
         private IWebElement _bulkImportDropdownProfilesButton => _seleniumDriver.FindElement(By.XPath("/html/body/header/nav/div/div/ul[2]/li[5]/div/a[1]"));
         private IWebElement _trainerProfileButton => _seleniumDriver.FindElement(By.XPath("/html/body/header/nav/div/div/ul[1]/li[1]/a"));

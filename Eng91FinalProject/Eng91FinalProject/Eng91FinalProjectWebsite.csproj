@@ -139,6 +139,7 @@
     <Compile Include="lib\pages\BulkImport\BulkImportProfilesPage.cs" />
     <Compile Include="lib\pages\BulkImport\BulkImportUsersPage.cs" />
     <Compile Include="lib\pages\LoginPage.cs" />
+    <Compile Include="lib\pages\ProgressPage.cs" />
     <Compile Include="lib\pages\TraineeProfile\TraineeProfileEditPage.cs" />
     <Compile Include="lib\pages\TraineeProfile\TraineeProfilePage.cs" />
     <Compile Include="lib\pages\Navbar\SharedNavbar.cs" />

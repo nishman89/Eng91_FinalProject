@@ -46,6 +46,7 @@ namespace Eng91FinalProject.lib.pages
         public SharedNavbar SharedNavbar { get; set; }
         public TrainerNavbar TrainerNavbar { get; set; }
         public TraineeNavbar TraineeNavbar { get;set; }
+        public ProgressPage ProgressPage { get; set; }
 
         public Website(int pageLoadInSecs = 10, int implicitWaitInSecs = 10)
         {
@@ -54,6 +55,7 @@ namespace Eng91FinalProject.lib.pages
             SplashPage = new SplashPage(SeleniumDriver);
             LoginPage = new LoginPage(SeleniumDriver);
             HomePage = new HomePage(SeleniumDriver);
+            ProgressPage = new ProgressPage(SeleniumDriver);
             ProfilesPage = new ProfilesPage(SeleniumDriver);
             TraineeTrackerPage = new TraineeTrackerPage(SeleniumDriver);
             TrainerTrackerPage = new TrainerTrackerPage(SeleniumDriver);

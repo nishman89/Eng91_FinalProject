@@ -134,7 +134,7 @@
     <Compile Include="BDD\UserJourneys_TrainerTracker\UserJourney_TrainerLogin_Tracker_CommentSteps.cs" />
     <Compile Include="BDD\UserJourneys_TrainerTracker\UserJourney_TrainerLogin_Tracker_ChangeGradesSteps.cs" />
     <Compile Include="BDD\UserJourneys_TraineeTracker\UserJourney_TraineeLogin_Tracker_UpdateTrackerSteps.cs" />
-    <Compile Include="BDD\UserJourneys_TrainerTracker\UserJourney_TrainerLogin_Courses_AddNewCourseSteps.cs" />
+    <Compile Include="BDD\UserJourney_TrainerLogin_Courses_AddNewCourseSteps.cs" />
     <Compile Include="lib\driver_config\SeleniumDriverConfig.cs" />
     <Compile Include="lib\pages\AdminAPI\AdminAPICreatePage.cs" />
     <Compile Include="lib\pages\AdminAPI\AdminAPIPage.cs" />
@@ -202,7 +202,7 @@
     <None Include="BDD\TrainerProfile\TrainerProfile.feature" />
     <None Include="BDD\UserJourneys_TraineeTracker\UserJourney_TraineeLogin_Tracker_UpdateTracker.feature" />
     <None Include="BDD\UserJourneys_TrainerTracker\UserJourney_TrainerLogin_Tracker_ChangeGrades.feature" />
-    <None Include="BDD\UserJourneys_TrainerTracker\UserJourney_TrainerLogin_Courses_AddNewCourse.feature" />
+    <None Include="BDD\UserJourney_TrainerLogin_Courses_AddNewCourse.feature" />
     <None Include="BDD\UserJourneys_TrainerTracker\UserJourney_TrainerLogin_Tracker_Comment.feature" />
     <None Include="packages.config" />
   </ItemGroup>

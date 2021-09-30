@@ -1,4 +1,4 @@
-﻿Feature: UserJourney_TraineeLogin_Tracker_CreateNewTracker
+﻿Feature: UserJourney_TraineeLogin_Tracker_UpdateTracker
 	Simple calculator for adding two numbers
 
 @UserJourney_TraineeTracker

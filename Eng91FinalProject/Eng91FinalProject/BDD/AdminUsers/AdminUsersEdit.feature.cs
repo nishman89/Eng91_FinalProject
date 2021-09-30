@@ -75,16 +75,16 @@ namespace Eng91FinalProject.BDD.AdminUsers
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Admin wants to edit a user")]
+        [NUnit.Framework.DescriptionAttribute("Admin wants to edit a trainer")]
         [NUnit.Framework.CategoryAttribute("Happy")]
         [NUnit.Framework.CategoryAttribute("AdminUsersEdit")]
-        public virtual void AdminWantsToEditAUser()
+        public virtual void AdminWantsToEditATrainer()
         {
             string[] tagsOfScenario = new string[] {
                     "Happy",
                     "AdminUsersEdit"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Admin wants to edit a user", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Admin wants to edit a trainer", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -105,14 +105,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table17 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table29 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table17.AddRow(new string[] {
+                table29.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 8
- testRunner.Given("I am logged in", ((string)(null)), table17, "Given ");
+ testRunner.Given("I am logged in", ((string)(null)), table29, "Given ");
 #line hidden
 #line 11
  testRunner.And("I click Admin", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

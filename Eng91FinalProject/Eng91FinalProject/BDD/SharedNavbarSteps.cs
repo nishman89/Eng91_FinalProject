@@ -11,10 +11,34 @@ namespace Eng91FinalProject.BDD
 {
     public class SharedNavbarSteps : SharedLoginSteps
     {
+        [Given(@"I click ‘Admin’")]
+        public void GivenIClickAdmin()
+        {
+            Website.TrainerNavbar.ClickAdminDropdownButton();
+        }
+
+        [Given(@"I click ‘API’")]
+        public void GivenIClickAPI()
+        {
+            Website.TrainerNavbar.ClickAdminDropdownAPIButton();
+        }
+
         [When(@"I click my name to view my Profile Page")]
         public void WhenIClickMyNameToViewMyProfilePage()
         {
             base.Website.TraineeNavbar.ClickTraineeProfile();
+        }
+
+        [When(@"I click ‘Admin’")]
+        public void WhenIClickAdmin()
+        {
+            Website.TrainerNavbar.ClickAdminDropdownButton();
+        }
+
+        [When(@"I click ‘API’")]
+        public void WhenIClickAPI()
+        {
+            Website.TrainerNavbar.ClickAdminDropdownAPIButton();
         }
 
         [When(@"I click the Sparta Global image")]
@@ -23,7 +47,7 @@ namespace Eng91FinalProject.BDD
             Website.SharedNavbar.ClickSpartaGlobalIcon();
         }
 
-        [When(@"I click 'Home'")]
+        [When(@"I click ‘Home’")]
         public void WhenIClickHome()
         {
             Website.SharedNavbar.ClickHomeButton();
@@ -35,13 +59,13 @@ namespace Eng91FinalProject.BDD
             Assert.That(Website.SeleniumDriver.Url.Contains("Profile"));
         }
 
-        [When(@"I click 'Profiles'")]
+        [When(@"I click ‘Profiles’")]
         public void WhenIClick()
         {
             Website.TrainerNavbar.ClickProfilesButton();
         }
 
-        [When(@"I click 'Logout'")]
+        [When(@"I click ‘Logout’")]
         public void WhenIClickLogout()
         {
             Website.SharedNavbar.ClickLogoutButton();
@@ -56,7 +80,7 @@ namespace Eng91FinalProject.BDD
         [Then(@"I am taken to my Profile Page")]
         public void ThenIAmTakenToMyProfilePage()
         {
-            Assert.That(base.Website.SeleniumDriver.Url, Does.Contain("Profile/View"));
+            Assert.That(base.Website.SeleniumDriver.Url, Does.Contain("Profile/View").Or.Contain("Trainer"));
         }
     }
 }

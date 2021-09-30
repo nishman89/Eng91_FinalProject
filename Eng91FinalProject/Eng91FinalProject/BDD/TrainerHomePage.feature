@@ -35,3 +35,19 @@ Scenario: As Trainer, view Attendance Page
     | jsmith@spartaglobal.com  | Password123! |
 	When I Click Course Attendance
 	Then I am taken to the Course Attendance page
+
+@CourseAttendanceTests
+Scenario: Check Correct Stream
+	Given I am logged in
+	| email                    | password     |
+    | jsmith@spartaglobal.com  | Password123! |
+	When I Click Course Attendance
+	Then Correct stream is shown
+
+@CourseAttendanceTests
+Scenario: Check Students
+	Given I am logged in
+	| email                    | password     |
+    | jsmith@spartaglobal.com  | Password123! |
+	When I Click Course Attendance
+	Then All Course students are shown

@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Eng91FinalProject.BDD.TraineeProfile
+namespace Eng91FinalProject.BDD.AdminAPI
 {
     using TechTalk.SpecFlow;
     using System;
@@ -20,23 +20,23 @@ namespace Eng91FinalProject.BDD.TraineeProfile
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("TraineeProfileEditPage")]
-    public partial class TraineeProfileEditPageFeature
+    [NUnit.Framework.DescriptionAttribute("AdminAPIEditPage")]
+    public partial class AdminAPIEditPageFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "TraineeProfileEdit.feature"
+#line 1 "AdminAPIEditPage.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BDD/TraineeProfile", "TraineeProfileEditPage", "\tAs a trainee, \r\n\tI want to be able to edit my profile, \r\n\tso that I can update m" +
-                    "y details", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BDD/AdminAPI", "AdminAPIEditPage", "\tAs a trainer, \r\n\tI want to be able to edit API keys, \r\n\tso that I can make chang" +
+                    "es to existing API keys", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -75,16 +75,16 @@ namespace Eng91FinalProject.BDD.TraineeProfile
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit trainee profile")]
-        [NUnit.Framework.CategoryAttribute("TraineeProfileEditPage")]
+        [NUnit.Framework.DescriptionAttribute("Navigate to Admin API Edit Page")]
+        [NUnit.Framework.CategoryAttribute("AdminAPIEditPage")]
         [NUnit.Framework.CategoryAttribute("Happy")]
-        public virtual void EditTraineeProfile()
+        public virtual void NavigateToAdminAPIEditPage()
         {
             string[] tagsOfScenario = new string[] {
-                    "TraineeProfileEditPage",
+                    "AdminAPIEditPage",
                     "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit trainee profile", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigate to Admin API Edit Page", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -105,72 +105,43 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table51 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table51.AddRow(new string[] {
-                            "bhoward@spartaglobal.com",
+                table8.AddRow(new string[] {
+                            "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 8
- testRunner.Given("I am logged in", ((string)(null)), table51, "Given ");
+ testRunner.Given("I am logged in", ((string)(null)), table8, "Given ");
 #line hidden
 #line 11
- testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I click ‘Admin’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 12
- testRunner.And("I click ‘EDIT’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I click ‘API’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table52 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Summary",
-                            "LifeStory",
-                            "CareerMotivation",
-                            "Skills",
-                            "Interests",
-                            "Education",
-                            "Certifications",
-                            "AdditionalAchievements",
-                            "RecentEmployment",
-                            "Volunteering",
-                            "LinkedIn",
-                            "Github"});
-                table52.AddRow(new string[] {
-                            "test",
-                            "test",
-                            "test",
-                            "test",
-                            "test",
-                            "test",
-                            "test",
-                            "test",
-                            "test",
-                            "test",
-                            "test",
-                            "test"});
 #line 13
- testRunner.And("I update my details", ((string)(null)), table52, "And ");
+ testRunner.And("I click ‘EDIT’ on \'test\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 16
- testRunner.And("I click ‘SAVE’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 17
- testRunner.Then("my profile is updated", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 14
+ testRunner.Then("I am taken to the Admin API Edit Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Navigate to home from trainee profile edit page using image")]
-        [NUnit.Framework.CategoryAttribute("TraineeProfileEditPage")]
+        [NUnit.Framework.DescriptionAttribute("Edit APIKey")]
+        [NUnit.Framework.CategoryAttribute("AdminAPIEditPage")]
         [NUnit.Framework.CategoryAttribute("Happy")]
-        public virtual void NavigateToHomeFromTraineeProfileEditPageUsingImage()
+        public virtual void EditAPIKey()
         {
             string[] tagsOfScenario = new string[] {
-                    "TraineeProfileEditPage",
+                    "AdminAPIEditPage",
                     "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigate to home from trainee profile edit page using image", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 20
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit APIKey", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 17
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -190,43 +161,55 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table53 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table53.AddRow(new string[] {
-                            "bhoward@spartaglobal.com",
+                table9.AddRow(new string[] {
+                            "jsmith@spartaglobal.com",
                             "Password123!"});
+#line 18
+ testRunner.Given("I am logged in", ((string)(null)), table9, "Given ");
+#line hidden
 #line 21
- testRunner.Given("I am logged in", ((string)(null)), table53, "Given ");
+ testRunner.And("I click ‘Admin’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 22
+ testRunner.And("I click ‘API’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 23
+ testRunner.When("I click ‘EDIT’ on \'test\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 24
- testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("I enter the Reference Name \'test\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 25
- testRunner.And("I click ‘EDIT’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I enter the Key Expiration date/time \'2222222222222\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 26
- testRunner.And("I click the Sparta Global image", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I enter the Request Limit \'100\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 27
- testRunner.Then("I am taken to the Home Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("I click ‘SAVE’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 28
+ testRunner.Then("the API Key & API Token is edited", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Navigate to home from trainee profile edit page using home button")]
-        [NUnit.Framework.CategoryAttribute("TraineeProfileEditPage")]
+        [NUnit.Framework.DescriptionAttribute("Navigate to home from admin api edit page using image")]
+        [NUnit.Framework.CategoryAttribute("AdminAPIEditPage")]
         [NUnit.Framework.CategoryAttribute("Happy")]
-        public virtual void NavigateToHomeFromTraineeProfileEditPageUsingHomeButton()
+        public virtual void NavigateToHomeFromAdminApiEditPageUsingImage()
         {
             string[] tagsOfScenario = new string[] {
-                    "TraineeProfileEditPage",
+                    "AdminAPIEditPage",
                     "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigate to home from trainee profile edit page using home button", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 30
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigate to home from admin api edit page using image", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 31
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -246,25 +229,28 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table54 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table10 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table54.AddRow(new string[] {
-                            "bhoward@spartaglobal.com",
+                table10.AddRow(new string[] {
+                            "jsmith@spartaglobal.com",
                             "Password123!"});
-#line 31
- testRunner.Given("I am logged in", ((string)(null)), table54, "Given ");
-#line hidden
-#line 34
- testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 32
+ testRunner.Given("I am logged in", ((string)(null)), table10, "Given ");
 #line hidden
 #line 35
- testRunner.And("I click ‘EDIT’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("I click ‘Admin’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 36
- testRunner.And("I click ‘Home’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I click ‘API’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 37
+ testRunner.And("I click ‘EDIT’ on \'test\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 38
+ testRunner.And("I click the Sparta Global image", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 39
  testRunner.Then("I am taken to the Home Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -272,17 +258,17 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Navigate to profiles from trainee profile edit page")]
-        [NUnit.Framework.CategoryAttribute("TraineeProfileEditPage")]
+        [NUnit.Framework.DescriptionAttribute("Navigate to home from admin api edit page using home button")]
+        [NUnit.Framework.CategoryAttribute("AdminAPIEditPage")]
         [NUnit.Framework.CategoryAttribute("Happy")]
-        public virtual void NavigateToProfilesFromTraineeProfileEditPage()
+        public virtual void NavigateToHomeFromAdminApiEditPageUsingHomeButton()
         {
             string[] tagsOfScenario = new string[] {
-                    "TraineeProfileEditPage",
+                    "AdminAPIEditPage",
                     "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigate to profiles from trainee profile edit page", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 40
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigate to home from admin api edit page using home button", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 42
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -302,25 +288,87 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table55 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table55.AddRow(new string[] {
-                            "bhoward@spartaglobal.com",
+                table11.AddRow(new string[] {
+                            "jsmith@spartaglobal.com",
                             "Password123!"});
-#line 41
- testRunner.Given("I am logged in", ((string)(null)), table55, "Given ");
-#line hidden
-#line 44
- testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 45
- testRunner.And("I click ‘EDIT’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 43
+ testRunner.Given("I am logged in", ((string)(null)), table11, "Given ");
 #line hidden
 #line 46
- testRunner.And("I click ‘Profiles’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("I click ‘Admin’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 47
+ testRunner.And("I click ‘API’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 48
+ testRunner.And("I click ‘EDIT’ on \'test\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 49
+ testRunner.And("I click ‘Home’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 50
+ testRunner.Then("I am taken to the Home Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Navigate to profiles from admin api edit page")]
+        [NUnit.Framework.CategoryAttribute("AdminAPIEditPage")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
+        public virtual void NavigateToProfilesFromAdminApiEditPage()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "AdminAPIEditPage",
+                    "Happy"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigate to profiles from admin api edit page", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 53
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table12 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Email",
+                            "Password"});
+                table12.AddRow(new string[] {
+                            "jsmith@spartaglobal.com",
+                            "Password123!"});
+#line 54
+ testRunner.Given("I am logged in", ((string)(null)), table12, "Given ");
+#line hidden
+#line 57
+ testRunner.When("I click ‘Admin’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 58
+ testRunner.And("I click ‘API’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 59
+ testRunner.And("I click ‘EDIT’ on \'test\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 60
+ testRunner.And("I click ‘Profiles’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 61
  testRunner.Then("I am taken to the Profiles Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -328,17 +376,17 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Log out when on trainee profile edit page")]
-        [NUnit.Framework.CategoryAttribute("TraineeProfileEditPage")]
+        [NUnit.Framework.DescriptionAttribute("Log out when on admin api edit page")]
+        [NUnit.Framework.CategoryAttribute("AdminAPIEditPage")]
         [NUnit.Framework.CategoryAttribute("Happy")]
-        public virtual void LogOutWhenOnTraineeProfileEditPage()
+        public virtual void LogOutWhenOnAdminApiEditPage()
         {
             string[] tagsOfScenario = new string[] {
-                    "TraineeProfileEditPage",
+                    "AdminAPIEditPage",
                     "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Log out when on trainee profile edit page", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 50
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Log out when on admin api edit page", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 64
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -358,25 +406,28 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table56 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table13 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table56.AddRow(new string[] {
-                            "bhoward@spartaglobal.com",
+                table13.AddRow(new string[] {
+                            "jsmith@spartaglobal.com",
                             "Password123!"});
-#line 51
- testRunner.Given("I am logged in", ((string)(null)), table56, "Given ");
+#line 65
+ testRunner.Given("I am logged in", ((string)(null)), table13, "Given ");
 #line hidden
-#line 54
- testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 68
+ testRunner.When("I click ‘Admin’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 55
- testRunner.And("I click ‘EDIT’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 69
+ testRunner.And("I click ‘API’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 56
+#line 70
+ testRunner.And("I click ‘EDIT’ on \'test\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 71
  testRunner.And("I click ‘Logout’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 57
+#line 72
  testRunner.Then("I am logged out and sent to the Splash Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -384,17 +435,17 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Navigate to trainee profile page when on trainee profile edit page")]
-        [NUnit.Framework.CategoryAttribute("TraineeProfileEditPage")]
+        [NUnit.Framework.DescriptionAttribute("Navigate to trainer profile page when on admin api edit page")]
+        [NUnit.Framework.CategoryAttribute("AdminAPIEditPage")]
         [NUnit.Framework.CategoryAttribute("Happy")]
-        public virtual void NavigateToTraineeProfilePageWhenOnTraineeProfileEditPage()
+        public virtual void NavigateToTrainerProfilePageWhenOnAdminApiEditPage()
         {
             string[] tagsOfScenario = new string[] {
-                    "TraineeProfileEditPage",
+                    "AdminAPIEditPage",
                     "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigate to trainee profile page when on trainee profile edit page", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 60
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigate to trainer profile page when on admin api edit page", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 75
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -414,25 +465,28 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table57 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table14 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table57.AddRow(new string[] {
-                            "bhoward@spartaglobal.com",
+                table14.AddRow(new string[] {
+                            "jsmith@spartaglobal.com",
                             "Password123!"});
-#line 61
- testRunner.Given("I am logged in", ((string)(null)), table57, "Given ");
+#line 76
+ testRunner.Given("I am logged in", ((string)(null)), table14, "Given ");
 #line hidden
-#line 64
- testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 79
+ testRunner.When("I click ‘Admin’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 65
- testRunner.And("I click ‘EDIT’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 80
+ testRunner.And("I click ‘API’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 66
+#line 81
+ testRunner.And("I click ‘EDIT’ on \'test\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 82
  testRunner.And("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 67
+#line 83
  testRunner.Then("I am taken to my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

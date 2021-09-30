@@ -6,22 +6,21 @@ using System.Threading.Tasks;
 using OpenQA.Selenium;
 using Eng91FinalProject.utils;
 
-namespace Eng91FinalProject.lib.pages
+namespace Eng91FinalProject.lib.pages.AdminAPI
 {
-    public class AdminAPICreatePage
+    public class AdminAPIEditPage
     {
         private IWebDriver _seleniumDriver;
-        private string _adminAPICreatePageUrl = AppConfigReader.AdminAPICreateURL;
-
+        private string _adminAPIEditPageUrl = AppConfigReader.AdminAPIEditURL;
         private IWebElement _pageTitle => _seleniumDriver.FindElement(By.CssSelector(".card-title"));
         private IWebElement _referenceNameField => _seleniumDriver.FindElement(By.Id("ReferenceName"));
         private IWebElement _calendarField => _seleniumDriver.FindElement(By.Id("APIKeyExpiresOn"));
         private IWebElement _clearButton => _seleniumDriver.FindElement(By.Id("clearExpiresOn"));
         private IWebElement _requestLimitField => _seleniumDriver.FindElement(By.Id("RequestLimit"));
         private IWebElement _disabledCheckBox => _seleniumDriver.FindElement(By.Id("IsDisabled"));
-        private IWebElement _saveButton => _seleniumDriver.FindElement(By.CssSelector(".btn-primary"));
+        private IWebElement _saveButton => _seleniumDriver.FindElement(By.CssSelector(".btn-primary:nth-child(1)"));
 
-        public AdminAPICreatePage(IWebDriver seleniumDriver) => _seleniumDriver = seleniumDriver;
+        public AdminAPIEditPage(IWebDriver seleniumDriver) => _seleniumDriver = seleniumDriver;
 
         public string GetPageTitle() => _pageTitle.Text;
         public void InputReferenceName(string name) => _referenceNameField.SendKeys(name);

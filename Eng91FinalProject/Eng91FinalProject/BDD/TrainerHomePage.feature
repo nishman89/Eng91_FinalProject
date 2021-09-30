@@ -36,7 +36,7 @@ Scenario: As Trainer, view Attendance Page
 	When I Click Course Attendance
 	Then I am taken to the Course Attendance page
 
-@CourseAttendanceTests
+@CourseAttendanceTests @Happy
 Scenario: Check Correct Stream
 	Given I am logged in
 	| email                    | password     |
@@ -44,7 +44,7 @@ Scenario: Check Correct Stream
 	When I Click Course Attendance
 	Then Correct stream is shown
 
-@CourseAttendanceTests
+@CourseAttendanceTests @Happy
 Scenario: Check Students
 	Given I am logged in
 	| email                    | password     |

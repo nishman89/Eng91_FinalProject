@@ -10,7 +10,7 @@ Scenario: Navigate to Admin API Edit Page
 	| jsmith@spartaglobal.com | Password123! |
 	When I click ‘Admin’ 
 	And I click ‘API’
-	And I click ‘EDIT’ on 'test'
+	And I click ‘EDIT’ on 'testedit'
 	Then I am taken to the Admin API Edit Page
 
 @AdminAPIEditPage @Happy
@@ -21,7 +21,7 @@ Scenario: Edit APIKey
 	And I click ‘Admin’ 
 	And I click ‘API’
 	When I click ‘EDIT’ on 'test'
-	And I enter the Reference Name 'test'
+	And I enter the Reference Name 'edit'
 	And I enter the Key Expiration date/time '2222222222222'
 	And I enter the Request Limit '100'
 	And I click ‘SAVE’
@@ -34,7 +34,7 @@ Scenario: Navigate to home from admin api edit page using image
 	| jsmith@spartaglobal.com | Password123! |
 	When I click ‘Admin’ 
 	And I click ‘API’
-	And I click ‘EDIT’ on 'test'
+	And I click ‘EDIT’ on 'testedit'
 	And I click the Sparta Global image
 	Then I am taken to the Home Page
 
@@ -45,7 +45,7 @@ Scenario: Navigate to home from admin api edit page using home button
 	| jsmith@spartaglobal.com | Password123! |
 	When I click ‘Admin’ 
 	And I click ‘API’
-	And I click ‘EDIT’ on 'test'
+	And I click ‘EDIT’ on 'testedit'
 	And I click ‘Home’
 	Then I am taken to the Home Page
 
@@ -56,7 +56,7 @@ Scenario: Navigate to profiles from admin api edit page
 	| jsmith@spartaglobal.com | Password123! |
 	When I click ‘Admin’ 
 	And I click ‘API’
-	And I click ‘EDIT’ on 'test'
+	And I click ‘EDIT’ on 'testedit'
 	And I click ‘Profiles’
 	Then I am taken to the Profiles Page
 
@@ -67,7 +67,7 @@ Scenario: Log out when on admin api edit page
 	| jsmith@spartaglobal.com | Password123! |
 	When I click ‘Admin’ 
 	And I click ‘API’
-	And I click ‘EDIT’ on 'test'
+	And I click ‘EDIT’ on 'testedit'
 	And I click ‘Logout’
 	Then I am logged out and sent to the Splash Page
 
@@ -78,6 +78,6 @@ Scenario: Navigate to trainer profile page when on admin api edit page
 	| jsmith@spartaglobal.com | Password123! |
 	When I click ‘Admin’ 
 	And I click ‘API’
-	And I click ‘EDIT’ on 'test'
+	And I click ‘EDIT’ on 'testedit'
 	And I click my name to view my Profile Page
 	Then I am taken to my Profile Page

@@ -1,5 +1,4 @@
-﻿using APIMiniProject;
-using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json.Linq;
 using RestSharp;
 using System.Threading.Tasks;
 
@@ -11,8 +10,8 @@ namespace Eng91FinalProjectAPI.HTTPManager
 
         public int StatusCode { get; set; }
         public int JSONStatusCode { get; set; }
-        public string AuthorisationToken { get; set; } = "/raHHLG3CkngPn73rvHVj1AsQpMxoJvD8Ck93GwnCK4=";
-        public string APIKey { get; set; } = "SexLEYatCnW5x3lri//G6EnE3a9egpV3U2xIsLINR3M=";
+        public string AuthorisationToken { get; set; } = AppConfigReader.ApiToken;
+        public string APIKey { get; set; } = AppConfigReader.ApiKey;
         public enum GetMethods
         {
             Trainees,

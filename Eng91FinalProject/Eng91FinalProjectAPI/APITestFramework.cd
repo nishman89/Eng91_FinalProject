@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Eng91FinalProjectAPI.Services.TraineeService">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAECAACBAAAAAAgAAAAAAAQAAIAAAA=</HashCode>
+      <FileName>Services\TraineeService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CallManager" />
+      <Property Name="ErrorResponseDTO" />
+      <Property Name="TraineeResponseDTO" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Eng91FinalProjectAPI.Services.TokenService">
+    <Position X="7" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAACAACAAAABAggAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Services\TokenService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CallManager" />
+      <Property Name="ErrorResponseDTO" />
+      <Property Name="TokenResponseDTO" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Eng91FinalProjectAPI.HTTPManager.CallManager">
+    <Position X="3.75" Y="3.25" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Eng91FinalProjectAPI.HTTPManager.CallManager.GetMethods" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>HTTPManager\CallManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAFAAAAAAAAAAEAAAAAAAQAAAAAAAAAAIAAggAAAAAA=</HashCode>
+      <FileName>HTTPManager\CallManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Eng91FinalProjectAPI.Data.Model">
+    <Position X="10.5" Y="0.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Eng91FinalProjectAPI.Data.Model.Course" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Data\Model.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Eng91FinalProjectAPI.Data.Model.Response" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Data\Model.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Eng91FinalProjectAPI.Data.Model.ErrorResponse" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Data\Model.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="Eng91FinalProjectAPI.Data.Model.Profile" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Data\Model.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Eng91FinalProjectAPI.Data.Model.Trainer" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Data\Model.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Eng91FinalProjectAPI.Data.Model.TraineeResponse" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Data\Model.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="Eng91FinalProjectAPI.Data.Model.Trainee" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Data\Model.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Eng91FinalProjectAPI.Data.Model.TokenResponse" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Data\Model.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="Eng91FinalProjectAPI.Data.Model.Stream" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Data\Model.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Eng91FinalProjectAPI.Data.DTO&lt;ResponseType&gt;">
+    <Position X="3.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\DTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Eng91FinalProjectAPI.Services.IService">
+    <Position X="8.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAACAAAAAAAgAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Services\IService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Eng91FinalProjectAPI.Data.IResponse">
+    <Position X="8.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\IResponse.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

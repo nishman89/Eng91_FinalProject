@@ -1,4 +1,5 @@
-﻿using Eng91FinalProject.utils;
+﻿using Eng91FinalProject.BDD.AdminCourse;
+using Eng91FinalProject.utils;
 using NUnit.Framework;
 using System;
 using System.Threading;
@@ -9,16 +10,10 @@ namespace Eng91FinalProject.BDD
 {
     [Binding]
     [Scope(Tag = "AdminCourseCreate")]
-    public class AdminCourseCreatePageSteps : SharedLoginSteps
+    public class AdminCourseCreatePageSteps : AdminCourseSharedSteps
     {
         private CourseDetails _courseDetails;
-        private AdminCoursePageSteps _coursePageSteps = new AdminCoursePageSteps();
-        [BeforeScenario]
-        public void InstantiateSteps()
-        {
-            _coursePageSteps.Website.SeleniumDriver.Quit();
-            _coursePageSteps.Website = Website;
-        }
+
         [Given(@"I click Courses")]
         public void GivenIClickCourses()
         {
@@ -70,9 +65,7 @@ namespace Eng91FinalProject.BDD
         [Then(@"the new course is created")]
         public void ThenTheNewCourseIsCreated()
         {
-            _coursePageSteps.WhenITypeInSearchBar(_courseDetails.Name);
-            _coursePageSteps.WhenIClickSearch();
-            _coursePageSteps.ThenTheResultShouldShow(_courseDetails.Name);
+            ThenTheResultShouldShow(_courseDetails.Name);
         }
     }
 }

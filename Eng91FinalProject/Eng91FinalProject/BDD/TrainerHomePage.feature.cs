@@ -102,14 +102,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table92 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table90 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table92.AddRow(new string[] {
+                table90.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 6
- testRunner.Given("I am logged in", ((string)(null)), table92, "Given ");
+ testRunner.Given("I am logged in", ((string)(null)), table90, "Given ");
 #line hidden
 #line 9
  testRunner.When("I click EXPAND ALL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -153,7 +153,7 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table93 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table93.AddRow(new string[] {
+                table91.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 15
@@ -201,7 +201,7 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table94 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table94.AddRow(new string[] {
+                table92.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 24
@@ -246,20 +246,116 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table95 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table93 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table95.AddRow(new string[] {
+                table93.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 33
- testRunner.Given("I am logged in", ((string)(null)), table95, "Given ");
+ testRunner.Given("I am logged in", ((string)(null)), table93, "Given ");
 #line hidden
 #line 36
  testRunner.When("I Click Course Attendance", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 37
  testRunner.Then("I am taken to the Course Attendance page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Check Correct Stream")]
+        [NUnit.Framework.CategoryAttribute("CourseAttendanceTests")]
+        public virtual void CheckCorrectStream()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "CourseAttendanceTests"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check Correct Stream", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 40
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table49 = new TechTalk.SpecFlow.Table(new string[] {
+                            "email",
+                            "password"});
+                table49.AddRow(new string[] {
+                            "jsmith@spartaglobal.com",
+                            "Password123!"});
+#line 41
+ testRunner.Given("I am logged in", ((string)(null)), table49, "Given ");
+#line hidden
+#line 44
+ testRunner.When("I Click Course Attendance", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 45
+ testRunner.Then("Correct stream is shown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Check Students")]
+        [NUnit.Framework.CategoryAttribute("CourseAttendanceTests")]
+        public virtual void CheckStudents()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "CourseAttendanceTests"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check Students", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 48
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table50 = new TechTalk.SpecFlow.Table(new string[] {
+                            "email",
+                            "password"});
+                table50.AddRow(new string[] {
+                            "jsmith@spartaglobal.com",
+                            "Password123!"});
+#line 49
+ testRunner.Given("I am logged in", ((string)(null)), table50, "Given ");
+#line hidden
+#line 52
+ testRunner.When("I Click Course Attendance", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 53
+ testRunner.Then("All Course students are shown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

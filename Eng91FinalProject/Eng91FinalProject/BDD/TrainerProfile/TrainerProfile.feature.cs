@@ -105,7 +105,7 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table96 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table96.AddRow(new string[] {
+                table94.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 6
@@ -153,11 +153,11 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table97 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table97.AddRow(new string[] {
+                table95.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 14
-testRunner.Given("I am logged in", ((string)(null)), table97, "Given ");
+testRunner.Given("I am logged in", ((string)(null)), table63, "Given ");
 #line hidden
 #line 17
 testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -220,7 +220,7 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table99 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table99.AddRow(new string[] {
+                table97.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 27
@@ -277,11 +277,11 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table100 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table100.AddRow(new string[] {
+                table98.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 38
-testRunner.Given("I am logged in", ((string)(null)), table100, "Given ");
+testRunner.Given("I am logged in", ((string)(null)), table66, "Given ");
 #line hidden
 #line 41
 testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -334,11 +334,11 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table101 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table101.AddRow(new string[] {
+                table99.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 49
-testRunner.Given("I am logged in", ((string)(null)), table101, "Given ");
+testRunner.Given("I am logged in", ((string)(null)), table67, "Given ");
 #line hidden
 #line 52
 testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -391,11 +391,11 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table102 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table102.AddRow(new string[] {
+                table100.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 60
-testRunner.Given("I am logged in", ((string)(null)), table102, "Given ");
+testRunner.Given("I am logged in", ((string)(null)), table68, "Given ");
 #line hidden
 #line 63
 testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -448,7 +448,7 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table103 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table103.AddRow(new string[] {
+                table101.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 71

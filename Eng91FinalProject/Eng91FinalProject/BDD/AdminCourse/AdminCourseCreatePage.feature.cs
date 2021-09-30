@@ -173,14 +173,14 @@ this.ScenarioInitialize(scenarioInfo);
 #line 21
  testRunner.When("I click New", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table35 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table33 = new TechTalk.SpecFlow.Table(new string[] {
                             "Name",
                             "Trainer",
                             "Stream",
                             "Location",
                             "CourseLength",
                             "CourseStart"});
-                table35.AddRow(new string[] {
+                table33.AddRow(new string[] {
                             "Eng91",
                             "John",
                             "C# SDET",
@@ -188,7 +188,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "1",
                             "01012022"});
 #line 22
- testRunner.And("I enter the desired course details", ((string)(null)), table35, "And ");
+ testRunner.And("I enter the desired course details", ((string)(null)), table33, "And ");
 #line hidden
 #line 25
  testRunner.And("I click Create", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -234,14 +234,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table36 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table34 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table36.AddRow(new string[] {
+                table34.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 31
- testRunner.Given("I am logged in", ((string)(null)), table36, "Given ");
+ testRunner.Given("I am logged in", ((string)(null)), table34, "Given ");
 #line hidden
 #line 34
  testRunner.And("I click Courses", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

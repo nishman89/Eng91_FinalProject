@@ -117,6 +117,7 @@
     <Compile Include="BDD\AdminCourse\AdminCourseDeletePageSteps.cs" />
     <Compile Include="BDD\AdminCourse\AdminCourseEditPageSteps.cs" />
     <Compile Include="BDD\AdminCourse\AdminCoursePageSteps.cs" />
+    <Compile Include="BDD\AdminCourse\AdminCourseSharedSteps.cs" />
     <Compile Include="BDD\AdminStream\AdminStreamCreateSteps.cs" />
     <Compile Include="BDD\AdminStream\AdminStreamDeleteSteps.cs" />
     <Compile Include="BDD\AdminStream\AdminStreamEditSteps.cs" />
@@ -135,10 +136,12 @@
     <Compile Include="BDD\TraineeTrackerTrainee\TraineeTrackerAsTraineeSteps.cs" />
     <Compile Include="BDD\TrainerProfile\TrainerProfilePageSteps.cs" />
     <Compile Include="BDD\TrainerHomePage.feature.cs" />
+
     <Compile Include="BDD\UserJourneys_TrainerTracker\UserJourney_TrainerLogin_Tracker_CommentSteps.cs" />
     <Compile Include="BDD\UserJourneys_TrainerTracker\UserJourney_TrainerLogin_Tracker_ChangeGradesSteps.cs" />
     <Compile Include="BDD\UserJourneys_TraineeTracker\UserJourney_TraineeLogin_Tracker_UpdateTrackerSteps.cs" />
     <Compile Include="BDD\UserJourneys_TrainerTracker\UserJourney_TrainerLogin_Courses_AddNewCourseSteps.cs" />
+
     <Compile Include="lib\driver_config\SeleniumDriverConfig.cs" />
     <Compile Include="lib\pages\AdminAPI\AdminAPICreatePage.cs" />
     <Compile Include="lib\pages\AdminAPI\AdminAPIEditPage.cs" />
@@ -208,10 +211,12 @@
     <None Include="BDD\TraineeTrackerTrainer\TraineeTrackerAsTrainer.feature" />
     <None Include="BDD\TrainerHomePage.feature" />
     <None Include="BDD\TrainerProfile\TrainerProfile.feature" />
+
     <None Include="BDD\UserJourneys_TraineeTracker\UserJourney_TraineeLogin_Tracker_UpdateTracker.feature" />
     <None Include="BDD\UserJourneys_TrainerTracker\UserJourney_TrainerLogin_Tracker_ChangeGrades.feature" />
     <None Include="BDD\UserJourneys_TrainerTracker\UserJourney_TrainerLogin_Courses_AddNewCourse.feature" />
     <None Include="BDD\UserJourneys_TrainerTracker\UserJourney_TrainerLogin_Tracker_Comment.feature" />
+
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />

@@ -117,6 +117,7 @@
     <Compile Include="BDD\AdminCourse\AdminCourseDeletePageSteps.cs" />
     <Compile Include="BDD\AdminCourse\AdminCourseEditPageSteps.cs" />
     <Compile Include="BDD\AdminCourse\AdminCoursePageSteps.cs" />
+    <Compile Include="BDD\AdminCourse\AdminCourseSharedSteps.cs" />
     <Compile Include="BDD\AdminStream\AdminStreamCreateSteps.cs" />
     <Compile Include="BDD\AdminStream\AdminStreamDeleteSteps.cs" />
     <Compile Include="BDD\AdminStream\AdminStreamEditSteps.cs" />

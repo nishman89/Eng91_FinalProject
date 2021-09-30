@@ -24,16 +24,10 @@ namespace Eng91FinalProject.BDD
             base.WhenIEnterTheFollowingCredentials(table);
         }
 
-        [When(@"I click ‘Admin’")]
-        public void WhenIClickAdmin()
-        {
-            ScenarioContext.Current.Pending();
-        }
-
         [When(@"I click ‘Courses’ in the drop-down menu")]
         public void WhenIClickCoursesInTheDrop_DownMenu()
         {
-            ScenarioContext.Current.Pending();
+            _coursePageSteps.GivenIClickCourses();
         }
 
         [When(@"I click ‘New’")]
@@ -55,7 +49,7 @@ namespace Eng91FinalProject.BDD
         }
 
         [Then(@"the new course is created")]
-        public void ThenTheNewCourseIsCreated(string coursename)
+        public void ThenTheNewCourseIsCreated()
         {
             _createPageSteps.ThenTheNewCourseIsCreated();
         }

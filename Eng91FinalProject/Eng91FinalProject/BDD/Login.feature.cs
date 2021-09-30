@@ -166,7 +166,7 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table31 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table31.AddRow(new string[] {
+                table20.AddRow(new string[] {
                             "ajolie@spartaglobal.com",
                             "Password123!"});
 #line 19
@@ -220,7 +220,7 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table32 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table32.AddRow(new string[] {
+                table21.AddRow(new string[] {
                             "",
                             "Password123!"});
 #line 29
@@ -272,14 +272,14 @@ this.ScenarioInitialize(scenarioInfo);
 #line 38
     testRunner.And("I click ‘Login’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table33 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table22 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table33.AddRow(new string[] {
+                table22.AddRow(new string[] {
                             "ajolie@spartaglobal.com",
                             ""});
 #line 39
-    testRunner.When("I enter the following credentials", ((string)(null)), table33, "When ");
+    testRunner.When("I enter the following credentials", ((string)(null)), table22, "When ");
 #line hidden
 #line 42
     testRunner.And("I click ‘LOGIN’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

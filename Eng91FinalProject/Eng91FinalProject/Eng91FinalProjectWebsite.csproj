@@ -109,13 +109,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppConfigReader.cs" />
-    <Compile Include="BDD\AdminCourse\AdminCourseCreatePage.feature.cs" />
     <Compile Include="BDD\AdminCourse\AdminCourseCreatePageSteps.cs" />
-    <Compile Include="BDD\AdminCourse\AdminCourseDeletePage.feature.cs" />
     <Compile Include="BDD\AdminCourse\AdminCourseDeletePageSteps.cs" />
-    <Compile Include="BDD\AdminCourse\AdminCourseEditPage.feature.cs" />
     <Compile Include="BDD\AdminCourse\AdminCourseEditPageSteps.cs" />
-    <Compile Include="BDD\AdminCourse\AdminCoursePage.feature.cs" />
     <Compile Include="BDD\AdminCourse\AdminCoursePageSteps.cs" />
     <Compile Include="BDD\LoginSteps.cs" />
     <Compile Include="BDD\SharedNavbarSteps.cs" />

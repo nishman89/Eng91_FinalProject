@@ -169,6 +169,7 @@
     <Compile Include="lib\pages\Website.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BDD\SharedLoginSteps.cs" />
+    <Compile Include="utils\CourseDetails.cs" />
     <Compile Include="utils\Credentials.cs" />
     <Compile Include="utils\TraineeProfileDetails.cs" />
     <Compile Include="utils\TrainerProfileDetails.cs" />

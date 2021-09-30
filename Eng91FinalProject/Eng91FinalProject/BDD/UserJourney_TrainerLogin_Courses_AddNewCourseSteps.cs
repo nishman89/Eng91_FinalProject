@@ -4,6 +4,7 @@ using TechTalk.SpecFlow;
 namespace Eng91FinalProject.BDD
 {
     [Binding]
+    [Scope(Feature = "UserJourney_TrainerLogin_Courses_AddNewCourse")]
     public class UserJourney_TrainerLogin_Courses_AddNewCourseSteps : SharedNavbarSteps
     {
         AdminCourseCreatePageSteps _createPageSteps = new AdminCourseCreatePageSteps();
@@ -34,9 +35,9 @@ namespace Eng91FinalProject.BDD
         }
 
         [When(@"I enter the desired course details")]
-        public void WhenIEnterTheDesiredCourseDetails()
+        public void WhenIEnterTheDesiredCourseDetails(Table table)
         {
-            ScenarioContext.Current.Pending();
+            _createPageSteps.WhenIEnterTheDesiredCourseDetails(table);
         }
 
         [When(@"I click ‘CREATE’")]
@@ -48,9 +49,7 @@ namespace Eng91FinalProject.BDD
         [Then(@"the new course is created")]
         public void ThenTheNewCourseIsCreated(string coursename)
         {
-            _coursePageSteps.WhenITypeInSearchBar(coursename);
-            _coursePageSteps.WhenIClickSearch();
-            _coursePageSteps.ThenTheResultShouldShow(coursename);
+            _createPageSteps.ThenTheNewCourseIsCreated();
         }
 
 

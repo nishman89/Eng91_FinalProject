@@ -1,6 +1,8 @@
-﻿using NUnit.Framework;
+﻿using Eng91FinalProject.utils;
+using NUnit.Framework;
 using System;
 using TechTalk.SpecFlow;
+using TechTalk.SpecFlow.Assist;
 
 namespace Eng91FinalProject.BDD
 {
@@ -8,6 +10,9 @@ namespace Eng91FinalProject.BDD
     [Scope(Tag = "AdminCourseCreate")]
     public class AdminCourseCreatePageSteps : SharedLoginSteps
     {
+        private CourseDetails _courseDetails;
+        private AdminCoursePageSteps _coursePageSteps = new AdminCoursePageSteps();
+
         [Given(@"I click Courses")]
         public void GivenIClickCourses()
         {
@@ -27,6 +32,17 @@ namespace Eng91FinalProject.BDD
             Website.AdminCourseCreatePage.ClickCreateButton();
         }
 
+        [When(@"I enter the desired course details")]
+        public void WhenIEnterTheDesiredCourseDetails(Table table)
+        {
+            _courseDetails = table.CreateInstance<CourseDetails>();
+
+            Website.AdminCourseCreatePage.InputCourseName(_courseDetails.Name);
+            Website.AdminCourseCreatePage.InputCourseLength(_courseDetails.CourseLength);
+            Website.AdminCourseCreatePage.InputStartDate(_courseDetails.CourseStart);
+        }
+
+
         [Then(@"I won't be returned to the course page")]
         public void ThenIWonTBeReturnedToTheCoursePage()
         {
@@ -38,5 +54,14 @@ namespace Eng91FinalProject.BDD
         {
             Assert.That(Website.SeleniumDriver.Url.Contains("Create"));
         }
-    }            
+
+        [Then(@"the new course is created")]
+        public void ThenTheNewCourseIsCreated()
+        {
+            _coursePageSteps.WhenITypeInSearchBar(_courseDetails.Name);
+            _coursePageSteps.WhenIClickSearch();
+            _coursePageSteps.ThenTheResultShouldShow(_courseDetails.Name);
+        }
+
+    }
 }

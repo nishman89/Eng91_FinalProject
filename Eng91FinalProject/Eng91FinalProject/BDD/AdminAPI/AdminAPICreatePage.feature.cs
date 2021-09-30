@@ -199,16 +199,16 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Navigate to home from admin api create page using image")]
+        [NUnit.Framework.DescriptionAttribute("Create APIKey with taken reference name")]
         [NUnit.Framework.CategoryAttribute("AdminAPICreatePage")]
-        [NUnit.Framework.CategoryAttribute("Happy")]
-        public virtual void NavigateToHomeFromAdminApiCreatePageUsingImage()
+        [NUnit.Framework.CategoryAttribute("Sad")]
+        public virtual void CreateAPIKeyWithTakenReferenceName()
         {
             string[] tagsOfScenario = new string[] {
                     "AdminAPICreatePage",
-                    "Happy"};
+                    "Sad"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigate to home from admin api create page using image", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create APIKey with taken reference name", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 31
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -239,36 +239,46 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("I am logged in", ((string)(null)), table3, "Given ");
 #line hidden
 #line 35
- testRunner.When("I click ‘Admin’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("I click ‘Admin’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 36
  testRunner.And("I click ‘API’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 37
- testRunner.And("I click ‘NEW’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("I click ‘NEW’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 38
- testRunner.And("I click the Sparta Global image", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I enter the Reference Name \'test\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 39
- testRunner.Then("I am taken to the Home Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("I enter the Key Expiration date/time \'2222222222222\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 40
+ testRunner.And("I enter the Request Limit \'100\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 41
+ testRunner.And("I click ‘SAVE’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 42
+ testRunner.Then("I should see an alert containing the error message \"Reference name already exists" +
+                        "\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Navigate to home from admin api create page using home button")]
+        [NUnit.Framework.DescriptionAttribute("Create disabled APIKey")]
         [NUnit.Framework.CategoryAttribute("AdminAPICreatePage")]
         [NUnit.Framework.CategoryAttribute("Happy")]
-        public virtual void NavigateToHomeFromAdminApiCreatePageUsingHomeButton()
+        public virtual void CreateDisabledAPIKey()
         {
             string[] tagsOfScenario = new string[] {
                     "AdminAPICreatePage",
                     "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigate to home from admin api create page using home button", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 42
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create disabled APIKey", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 45
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -294,40 +304,52 @@ this.ScenarioInitialize(scenarioInfo);
                 table4.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
-#line 43
+#line 46
  testRunner.Given("I am logged in", ((string)(null)), table4, "Given ");
 #line hidden
-#line 46
- testRunner.When("I click ‘Admin’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 47
- testRunner.And("I click ‘API’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 48
- testRunner.And("I click ‘NEW’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
 #line 49
- testRunner.And("I click ‘Home’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I click ‘Admin’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 50
- testRunner.Then("I am taken to the Home Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("I click ‘API’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 51
+ testRunner.When("I click ‘NEW’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 52
+ testRunner.And("I enter the Reference Name \'disabledtest\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 53
+ testRunner.And("I enter the Key Expiration date/time \'2222222222222\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 54
+ testRunner.And("I enter the Request Limit \'100\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 55
+ testRunner.And("I click ‘Disabled’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 56
+ testRunner.And("I click ‘SAVE’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 57
+ testRunner.Then("a new disabled API Key & API Token is created on \'disabledtest\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Navigate to profiles from admin api create page")]
+        [NUnit.Framework.DescriptionAttribute("Navigate to home from admin api create page using image")]
         [NUnit.Framework.CategoryAttribute("AdminAPICreatePage")]
         [NUnit.Framework.CategoryAttribute("Happy")]
-        public virtual void NavigateToProfilesFromAdminApiCreatePage()
+        public virtual void NavigateToHomeFromAdminApiCreatePageUsingImage()
         {
             string[] tagsOfScenario = new string[] {
                     "AdminAPICreatePage",
                     "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigate to profiles from admin api create page", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 53
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigate to home from admin api create page using image", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 60
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -353,40 +375,40 @@ this.ScenarioInitialize(scenarioInfo);
                 table5.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
-#line 54
+#line 61
  testRunner.Given("I am logged in", ((string)(null)), table5, "Given ");
 #line hidden
-#line 57
+#line 64
  testRunner.When("I click ‘Admin’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 58
+#line 65
  testRunner.And("I click ‘API’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 59
+#line 66
  testRunner.And("I click ‘NEW’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 60
- testRunner.And("I click ‘Profiles’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 67
+ testRunner.And("I click the Sparta Global image", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 61
- testRunner.Then("I am taken to the Profiles Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 68
+ testRunner.Then("I am taken to the Home Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Log out when on admin api create page")]
+        [NUnit.Framework.DescriptionAttribute("Navigate to home from admin api create page using home button")]
         [NUnit.Framework.CategoryAttribute("AdminAPICreatePage")]
         [NUnit.Framework.CategoryAttribute("Happy")]
-        public virtual void LogOutWhenOnAdminApiCreatePage()
+        public virtual void NavigateToHomeFromAdminApiCreatePageUsingHomeButton()
         {
             string[] tagsOfScenario = new string[] {
                     "AdminAPICreatePage",
                     "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Log out when on admin api create page", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 64
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigate to home from admin api create page using home button", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 71
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -412,40 +434,40 @@ this.ScenarioInitialize(scenarioInfo);
                 table6.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
-#line 65
+#line 72
  testRunner.Given("I am logged in", ((string)(null)), table6, "Given ");
 #line hidden
-#line 68
+#line 75
  testRunner.When("I click ‘Admin’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 69
+#line 76
  testRunner.And("I click ‘API’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 70
+#line 77
  testRunner.And("I click ‘NEW’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 71
- testRunner.And("I click ‘Logout’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 78
+ testRunner.And("I click ‘Home’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 72
- testRunner.Then("I am logged out and sent to the Splash Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 79
+ testRunner.Then("I am taken to the Home Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Navigate to trainer profile page when on admin api create page")]
+        [NUnit.Framework.DescriptionAttribute("Navigate to profiles from admin api create page")]
         [NUnit.Framework.CategoryAttribute("AdminAPICreatePage")]
         [NUnit.Framework.CategoryAttribute("Happy")]
-        public virtual void NavigateToTrainerProfilePageWhenOnAdminApiCreatePage()
+        public virtual void NavigateToProfilesFromAdminApiCreatePage()
         {
             string[] tagsOfScenario = new string[] {
                     "AdminAPICreatePage",
                     "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigate to trainer profile page when on admin api create page", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 75
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigate to profiles from admin api create page", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 82
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -471,22 +493,140 @@ this.ScenarioInitialize(scenarioInfo);
                 table7.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
-#line 76
+#line 83
  testRunner.Given("I am logged in", ((string)(null)), table7, "Given ");
 #line hidden
-#line 79
+#line 86
  testRunner.When("I click ‘Admin’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 80
+#line 87
  testRunner.And("I click ‘API’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 81
+#line 88
  testRunner.And("I click ‘NEW’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 82
+#line 89
+ testRunner.And("I click ‘Profiles’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 90
+ testRunner.Then("I am taken to the Profiles Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Log out when on admin api create page")]
+        [NUnit.Framework.CategoryAttribute("AdminAPICreatePage")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
+        public virtual void LogOutWhenOnAdminApiCreatePage()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "AdminAPICreatePage",
+                    "Happy"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Log out when on admin api create page", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 93
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Email",
+                            "Password"});
+                table8.AddRow(new string[] {
+                            "jsmith@spartaglobal.com",
+                            "Password123!"});
+#line 94
+ testRunner.Given("I am logged in", ((string)(null)), table8, "Given ");
+#line hidden
+#line 97
+ testRunner.When("I click ‘Admin’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 98
+ testRunner.And("I click ‘API’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 99
+ testRunner.And("I click ‘NEW’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 100
+ testRunner.And("I click ‘Logout’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 101
+ testRunner.Then("I am logged out and sent to the Splash Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Navigate to trainer profile page when on admin api create page")]
+        [NUnit.Framework.CategoryAttribute("AdminAPICreatePage")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
+        public virtual void NavigateToTrainerProfilePageWhenOnAdminApiCreatePage()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "AdminAPICreatePage",
+                    "Happy"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigate to trainer profile page when on admin api create page", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 104
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Email",
+                            "Password"});
+                table9.AddRow(new string[] {
+                            "jsmith@spartaglobal.com",
+                            "Password123!"});
+#line 105
+ testRunner.Given("I am logged in", ((string)(null)), table9, "Given ");
+#line hidden
+#line 108
+ testRunner.When("I click ‘Admin’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 109
+ testRunner.And("I click ‘API’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 110
+ testRunner.And("I click ‘NEW’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 111
  testRunner.And("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 83
+#line 112
  testRunner.Then("I am taken to my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

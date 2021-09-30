@@ -20,6 +20,7 @@ namespace Eng91FinalProject.lib.pages
         private IWebElement _requestLimitField => _seleniumDriver.FindElement(By.Id("RequestLimit"));
         private IWebElement _disabledCheckBox => _seleniumDriver.FindElement(By.Id("IsDisabled"));
         private IWebElement _saveButton => _seleniumDriver.FindElement(By.CssSelector(".btn-primary"));
+        private IWebElement _errorMessage => _seleniumDriver.FindElement(By.CssSelector(".validation-summary-errors li"));
 
         public AdminAPICreatePage(IWebDriver seleniumDriver) => _seleniumDriver = seleniumDriver;
 
@@ -30,5 +31,6 @@ namespace Eng91FinalProject.lib.pages
         public void InputRequestLimit(string limit) => _requestLimitField.SendKeys(limit);
         public void CheckDisabledBox() => _disabledCheckBox.Click();
         public void ClickSaveButton() => _saveButton.Click();
+        public string GetErrorMessage() => _errorMessage.Text;
     }
 }

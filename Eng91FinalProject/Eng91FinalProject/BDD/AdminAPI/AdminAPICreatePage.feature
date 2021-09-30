@@ -27,6 +27,35 @@ Scenario: Create APIKey
 	And I click ‘SAVE’
 	Then a new API Key & API Token is created
 
+@AdminAPICreatePage @Sad
+Scenario: Create APIKey with taken reference name
+	Given I am logged in
+	| Email                   | Password     |
+	| jsmith@spartaglobal.com | Password123! |
+	And I click ‘Admin’ 
+	And I click ‘API’
+	When I click ‘NEW’
+	And I enter the Reference Name 'test'
+	And I enter the Key Expiration date/time '2222222222222'
+	And I enter the Request Limit '100'
+	And I click ‘SAVE’
+	Then I should see an alert containing the error message "Reference name already exists"
+
+@AdminAPICreatePage @Happy
+Scenario: Create disabled APIKey
+	Given I am logged in
+	| Email                   | Password     |
+	| jsmith@spartaglobal.com | Password123! |
+	And I click ‘Admin’ 
+	And I click ‘API’
+	When I click ‘NEW’
+	And I enter the Reference Name 'disabledtest'
+	And I enter the Key Expiration date/time '2222222222222'
+	And I enter the Request Limit '100'
+	And I click ‘Disabled’
+	And I click ‘SAVE’
+	Then a new disabled API Key & API Token is created on 'disabledtest'
+
 @AdminAPICreatePage @Happy
 Scenario: Navigate to home from admin api create page using image
 	Given I am logged in

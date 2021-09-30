@@ -9,6 +9,14 @@ namespace Eng91FinalProject.BDD
     {
         AdminCourseCreatePageSteps _createPageSteps = new AdminCourseCreatePageSteps();
         AdminCoursePageSteps _coursePageSteps = new AdminCoursePageSteps();
+        [BeforeScenario]
+        public void InstantiateSteps()
+        {
+            _coursePageSteps.Website.SeleniumDriver.Quit();
+            _createPageSteps.Website.SeleniumDriver.Quit();
+            _coursePageSteps.Website = Website;
+            _createPageSteps.Website = Website;
+        }
 
         [When(@"I enter the correct credentials")]
         public void WhenIEnterTheCorrectCredentials(Table table)
@@ -51,7 +59,5 @@ namespace Eng91FinalProject.BDD
         {
             _createPageSteps.ThenTheNewCourseIsCreated();
         }
-
-
     }
 }

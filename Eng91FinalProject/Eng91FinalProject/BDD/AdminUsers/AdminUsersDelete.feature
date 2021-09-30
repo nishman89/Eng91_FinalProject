@@ -4,7 +4,7 @@
 	So that I can delete trainers and trainees
 
 @Happy @AdminUserDelete
-Scenario: Admin wants to delete a user
+Scenario: Admin wants to delete a trainer
 	Given I am logged in
 	| email                    | password     |
     | jsmith@spartaglobal.com  | Password123! |

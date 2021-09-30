@@ -4,7 +4,7 @@
 	So that I can edit trainers and trainees
 
 @Happy @AdminUsersEdit
-Scenario: Admin wants to edit a user
+Scenario: Admin wants to edit a trainer
 	Given I am logged in
 	| email                    | password     |
     | jsmith@spartaglobal.com  | Password123! |

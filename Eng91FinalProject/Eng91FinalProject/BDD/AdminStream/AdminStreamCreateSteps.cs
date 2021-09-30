@@ -25,7 +25,13 @@ namespace Eng91FinalProject.BDD.AdminStream
         {
             Website.AdminStreamPage.ClickCreateNew();
         }
-        
+
+        [When(@"I enter '(.*)'")]
+        public void WhenIEnter(string streamName)
+        {
+            Website.AdminStreamCreatePage.GiveDataToNameField(streamName);
+        }
+
         [Then(@"I should be taken to the create a stream page")]
         public void ThenIShouldBeTakenToTheCreateAStreamPage()
         {

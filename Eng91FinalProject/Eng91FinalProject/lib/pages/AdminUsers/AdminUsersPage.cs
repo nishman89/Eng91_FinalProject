@@ -22,9 +22,9 @@ namespace Eng91FinalProject.lib.pages
         public void CreateNewUser() => _createNewUser.Click();
         public void EditUser(string username) => _editUser(username).Click();
         public void LockUser(string username) => _lockUser(username).Click();
-        public void DeleteCourse(string username) => _deleteUser(username).Click();
+        public void DeleteUser(string username) => _deleteUser(username).Click();
         public void SearchUser() => _searchButton.Click();
         public void Search(string username) => _searchBar.SendKeys(username);
-
+        public string SearchResult(string user) => _seleniumDriver.FindElement(By.CssSelector($"#{user} .btn-link")).Text;
     }
 }

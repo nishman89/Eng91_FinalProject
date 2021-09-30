@@ -7,7 +7,7 @@ namespace Eng91FinalProject.BDD.Profiles
 {
     [Binding]
     [Scope(Feature = "Profiles")]
-    public sealed class ProfilesSteps :SharedLoginSteps
+    public class ProfilesSteps : SharedLoginSteps
         
     {
         [When(@"I click 'Profiles'")]

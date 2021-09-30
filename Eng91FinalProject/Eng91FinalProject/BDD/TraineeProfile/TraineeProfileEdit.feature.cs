@@ -105,8 +105,7 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-
-                TechTalk.SpecFlow.Table table22 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table32 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
                 table41.AddRow(new string[] {
@@ -121,8 +120,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 12
  testRunner.And("I click ‘EDIT’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-
-                TechTalk.SpecFlow.Table table23 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table33 = new TechTalk.SpecFlow.Table(new string[] {
                             "Summary",
                             "LifeStory",
                             "CareerMotivation",
@@ -135,8 +133,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "Volunteering",
                             "LinkedIn",
                             "Github"});
-
-                table23.AddRow(new string[] {
+                table33.AddRow(new string[] {
                             "test",
                             "test",
                             "test",
@@ -150,7 +147,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "test",
                             "test"});
 #line 13
- testRunner.And("I update my details", ((string)(null)), table42, "And ");
+ testRunner.And("I update my details", ((string)(null)), table33, "And ");
 #line hidden
 #line 16
  testRunner.And("I click ‘SAVE’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -193,8 +190,7 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-
-                TechTalk.SpecFlow.Table table24 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table34 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
                 table43.AddRow(new string[] {
@@ -250,8 +246,7 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-
-                TechTalk.SpecFlow.Table table25 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table35 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
                 table44.AddRow(new string[] {

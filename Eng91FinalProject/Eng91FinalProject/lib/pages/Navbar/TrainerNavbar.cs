@@ -13,7 +13,7 @@ namespace Eng91FinalProject.lib.pages.Navbar
         //Admin Dropdown
         private IWebElement _adminDropdownButton => _seleniumDriver.FindElement(By.Id("adminDropdown"));
         private IWebElement _adminDropdownUsersButton => _seleniumDriver.FindElement(By.XPath("/html/body/header/nav/div/div/ul[2]/li[4]/div/a[1]"));
-        private IWebElement _adminDropdownStreamsButton => _seleniumDriver.FindElement(By.LinkText("Stream"));
+        private IWebElement _adminDropdownStreamsButton => _seleniumDriver.FindElement(By.LinkText("Streams"));
         private IWebElement _adminDropdownCoursesButton => _seleniumDriver.FindElement(By.LinkText("Courses"));
         private IWebElement _adminDropdownAPIButton => _seleniumDriver.FindElement(By.LinkText("API"));
 

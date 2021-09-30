@@ -108,6 +108,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
  testRunner.And("I click ‘Login’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
+<<<<<<< HEAD
                 TechTalk.SpecFlow.Table table73 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
@@ -116,40 +117,60 @@ this.ScenarioInitialize(scenarioInfo);
                             "Password123!"});
 #line 8
  testRunner.When("I enter the correct credentials", ((string)(null)), table73, "When ");
+=======
+                TechTalk.SpecFlow.Table table103 = new TechTalk.SpecFlow.Table(new string[] {
+                            "email",
+                            "password"});
+                table103.AddRow(new string[] {
+                            "jsmith@spartaglobal.com",
+                            "Password123!"});
+#line 8
+ testRunner.When("I enter the correct credentials", ((string)(null)), table103, "When ");
+>>>>>>> d6bca6c54c4d8b1b1775b99b475264fabb12ab17
 #line hidden
 #line 11
  testRunner.And("I click ‘LOGIN’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 12
- testRunner.And("I click ‘Admin’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 13
  testRunner.And("I click ‘Courses’ in the drop-down menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 14
+#line 13
  testRunner.And("I click ‘New’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
+<<<<<<< HEAD
                 TechTalk.SpecFlow.Table table74 = new TechTalk.SpecFlow.Table(new string[] {
+=======
+                TechTalk.SpecFlow.Table table104 = new TechTalk.SpecFlow.Table(new string[] {
+>>>>>>> d6bca6c54c4d8b1b1775b99b475264fabb12ab17
                             "Name",
                             "Trainer",
                             "Stream",
                             "Location",
                             "CourseLength",
                             "CourseStart"});
+<<<<<<< HEAD
                 table74.AddRow(new string[] {
+=======
+                table104.AddRow(new string[] {
+>>>>>>> d6bca6c54c4d8b1b1775b99b475264fabb12ab17
                             "Eng92",
                             "John",
                             "C# SDET",
                             "London",
-                            "12",
+                            "1",
                             "01012022"});
+<<<<<<< HEAD
 #line 15
  testRunner.And("I enter the desired course details", ((string)(null)), table74, "And ");
+=======
+#line 14
+ testRunner.And("I enter the desired course details", ((string)(null)), table104, "And ");
+>>>>>>> d6bca6c54c4d8b1b1775b99b475264fabb12ab17
 #line hidden
-#line 18
+#line 17
  testRunner.And("I click ‘CREATE’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 19
+#line 18
  testRunner.Then("the new course is created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

@@ -67,7 +67,17 @@ namespace Eng91FinalProject.BDD
             Assert.That(Website.SeleniumDriver.Url.Contains("AttendanceIndex"));
         }
 
+        [Then(@"Correct stream is shown")]
+        public void ThenCorrectStreamIsShown()
+        {
+            Assert.That(Website.CourseAttendancePage.GetStreamTitle().Contains("Engineering 79 Attendance"), Is.True);
+        }
 
+        [Then(@"All Course students are shown")]
+        public void ThenAllCourseStudentsAreShown()
+        {
+            Assert.That(Website.CourseAttendancePage.StudentCount(), Is.EqualTo(12));
+        }
 
     }
 }

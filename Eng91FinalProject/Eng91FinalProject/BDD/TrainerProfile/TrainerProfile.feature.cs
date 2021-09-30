@@ -157,7 +157,11 @@ this.ScenarioInitialize(scenarioInfo);
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 14
+<<<<<<< HEAD
 testRunner.Given("I am logged in", ((string)(null)), table95, "Given ");
+=======
+testRunner.Given("I am logged in", ((string)(null)), table63, "Given ");
+>>>>>>> d6bca6c54c4d8b1b1775b99b475264fabb12ab17
 #line hidden
 #line 17
 testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -281,7 +285,11 @@ this.ScenarioInitialize(scenarioInfo);
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 38
+<<<<<<< HEAD
 testRunner.Given("I am logged in", ((string)(null)), table98, "Given ");
+=======
+testRunner.Given("I am logged in", ((string)(null)), table66, "Given ");
+>>>>>>> d6bca6c54c4d8b1b1775b99b475264fabb12ab17
 #line hidden
 #line 41
 testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -338,7 +346,11 @@ this.ScenarioInitialize(scenarioInfo);
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 49
+<<<<<<< HEAD
 testRunner.Given("I am logged in", ((string)(null)), table99, "Given ");
+=======
+testRunner.Given("I am logged in", ((string)(null)), table67, "Given ");
+>>>>>>> d6bca6c54c4d8b1b1775b99b475264fabb12ab17
 #line hidden
 #line 52
 testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -395,7 +407,11 @@ this.ScenarioInitialize(scenarioInfo);
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 60
+<<<<<<< HEAD
 testRunner.Given("I am logged in", ((string)(null)), table100, "Given ");
+=======
+testRunner.Given("I am logged in", ((string)(null)), table68, "Given ");
+>>>>>>> d6bca6c54c4d8b1b1775b99b475264fabb12ab17
 #line hidden
 #line 63
 testRunner.When("I click my name to view my Profile Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");

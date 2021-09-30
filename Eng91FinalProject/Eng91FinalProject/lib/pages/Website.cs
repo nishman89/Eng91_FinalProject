@@ -47,6 +47,7 @@ namespace Eng91FinalProject.lib.pages
         public TrainerNavbar TrainerNavbar { get; set; }
         public TraineeNavbar TraineeNavbar { get;set; }
         public ProgressPage ProgressPage { get; set; }
+        public CourseAttendancePage CourseAttendancePage { get; set; }
 
         public Website(int pageLoadInSecs = 10, int implicitWaitInSecs = 10)
         {
@@ -56,6 +57,7 @@ namespace Eng91FinalProject.lib.pages
             LoginPage = new LoginPage(SeleniumDriver);
             HomePage = new HomePage(SeleniumDriver);
             ProgressPage = new ProgressPage(SeleniumDriver);
+            CourseAttendancePage = new CourseAttendancePage(SeleniumDriver);
             ProfilesPage = new ProfilesPage(SeleniumDriver);
             TraineeTrackerPage = new TraineeTrackerPage(SeleniumDriver);
             TrainerTrackerPage = new TrainerTrackerPage(SeleniumDriver);

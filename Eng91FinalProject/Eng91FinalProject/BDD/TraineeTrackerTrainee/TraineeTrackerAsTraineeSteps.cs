@@ -3,7 +3,7 @@ using NUnit.Framework;
 
 namespace Eng91FinalProject.BDD
 {
-    [Binding]
+    //[Binding]
     [Scope(Feature = "TraineeTrackerAsTrainee")]
     public class TraineeTrackerAsTraineeSteps : SharedLoginSteps
     {

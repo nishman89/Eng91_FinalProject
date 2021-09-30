@@ -7,6 +7,16 @@ namespace Eng91FinalProject.BDD
     [Scope(Feature = "TraineeTrackerAsTrainer")]
     public class TraineeTrackerAsTrainerSteps : SharedLoginSteps
     {
+        public void ChangeGrades_RunTests()
+        {
+            WhenIPressTracker();
+            ThenIPressEdit();
+            WhenIMaxTheFirstUserGrades();
+            WhenIPressSave();
+            ThenIShouldSeeMyTraineeTrackers();
+            ThenHisGradesAreMaxed_();
+        }
+
         [When(@"I press Trainee Tracker")]
         public void WhenIPressTraineeTracker()
         {

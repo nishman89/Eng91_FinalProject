@@ -109,6 +109,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppConfigReader.cs" />
+    <Compile Include="BDD\AdminAPI\AdminAPICreatePageSteps.cs" />
+    <Compile Include="BDD\AdminAPI\AdminAPIEditPageSteps.cs" />
+    <Compile Include="BDD\AdminAPI\AdminAPIPageSteps.cs" />
+    <Compile Include="BDD\AdminCourse\AdminCourseCreatePage.feature.cs" />
     <Compile Include="BDD\AdminCourse\AdminCourseCreatePageSteps.cs" />
     <Compile Include="BDD\AdminCourse\AdminCourseDeletePageSteps.cs" />
     <Compile Include="BDD\AdminCourse\AdminCourseEditPageSteps.cs" />
@@ -137,6 +141,7 @@
     <Compile Include="BDD\UserJourney_TrainerLogin_Courses_AddNewCourseSteps.cs" />
     <Compile Include="lib\driver_config\SeleniumDriverConfig.cs" />
     <Compile Include="lib\pages\AdminAPI\AdminAPICreatePage.cs" />
+    <Compile Include="lib\pages\AdminAPI\AdminAPIEditPage.cs" />
     <Compile Include="lib\pages\AdminAPI\AdminAPIPage.cs" />
     <Compile Include="lib\pages\AdminCourse\AdminCoursesPage.cs" />
     <Compile Include="lib\pages\AdminStream\AdminStreamPage.cs" />
@@ -180,6 +185,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="BDD\AdminAPI\AdminAPICreatePage.feature" />
+    <None Include="BDD\AdminAPI\AdminAPIEditPage.feature" />
+    <None Include="BDD\AdminAPI\AdminAPIPage.feature" />
     <None Include="BDD\AdminCourse\AdminCourseCreatePage.feature" />
     <None Include="BDD\AdminCourse\AdminCourseDeletePage.feature" />
     <None Include="BDD\AdminCourse\AdminCourseEditPage.feature" />

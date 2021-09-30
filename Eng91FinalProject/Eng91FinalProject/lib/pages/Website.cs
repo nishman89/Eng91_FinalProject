@@ -9,6 +9,7 @@ using Eng91FinalProject.lib.pages.TraineeTracker;
 using Eng91FinalProject.lib.pages.TrainerProfile;
 using Eng91FinalProject.lib.pages.TraineeProfile;
 using Eng91FinalProject.lib.pages.Navbar;
+using Eng91FinalProject.lib.pages.AdminAPI;
 using Eng91FinalProject.lib.pages.Profiles;
 
 namespace Eng91FinalProject.lib.pages
@@ -30,6 +31,7 @@ namespace Eng91FinalProject.lib.pages
         public TraineeProfilePage TraineeProfilePage { get; set; }
         public TraineeProfileEditPage TraineeProfileEditPage { get; set; }
         public AdminAPICreatePage AdminAPICreatePage { get; set; }
+        public AdminAPIEditPage AdminAPIEditPage { get; set; }
         public AdminAPIPage AdminAPIPage { get; set; }
         public AdminCourseCreatePage AdminCourseCreatePage { get; set; }
         public AdminCourseDeletePage AdminCourseDeletePage { get; set; }
@@ -66,6 +68,7 @@ namespace Eng91FinalProject.lib.pages
             TraineeProfilePage = new TraineeProfilePage(SeleniumDriver);
             TraineeProfileEditPage = new TraineeProfileEditPage(SeleniumDriver);
             AdminAPICreatePage = new AdminAPICreatePage(SeleniumDriver);
+            AdminAPIEditPage = new AdminAPIEditPage(SeleniumDriver);
             AdminAPIPage = new AdminAPIPage(SeleniumDriver);
             AdminCourseCreatePage = new AdminCourseCreatePage(SeleniumDriver);
             AdminCourseDeletePage = new AdminCourseDeletePage(SeleniumDriver);

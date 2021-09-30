@@ -9,5 +9,6 @@ namespace Eng91FinalProject
         public static readonly string MyProfileURL = ConfigurationManager.AppSettings["myprofile_url"];
         public static readonly string AdminAPIURL = ConfigurationManager.AppSettings["adminapi_url"];
         public static readonly string AdminAPICreateURL = ConfigurationManager.AppSettings["adminapicreate_url"];
+        public static readonly string AdminAPIEditURL = ConfigurationManager.AppSettings["adminapiedit_url"];
     }
 }

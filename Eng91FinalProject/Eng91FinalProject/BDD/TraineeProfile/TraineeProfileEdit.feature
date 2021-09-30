@@ -33,7 +33,7 @@ Scenario: Navigate to home from trainee profile edit page using home button
 	| bhoward@spartaglobal.com | Password123! |
 	When I click my name to view my Profile Page
 	And I click ‘EDIT’
-	And I click 'Home'
+	And I click ‘Home’
 	Then I am taken to the Home Page
 
 @TraineeProfileEditPage @Happy
@@ -43,7 +43,7 @@ Scenario: Navigate to profiles from trainee profile edit page
 	| bhoward@spartaglobal.com | Password123! |
 	When I click my name to view my Profile Page
 	And I click ‘EDIT’
-	And I click 'Profiles'
+	And I click ‘Profiles’
 	Then I am taken to the Profiles Page
 
 @TraineeProfileEditPage @Happy
@@ -53,7 +53,7 @@ Scenario: Log out when on trainee profile edit page
 	| bhoward@spartaglobal.com | Password123! |
 	When I click my name to view my Profile Page
 	And I click ‘EDIT’
-	And I click 'Logout'
+	And I click ‘Logout’
 	Then I am logged out and sent to the Splash Page
 
 @TraineeProfileEditPage @Happy

@@ -1,6 +1,7 @@
 ﻿using Eng91FinalProject.utils;
 using NUnit.Framework;
 using System;
+using System.Threading;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
 
@@ -12,7 +13,12 @@ namespace Eng91FinalProject.BDD
     {
         private CourseDetails _courseDetails;
         private AdminCoursePageSteps _coursePageSteps = new AdminCoursePageSteps();
-
+        [BeforeScenario]
+        public void InstantiateSteps()
+        {
+            _coursePageSteps.Website.SeleniumDriver.Quit();
+            _coursePageSteps.Website = Website;
+        }
         [Given(@"I click Courses")]
         public void GivenIClickCourses()
         {
@@ -42,6 +48,12 @@ namespace Eng91FinalProject.BDD
             Website.AdminCourseCreatePage.InputStartDate(_courseDetails.CourseStart);
         }
 
+        [When(@"I click Courses")]
+        public void WhenIClickCourses()
+        {
+            Website.TrainerNavbar.ClickAdminDropdownButton();
+            Website.TrainerNavbar.ClickAdminDropdownCoursesButton();
+        }
 
         [Then(@"I won't be returned to the course page")]
         public void ThenIWonTBeReturnedToTheCoursePage()
@@ -62,6 +74,5 @@ namespace Eng91FinalProject.BDD
             _coursePageSteps.WhenIClickSearch();
             _coursePageSteps.ThenTheResultShouldShow(_courseDetails.Name);
         }
-
     }
 }

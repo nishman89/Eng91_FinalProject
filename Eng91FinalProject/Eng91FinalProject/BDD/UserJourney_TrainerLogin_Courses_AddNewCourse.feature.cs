@@ -108,14 +108,14 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
  testRunner.And("I click ‘Login’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table60 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table71 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table60.AddRow(new string[] {
+                table71.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 8
- testRunner.When("I enter the correct credentials", ((string)(null)), table60, "When ");
+ testRunner.When("I enter the correct credentials", ((string)(null)), table71, "When ");
 #line hidden
 #line 11
  testRunner.And("I click ‘LOGIN’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -129,13 +129,27 @@ this.ScenarioInitialize(scenarioInfo);
 #line 14
  testRunner.And("I click ‘New’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
+                TechTalk.SpecFlow.Table table72 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Name",
+                            "Trainer",
+                            "Stream",
+                            "Location",
+                            "CourseLength",
+                            "CourseStart"});
+                table72.AddRow(new string[] {
+                            "Eng92",
+                            "John",
+                            "C# SDET",
+                            "London",
+                            "12",
+                            "01012022"});
 #line 15
- testRunner.And("I enter the desired course details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I enter the desired course details", ((string)(null)), table72, "And ");
 #line hidden
-#line 16
+#line 18
  testRunner.And("I click ‘CREATE’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 17
+#line 19
  testRunner.Then("the new course is created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

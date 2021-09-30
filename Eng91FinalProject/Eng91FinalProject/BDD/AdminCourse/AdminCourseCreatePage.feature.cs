@@ -129,12 +129,12 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Admin tries to create a course with details")]
-        [NUnit.Framework.CategoryAttribute("happy")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         [NUnit.Framework.CategoryAttribute("AdminCourseCreate")]
         public virtual void AdminTriesToCreateACourseWithDetails()
         {
             string[] tagsOfScenario = new string[] {
-                    "happy",
+                    "Happy",
                     "AdminCourseCreate"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Admin tries to create a course with details", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
@@ -173,9 +173,6 @@ this.ScenarioInitialize(scenarioInfo);
 #line 21
  testRunner.When("I click New", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 22
- testRunner.And("I click Create", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
                 TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
                             "Name",
                             "Trainer",
@@ -184,16 +181,22 @@ this.ScenarioInitialize(scenarioInfo);
                             "CourseLength",
                             "CourseStart"});
                 table3.AddRow(new string[] {
-                            "Eng92",
+                            "Eng91",
                             "John",
                             "C# SDET",
                             "London",
-                            "12",
+                            "1",
                             "01012022"});
-#line 23
+#line 22
  testRunner.And("I enter the desired course details", ((string)(null)), table3, "And ");
 #line hidden
+#line 25
+ testRunner.And("I click Create", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
 #line 26
+ testRunner.And("I click Courses", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 27
  testRunner.Then("the new course is created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -211,7 +214,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "AdminCourseCreate"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Admin tries to create a course with no details", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 29
+#line 30
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -237,19 +240,19 @@ this.ScenarioInitialize(scenarioInfo);
                 table4.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
-#line 30
+#line 31
  testRunner.Given("I am logged in", ((string)(null)), table4, "Given ");
 #line hidden
-#line 33
+#line 34
  testRunner.And("I click Courses", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 34
+#line 35
  testRunner.When("I click New", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 35
+#line 36
  testRunner.And("I click Create", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 36
+#line 37
  testRunner.Then("I won\'t be returned to the course page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

@@ -109,7 +109,7 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table23 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table23.AddRow(new string[] {
+                table36.AddRow(new string[] {
                             "bhoward@spartaglobal.com",
                             "Password123!"});
 #line 8
@@ -157,11 +157,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-
                 TechTalk.SpecFlow.Table table24 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table24.AddRow(new string[] {
+                table37.AddRow(new string[] {
                             "bhoward@spartaglobal.com",
                             "Password123!"});
 #line 16
@@ -216,7 +215,7 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table25 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table25.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "bhoward@spartaglobal.com",
                             "Password123!"});
 #line 25
@@ -271,7 +270,7 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table26 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table26.AddRow(new string[] {
+                table39.AddRow(new string[] {
                             "bhoward@spartaglobal.com",
                             "Password123!"});
 #line 34
@@ -326,7 +325,7 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table27 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table27.AddRow(new string[] {
+                table40.AddRow(new string[] {
                             "bhoward@spartaglobal.com",
                             "Password123!"});
 #line 43
@@ -381,7 +380,7 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table28 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table28.AddRow(new string[] {
+                table41.AddRow(new string[] {
                             "bhoward@spartaglobal.com",
                             "Password123!"});
 #line 52
@@ -436,7 +435,7 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table29 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table29.AddRow(new string[] {
+                table42.AddRow(new string[] {
                             "bhoward@spartaglobal.com",
                             "Password123!"});
 #line 61

@@ -106,7 +106,7 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table48 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table48.AddRow(new string[] {
+                table50.AddRow(new string[] {
                             "pbridgers@spartaglobal.com",
                             "Password123!"});
 #line 6
@@ -157,12 +157,11 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table49 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table49.AddRow(new string[] {
+                table51.AddRow(new string[] {
                             "pbridgers@spartaglobal.com",
                             "Password123!"});
 #line 15
  testRunner.Given("I am logged in", ((string)(null)), table49, "Given ");
-
 
 #line hidden
 #line 18
@@ -219,7 +218,7 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table41 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table50.AddRow(new string[] {
+                table52.AddRow(new string[] {
                             "pbridgers@spartaglobal.com",
                             "Password123!"});
 #line 24
@@ -286,7 +285,7 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table51 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table51.AddRow(new string[] {
+                table53.AddRow(new string[] {
                             "pbridgers@spartaglobal.com",
                             "Password123!"});
 #line 39
@@ -353,7 +352,7 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table43 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table43.AddRow(new string[] {
+                table54.AddRow(new string[] {
                             "pbridgers@spartaglobal.com",
                             "Password123!"});
 #line 54

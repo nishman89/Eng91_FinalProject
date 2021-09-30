@@ -10,7 +10,7 @@ namespace Eng91FinalProject
 {
     public class SharedLoginSteps
     {
-        public Website<ChromeDriver> Website { get; } = new Website<ChromeDriver>();
+        public Website<ChromeDriver> Website { get; set; } = new Website<ChromeDriver>();
         protected Credentials _credentials;
         protected TraineeProfileDetails _traineeProfileDetails;
 

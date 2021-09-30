@@ -705,7 +705,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("I click ‘OK’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 122
- testRunner.Then("the selected API Key & Token is deleted on \'deletetest\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the selected API Key & Token is deleted on \'asdasd\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

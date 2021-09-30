@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\NUnit3TestAdapter.4.0.0\build\net35\NUnit3TestAdapter.props" Condition="Exists('..\packages\NUnit3TestAdapter.4.0.0\build\net35\NUnit3TestAdapter.props')" />
   <Import Project="..\packages\SpecFlow.Plus.LivingDocPlugin.3.9.57\build\SpecFlow.Plus.LivingDocPlugin.props" Condition="Exists('..\packages\SpecFlow.Plus.LivingDocPlugin.3.9.57\build\SpecFlow.Plus.LivingDocPlugin.props')" />
@@ -138,6 +138,7 @@
     <Compile Include="BDD\UserJourney_TrainerLogin_Tracker_ChangeGradesSteps.cs" />
     <Compile Include="BDD\UserJourney_TraineeLogin_Tracker_CreateNewTrackerSteps.cs" />
     <Compile Include="BDD\UserJourney_TrainerLogin_Courses_AddNewCourseSteps.cs" />
+    <Compile Include="BDD\UserJourney_ViewTraineeProfileAsTrainerSteps.cs" />
     <Compile Include="lib\driver_config\SeleniumDriverConfig.cs" />
     <Compile Include="lib\pages\AdminAPI\AdminAPICreatePage.cs" />
     <Compile Include="lib\pages\AdminAPI\AdminAPIEditPage.cs" />
@@ -153,7 +154,7 @@
     <Compile Include="lib\pages\LoginPage.cs" />
     <Compile Include="lib\pages\Profiles\ProfilesPage.cs" />
     <Compile Include="lib\pages\ProgressPage.cs" />
-	<Compile Include="lib\pages\CourseAttendancePage.cs" />
+    <Compile Include="lib\pages\CourseAttendancePage.cs" />
     <Compile Include="lib\pages\TraineeProfile\TraineeProfileEditPage.cs" />
     <Compile Include="lib\pages\TraineeProfile\TraineeProfilePage.cs" />
     <Compile Include="lib\pages\Navbar\SharedNavbar.cs" />
@@ -209,6 +210,7 @@
     <None Include="BDD\TrainerProfile\TrainerProfile.feature" />
     <None Include="BDD\UserJourney_TraineeLogin_Tracker_CreateNewTracker.feature" />
     <None Include="BDD\UserJourney_TrainerLogin_Courses_AddNewCourse.feature" />
+    <None Include="BDD\UserJourney_ViewTraineeProfileAsTrainer.feature" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />

@@ -15,6 +15,11 @@ namespace Eng91FinalProject.BDD
             traineeSteps.Website.SeleniumDriver.Quit();
             traineeSteps.Website = Website;
         }
+        [When(@"I press Tracker")]
+        public void WhenIPressTracker()
+        {
+            traineeSteps.WhenIPressTracker();
+        }
 
         [When(@"I press Edit")]
         public void WhenIPressEdit()

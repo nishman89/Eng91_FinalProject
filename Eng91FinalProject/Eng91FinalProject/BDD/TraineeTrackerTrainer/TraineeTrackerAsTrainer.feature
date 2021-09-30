@@ -1,7 +1,7 @@
 ﻿Feature: TraineeTrackerAsTrainer
 	Automation Task - View trainee tracker as trainer
 
-@Login_As_Trainer
+@Login_As_Trainer @Happy
 Scenario: Check tracker as Trainer
 	Given I am logged in
 	| email                   | password     |
@@ -9,7 +9,7 @@ Scenario: Check tracker as Trainer
 	When I press Trainee Tracker
 	Then I should see my trainee trackers
 
-	@Trainee_EditTracker
+	@Trainee_EditTracker @Happy
 Scenario: Manage comment
 	Given I am logged in
 	| email                   | password     |
@@ -24,7 +24,7 @@ Scenario: Manage comment
 	| Tom Howard is better though |
 	| He's great                  |
 
-	@Trainee_EditTracker
+	@Trainee_EditTracker @Happy
 Scenario: Manage grades
 	Given I am logged in
 	| email                   | password     |

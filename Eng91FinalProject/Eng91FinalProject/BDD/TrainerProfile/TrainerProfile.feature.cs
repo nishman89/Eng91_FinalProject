@@ -76,10 +76,12 @@ namespace Eng91FinalProject.BDD.TrainerProfile
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Navigate to trainer profile page")]
         [NUnit.Framework.CategoryAttribute("Trainer_page")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         public virtual void NavigateToTrainerProfilePage()
         {
             string[] tagsOfScenario = new string[] {
-                    "Trainer_page"};
+                    "Trainer_page",
+                    "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigate to trainer profile page", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 5
@@ -124,10 +126,12 @@ testRunner.Then("I am taken to my Profile Page", ((string)(null)), ((TechTalk.Sp
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Edit and Save changes")]
         [NUnit.Framework.CategoryAttribute("Trainer_page")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         public virtual void EditAndSaveChanges()
         {
             string[] tagsOfScenario = new string[] {
-                    "Trainer_page"};
+                    "Trainer_page",
+                    "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit and Save changes", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 13
@@ -191,10 +195,12 @@ testRunner.Then("my profile is updated", ((string)(null)), ((TechTalk.SpecFlow.T
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("change stream to C# dev")]
         [NUnit.Framework.CategoryAttribute("Trainer_page")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         public virtual void ChangeStreamToCDev()
         {
             string[] tagsOfScenario = new string[] {
-                    "Trainer_page"};
+                    "Trainer_page",
+                    "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("change stream to C# dev", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 26
@@ -248,10 +254,12 @@ testRunner.Then("my profile details for course stream should show \'C# Developer
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("change stream to C# SDET")]
         [NUnit.Framework.CategoryAttribute("Trainer_page")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         public virtual void ChangeStreamToCSDET()
         {
             string[] tagsOfScenario = new string[] {
-                    "Trainer_page"};
+                    "Trainer_page",
+                    "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("change stream to C# SDET", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 37
@@ -305,10 +313,12 @@ testRunner.Then("my profile details for course stream should show \'C# SDET\'", 
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("change stream to Java Developer")]
         [NUnit.Framework.CategoryAttribute("Trainer_page")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         public virtual void ChangeStreamToJavaDeveloper()
         {
             string[] tagsOfScenario = new string[] {
-                    "Trainer_page"};
+                    "Trainer_page",
+                    "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("change stream to Java Developer", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 48
@@ -362,10 +372,12 @@ testRunner.Then("my profile details for course stream should show \'Java Develop
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("change stream to DevOps")]
         [NUnit.Framework.CategoryAttribute("Trainer_page")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         public virtual void ChangeStreamToDevOps()
         {
             string[] tagsOfScenario = new string[] {
-                    "Trainer_page"};
+                    "Trainer_page",
+                    "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("change stream to DevOps", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 59
@@ -419,10 +431,12 @@ testRunner.Then("my profile details for course stream should show \'DevOps\'", (
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("change stream to Business Analyst")]
         [NUnit.Framework.CategoryAttribute("Trainer_page")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         public virtual void ChangeStreamToBusinessAnalyst()
         {
             string[] tagsOfScenario = new string[] {
-                    "Trainer_page"};
+                    "Trainer_page",
+                    "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("change stream to Business Analyst", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 70

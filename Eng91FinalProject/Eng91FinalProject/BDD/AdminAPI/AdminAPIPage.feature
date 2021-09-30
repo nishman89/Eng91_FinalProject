@@ -13,13 +13,13 @@ Scenario: Navigate to Admin API Page
 	Then I am taken to the Admin API Page
 
 @AdminAPIPage @Happy
-Scenario: Disable created API but cancel
+Scenario: Cancel Disable created API
 	Given I am logged in
 	| Email                   | Password     |
 	| jsmith@spartaglobal.com | Password123! |
 	When I click ‘Admin’ 
 	And I click ‘API’
-	And I click ‘DISABLE’ on 'disabletest'
+	And I click ‘DISABLE’ on 'testedit'
 	And I click ‘CANCEL’
 	Then I am taken to the Admin API Page
 
@@ -30,18 +30,18 @@ Scenario: Disable created API
 	| jsmith@spartaglobal.com | Password123! |
 	When I click ‘Admin’ 
 	And I click ‘API’
-	And I click ‘DISABLE’ on 'disabletest'
+	And I click ‘DISABLE’ on 'disabledtest'
 	And I click ‘OK’
-	Then the selected API is disabled on 'disabletest'
+	Then the selected API is disabled on 'disabledtest'
 
 @AdminAPIPage @Happy
-Scenario: Reset created API but cancel
+Scenario: Cancel Reset created API
 	Given I am logged in
 	| Email                   | Password     |
 	| jsmith@spartaglobal.com | Password123! |
 	When I click ‘Admin’ 
 	And I click ‘API’
-	And I click ‘RESET’ on 'resettest'
+	And I click ‘RESET’ on 'testedit'
 	And I click ‘CANCEL’
 	Then I am taken to the Admin API Page
 
@@ -52,18 +52,18 @@ Scenario: Reset created API
 	| jsmith@spartaglobal.com | Password123! |
 	When I click ‘Admin’ 
 	And I click ‘API’
-	And I click ‘RESET’ on 'resettest'
+	And I click ‘RESET’ on 'disabledtest'
 	And I click ‘OK’
-	Then the selected API is reset on 'resettest'
+	Then the selected API is reset on 'disabledtest'
 
 @AdminAPIPage @Happy
-Scenario: Enable selected API but cancel
+Scenario: Disable selected API then enable
 	Given I am logged in
 	| Email                   | Password     |
 	| jsmith@spartaglobal.com | Password123! |
 	When I click ‘Admin’ 
 	And I click ‘API’
-	And I click ‘ENABLE’ on 'enabletest'
+	And I click ‘ENABLE’ on 'testedit'
 	And I click ‘CANCEL’
 	Then I am taken to the Admin API Page
 
@@ -74,9 +74,9 @@ Scenario: Enable selected API
 	| jsmith@spartaglobal.com | Password123! |
 	When I click ‘Admin’ 
 	And I click ‘API’
-	And I click ‘ENABLE’ on 'enabletest'
+	And I click ‘ENABLE’ on 'disabledtest'
 	And I click ‘OK’
-	Then the selected API is enabled on 'enabletest'
+	Then the selected API is enabled on 'disabledtest'
 
 @AdminAPIPage @Happy
 Scenario: Edit selected API
@@ -85,7 +85,7 @@ Scenario: Edit selected API
 	| jsmith@spartaglobal.com | Password123! |
 	When I click ‘Admin’ 
 	And I click ‘API’
-	And I click ‘Edit’ on 'test'
+	And I click ‘Edit’ on 'disabledtest'
 	Then I am taken to the Admin API Edit Page
 
 @AdminAPIPage @Happy
@@ -95,18 +95,18 @@ Scenario: View selected API
 	| jsmith@spartaglobal.com | Password123! |
 	When I click ‘Admin’ 
 	And I click ‘API’
-	And I click the name of the API on 'test'
-	Then the selected API information is shown on 'test'
+	And I click the name of the API on 'disabledtest'
+	Then the selected API information is shown on 'disabledtest'
 
 
 @AdminAPIPage @Happy
-Scenario: Delete created API but cancel
+Scenario: Cancel Delete created API
 	Given I am logged in
 	| Email                   | Password     |
 	| jsmith@spartaglobal.com | Password123! |
 	When I click ‘Admin’ 
 	And I click ‘API’
-	And I click ‘DELETE’ on 'test'
+	And I click ‘DELETE’ on 'testedit'
 	And I click ‘CANCEL’
 	Then I am taken to the Admin API Page
 
@@ -117,9 +117,9 @@ Scenario: Delete created API
 	| jsmith@spartaglobal.com | Password123! |
 	When I click ‘Admin’ 
 	And I click ‘API’
-	And I click ‘DELETE’ on 'deletetest'
+	And I click ‘DELETE’ on 'testedit'
 	And I click ‘OK’
-	Then the selected API Key & Token is deleted on 'deletetest'
+	Then the selected API Key & Token is deleted on 'testedit'
 
 @AdminAPIPage @Happy
 Scenario: Navigate to home from admin api page using image

@@ -108,14 +108,14 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
  testRunner.And("I click ‘Login’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table103 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table107 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table103.AddRow(new string[] {
+                table107.AddRow(new string[] {
                             "jsmith@spartaglobal.com",
                             "Password123!"});
 #line 8
- testRunner.When("I enter the correct credentials", ((string)(null)), table103, "When ");
+ testRunner.When("I enter the correct credentials", ((string)(null)), table107, "When ");
 #line hidden
 #line 11
  testRunner.And("I click ‘LOGIN’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -126,14 +126,14 @@ this.ScenarioInitialize(scenarioInfo);
 #line 13
  testRunner.And("I click ‘New’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table104 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table108 = new TechTalk.SpecFlow.Table(new string[] {
                             "Name",
                             "Trainer",
                             "Stream",
                             "Location",
                             "CourseLength",
                             "CourseStart"});
-                table104.AddRow(new string[] {
+                table108.AddRow(new string[] {
                             "Eng92",
                             "John",
                             "C# SDET",
@@ -141,7 +141,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "1",
                             "01012022"});
 #line 14
- testRunner.And("I enter the desired course details", ((string)(null)), table104, "And ");
+ testRunner.And("I enter the desired course details", ((string)(null)), table108, "And ");
 #line hidden
 #line 17
  testRunner.And("I click ‘CREATE’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

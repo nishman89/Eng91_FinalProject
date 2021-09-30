@@ -49,11 +49,24 @@ namespace Eng91FinalProject.BDD
             Website.HomePage.ClickProgressTrackerButton();
         }
 
-        [When(@"I am taken to the Progress Tracker page")]
+        [Then(@"I am taken to the Progress Tracker page")]
         public void WhenIAmTakenToTheProgressTrackerPage()
         {
             Assert.That(Website.SeleniumDriver.Url.Contains("Progress"));
         }
+
+        [When(@"I Click Course Attendance")]
+        public void WhenIClickCourseAttendance()
+        {
+            Website.HomePage.ClickCourseAttendanceButton();
+        }
+
+        [Then(@"I am taken to the Course Attendance page")]
+        public void ThenIAmTakenToTheCourseAttendancePage()
+        {
+            Assert.That(Website.SeleniumDriver.Url.Contains("AttendanceIndex"));
+        }
+
 
 
     }

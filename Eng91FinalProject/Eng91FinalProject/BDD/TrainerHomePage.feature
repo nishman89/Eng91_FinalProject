@@ -26,4 +26,12 @@ Scenario: As Trainer, view Progress Tracker
     | jsmith@spartaglobal.com  | Password123! |
 	When I click PROGRESS TRACKER
 
-	And I am taken to the Progress Tracker page
+	Then I am taken to the Progress Tracker page
+
+@AttendanceNavigation
+Scenario: As Trainer, view Attendance Page
+	Given I am logged in
+	| email                    | password     |
+    | jsmith@spartaglobal.com  | Password123! |
+	When I Click Course Attendance
+	Then I am taken to the Course Attendance page

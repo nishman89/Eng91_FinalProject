@@ -276,10 +276,12 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Check Correct Stream")]
         [NUnit.Framework.CategoryAttribute("CourseAttendanceTests")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         public virtual void CheckCorrectStream()
         {
             string[] tagsOfScenario = new string[] {
-                    "CourseAttendanceTests"};
+                    "CourseAttendanceTests",
+                    "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check Correct Stream", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 40
@@ -324,10 +326,12 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Check Students")]
         [NUnit.Framework.CategoryAttribute("CourseAttendanceTests")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
         public virtual void CheckStudents()
         {
             string[] tagsOfScenario = new string[] {
-                    "CourseAttendanceTests"};
+                    "CourseAttendanceTests",
+                    "Happy"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check Students", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 48

@@ -11,17 +11,22 @@ namespace Eng91FinalProjectAPI.Tests
     [Scope(Feature ="GetTraineeTests")]
     public class GetTraineeTestsSteps : SharedSteps
     {
-        
+        [BeforeScenario]
+        public void OneTimeSetUpAsync()
+        {
+            _service = new TraineeService();
+        }
+
         [Given(@"I make a get request for trainees")]
         public async Task GivenIMakeAGetRequestForTrainees()
         {
-            await _traineeService.MakeTraineeRequestAsync();
+            await ((TraineeService)_service).MakeTraineeRequestAsync();
         }
         
         [Then(@"I should receive a JSON of all trainees")]
         public void ThenIShouldReceiveAJSONOfAllTrainees()
         {
-            Assert.That(_traineeService.TraineeResponseDTO.Response, Is.Not.Null);
+            Assert.That(((TraineeService)_service).TraineeResponseDTO.Response, Is.Not.Null);
         }
 
     }

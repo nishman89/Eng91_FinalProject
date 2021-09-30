@@ -28,7 +28,7 @@ namespace Eng91FinalProject.BDD
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "UserJourney_TraineeLogin_Tracker_CreateNewTracker.feature"
+#line 1 "UserJourney_TraineeLogin_Tracker_UpdateTracker.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
@@ -116,24 +116,14 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
     testRunner.And("I click ‘Login’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-<<<<<<< HEAD
                 TechTalk.SpecFlow.Table table70 = new TechTalk.SpecFlow.Table(new string[] {
-=======
-
-                TechTalk.SpecFlow.Table table68 = new TechTalk.SpecFlow.Table(new string[] {
->>>>>>> 70ec710250fa7e57fd5b7789a1f12ae4c8936ad8
                             "email",
                             "password"});
                 table70.AddRow(new string[] {
                             "ajolie@spartaglobal.com",
                             "Password123!"});
 #line 8
-<<<<<<< HEAD
     testRunner.When("I enter the following credentials", ((string)(null)), table70, "When ");
-=======
-    testRunner.When("I enter the following credentials", ((string)(null)), table68, "When ");
-
->>>>>>> 70ec710250fa7e57fd5b7789a1f12ae4c8936ad8
 #line hidden
 #line 11
     testRunner.And("I click ‘LOGIN’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

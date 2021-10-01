@@ -376,6 +376,90 @@ this.ScenarioInitialize(scenarioInfo);
             }
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Create the tracker")]
+        [NUnit.Framework.CategoryAttribute("UserJourney_TraineeTracker")]
+        [NUnit.Framework.CategoryAttribute("Happy")]
+        [NUnit.Framework.TestCaseAttribute("Asking questions", "Asking more questions", "Being distracted", null)]
+        [NUnit.Framework.TestCaseAttribute("Studying", "Studying more", "Being late", null)]
+        public virtual void CreateTheTracker(string @continue, string start, string feedback, string[] exampleTags)
+        {
+            string[] @__tags = new string[] {
+                    "UserJourney_TraineeTracker",
+                    "Happy"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            string[] tagsOfScenario = @__tags;
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            argumentsOfScenario.Add("continue", @continue);
+            argumentsOfScenario.Add("start", start);
+            argumentsOfScenario.Add("feedback", feedback);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create the tracker", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 68
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 69
+ testRunner.Given("I am on the Splash Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 70
+    testRunner.And("I click ‘Login’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table89 = new TechTalk.SpecFlow.Table(new string[] {
+                            "email",
+                            "password"});
+                table89.AddRow(new string[] {
+                            "ajolie@spartaglobal.com",
+                            "Password123!"});
+#line 71
+    testRunner.When("I enter the following credentials", ((string)(null)), table89, "When ");
+#line hidden
+#line 74
+    testRunner.And("I click ‘LOGIN’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 75
+ testRunner.When("I press Tracker", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 76
+ testRunner.And("I press create new Tracker", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 77
+ testRunner.And(string.Format("I manage the Continue section with the feedback {0}", @continue), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 78
+ testRunner.And(string.Format("I manage the Start section with the feedback {0}", start), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 79
+ testRunner.And(string.Format("I manage the Stop section with the feedback {0}", feedback), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 80
+ testRunner.And("I press Create", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 81
+ testRunner.Then("I should see my trackers", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore

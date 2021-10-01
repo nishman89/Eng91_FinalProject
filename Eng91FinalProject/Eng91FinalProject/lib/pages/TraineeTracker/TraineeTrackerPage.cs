@@ -15,6 +15,9 @@ namespace Eng91FinalProject.lib.pages
         #region Properties
 
         private IWebDriver _seleniumDriver;
+
+        private IWebElement _createButton => _seleniumDriver.FindElement(By.Id("create-button"));
+        private IWebElement _createNewTracker => _seleniumDriver.FindElement(By.Id("CreateNewTrackerButton"));
         private IWebElement _newTrackerButton => _seleniumDriver.FindElement(By.Id("CreateNewTrackerButton"));
         private IWebElement _trackerButton => _seleniumDriver.FindElement(By.LinkText("Tracker"));
         private IWebElement _selfCheckFeedback_Week => _seleniumDriver.FindElement(By.Id("weekSelector"));
@@ -35,9 +38,11 @@ namespace Eng91FinalProject.lib.pages
 
         #endregion
         public void SaveChanges() => _saveChangesButton.Click();
+        public void CreateButton() => _createButton.Click();
         public void ClickEditButton() => _editButton_BenHoward_Engineering79.Click();
         public void PressEditTrackerButton() => _editTrackerButton.Click();
         public void PressTrackerButton() => _trackerButton.Click();
+        public void PressCreateNewTacker() => _createNewTracker.Click();
         public void Select_Skill_A() => _aSkill.Click();
         public void Select_Skill_B() => _bSkill.Click();
         public void Select_Skill_C() => _cSkill.Click();

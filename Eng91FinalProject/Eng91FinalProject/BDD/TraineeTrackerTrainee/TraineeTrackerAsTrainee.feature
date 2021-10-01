@@ -63,3 +63,23 @@ Scenario: Edit tracker - Continue
 	| feedback         |
 	| Asking questions |
 	| Studying         |
+
+		@UserJourney_TraineeTracker @Happy
+Scenario: Create the tracker
+	Given I am on the Splash Page
+    And I click ‘Login’
+    When I enter the following credentials
+    | email                    | password     |
+    | ajolie@spartaglobal.com  | Password123! |
+    And I click ‘LOGIN’
+	When I press Tracker
+	And I press create new Tracker
+	And I manage the Continue section with the feedback <continue>
+	And I manage the Start section with the feedback <start>
+	And I manage the Stop section with the feedback <feedback>
+	And I press Create
+	Then I should see my trackers
+	Examples: 
+	| continue         | start                 | feedback         |
+	| Asking questions | Asking more questions | Being distracted |
+	| Studying         | Studying more         | Being late       |

@@ -57,9 +57,37 @@ Scenario: Edit tracker - Continue
 	When I press Tracker
 	And I press Edit
 	And I manage the Continue section with the feedback <feedback>
-	And I press save
+	
 	Then I should see my trackers
 	Examples: 
 	| feedback         |
 	| Asking questions |
 	| Studying         |
+
+		@UserJourney_TraineeTracker @Happy
+Scenario: Create the tracker
+	Given I am on the Splash Page
+    And I click ‘Login’
+    When I enter the following credentials
+    | email                    | password     |
+    | ajolie@spartaglobal.com  | Password123! |
+    And I click ‘LOGIN’
+	When I press Tracker
+	And I press create new Tracker
+	And I manage the Continue section with the feedback <continue>
+	And I manage the Start section with the feedback <start>
+	And I manage the Stop section with the feedback <feedback>
+	Examples: 
+	| continue         |
+	| Asking questions |
+	| Studying         |
+	Examples: 
+	| start					|
+	| Asking more questions |
+	| Studying more         |
+	Examples: 
+	| feedback         |
+	| Being distracted |
+	| Being late       |
+	And I press save
+	Then I should see my trackers

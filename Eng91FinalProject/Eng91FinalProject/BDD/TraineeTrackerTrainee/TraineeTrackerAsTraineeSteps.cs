@@ -53,6 +53,11 @@ namespace Eng91FinalProject.BDD
         }
 
 
+        [When(@"I press create new Tracker")]
+        public void WhenIPressCreateNewTracker()
+        {
+            Website.TraineeTrackerPage.PressCreateNewTacker();
+        }
 
 
     }

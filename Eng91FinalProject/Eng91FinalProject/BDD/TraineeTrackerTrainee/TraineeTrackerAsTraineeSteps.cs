@@ -59,6 +59,11 @@ namespace Eng91FinalProject.BDD
             Website.TraineeTrackerPage.PressCreateNewTacker();
         }
 
+        [When(@"I press Create")]
+        public void WhenIPressCreate()
+        {
+            Website.TraineeTrackerPage.CreateButton();
+        }
 
     }
 }
